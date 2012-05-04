@@ -9,11 +9,25 @@
 
 body {
     background: url('img/bg-pattern.png');
-    font-family: 'Lato', 'helvetica neue', Helvetica, sans-serif;
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
-    font-size: 12pt;
+    font-size: 16px;
 }
 
+
+p {
+  margin: 0 0 6px;
+  line-height: 18px;
+}
+
+p small {
+  font-size: 11px;
+  color: #999999;
+}
+
+p:last-child {
+    margin: 0;
+}
 
 
 /*
@@ -75,11 +89,11 @@ h3 small {
 h4,
 h5,
 h6 {
-    line-height: 18px;
+    line-height: 20px;
 }
 
 h4 {
-    font-size: 14px;
+    font-size: 17px;
 }
 
 h4 small {
@@ -87,7 +101,7 @@ h4 small {
 }
 
 h5 {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 h6 {
@@ -107,6 +121,9 @@ a, a:visited, a:active {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
 
 
 /*
@@ -166,14 +183,18 @@ dl {
     margin-bottom: 18px;
 }
 
+dl:last-child {
+    margin-bottom: 4px;
+}
+
 dt,
 dd {
     line-height: 18px;
 }
 
 dt {
-    font-weight: bold;
-    line-height: 17px;
+    font-weight: 700;
+    color: #333;
 }
 
 dd {
@@ -215,10 +236,68 @@ dd {
     margin: 0 auto;
 }
 
+/*
+/* Code
+/* * * */
+
+code,
+pre {
+  padding: 0 3px 2px;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 12px;
+  color: #333333;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+code {
+  padding: 2px 4px;
+  color: #ff7516;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+
+pre {
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 9px;
+  font-size: 12.025px;
+  line-height: 18px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+pre.prettyprint {
+  margin-bottom: 18px;
+}
+
+pre code {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+}
+
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+
+
 
 /*
-* Box Settings
-* * * * * * * */
+/* Box Settings
+/* * * * * * * */
 
 .box {
     background: #fff;
