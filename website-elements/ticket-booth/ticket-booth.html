@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Ingresse</title>
+    <link href="../../prometheus.css" rel="stylesheet" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
+</head>
+
+<body>
+
+    <div id="container" class="container center">
+        
+        <div class="box shadow span12">
+            <h1>Ticket booth <small>&mdash; Create new tickets</small></h1>
+        </div>
+        
+        
+       
+        <div class="box span6 shadow">
+            <h3 class="box-title">Ticket booth</h3>
+            
+            <div class="row">
+                <p>
+                    Summary table [TO BE CONSTRUCTED]
+                </p>
+            </div>
+            
+            <div class="separating-dashed-line"></div>
+            
+            
+            
+            <div class="row">
+                <form class="form-horizontal">
+                    <fieldset class="colored">
+                        <div class="control-group">
+                            <label class="control-label" for="name"><strong>Name*</strong></label>
+                            <div class="controls">
+                                <input type="text" class="input-large" id="name" placeholder="Name"/>
+                            </div>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label class="control-label" for="category"><strong>Price*</strong></label>
+                            <div class="controls">
+                                <input type="text" class="input-small inline" id="name" placeholder="Price"/>
+                                <label class="checkbox inline">
+                                    <input type="checkbox" id="inlineCheckbox1" value="option1"/> Free
+                                </label>
+                                
+                                <p class="help-block small">Ingresse will add a fee of <strong>$7</strong> for this ticket.<br/>If you don't want the customer to pay for it, please check the box below.</p>
+                                
+                                <label class="checkbox">
+                                    <input type="checkbox" id="optionsCheckbox" value="option1"/>
+                                    <p><small><strong>Pay the fee yourself</strong></small></p>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label class="control-label"><strong>Quantity*</strong></label>
+                            <div class="controls">
+                                <input class="input-small" type="text" placeholder="Quantity"/>
+                            </div>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label class="control-label">Description</label>
+                            <div class="controls">
+                                <textarea class="description input-large" placeholder="Description"></textarea/>
+                            </div>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label class="control-label"><strong>Sales start</strong></label>
+                            <div class="controls">
+                                <input class="input-small inline" type="text" placeholder="Date"/>
+                                <input class="span2 inline" type="text" placeholder="Time"/>
+                            </div>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label class="control-label"><strong>Sales end</strong></label>
+                            <div class="controls">
+                                <input class="input-small inline" type="text" placeholder="Date"/>
+                                <input class="span2 inline" type="text" placeholder="Time"/>
+                            </div>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label class="control-label"><strong>Total cost<br/>for the customer</strong></label>
+                            <div class="controls">
+                                <p class="total"><strong>50$</strong></p>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                
+                <div class="ribbon-wrapper">
+                    <div class="ribbon-front">
+                        <h2>ADD THIS TICKET</h2>
+                    </div>
+                    <div class="ribbon-edge-bottomleft"></div>
+                    <div class="ribbon-edge-bottomright"></div>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

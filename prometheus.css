@@ -25,6 +25,12 @@ p small {
   color: #999999;
 }
 
+p.small {
+  font-size: 11px;
+  line-height: 11px;
+  color: #999999;
+}
+
 p:last-child {
     margin: 0;
 }
@@ -329,51 +335,51 @@ pre code {
     margin: 10px;
 }
 
-.span12 {
+.span12, .span12 fieldset {
     width: 900px;
 }
 
-.span11 {
+.span11, .span11 fieldset {
     width: 820px;
 }
 
-.span10 {
+.span10, .span10 fieldset {
     width: 740px;
 }
 
-.span9 {
+.span9, .span9 fieldset {
     width: 660px;
 }
 
-.span8 {
+.span8, .span8 fieldset {
     width: 580px;
 }
 
-.span7 {
+.span7, .span7 fieldset {
     width: 500px;
 }
 
-.span6 {
+.span6, .span6 fieldset {
     width: 420px;
 }
 
-.span5 {
+.span5, .span5 fieldset {
     width: 340px;
 }
 
-.span4 {
+.span4, .span4 fieldset {
     width: 260px;
 }
 
-.span3 {
+.span3, .span3 fieldset {
     width: 180px;
 }
 
-.span2 {
+.span2, .span2 fieldset {
     width: 100px;
 }
 
-.span1 {
+.span1, .span1 fieldset {
     width: 20px;
 }
 
@@ -771,6 +777,14 @@ fieldset {
     border: 0;
 }
 
+fieldset.colored {
+    display: inline-block;
+    background: #f5f5f5;
+    -webkit-box-shadow: inset 0 0 1px #000;
+       -moz-box-shadow: inset 0 0 1px #000;
+            box-shadow: inset 0 0 1px #000;
+}
+
 legend {
     display: block;
     width: 100%;
@@ -864,8 +878,8 @@ input[type="file"] {
     background-color: initial;
     border: initial;
     -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
 }
 
 input[type="button"],
@@ -931,11 +945,19 @@ input[type="hidden"] {
     padding-top: 5px;
 }
 
+.controls > p.total:first-child {
+    font-size: 30px;
+    line-height: auto;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
 .radio.inline,
 .checkbox.inline,
 input.inline {
     display: inline-block;
-    padding-top: 5px;
+/*    padding-top: 5px;*/
     margin-bottom: 0;
     vertical-align: middle;
 }
@@ -943,11 +965,6 @@ input.inline {
 .radio.inline + .radio.inline,
 .checkbox.inline + .checkbox.inline {
     margin-left: 10px;
-}
-
-input.inline + input.inline,
-.checkbox.inline + .checkbox.inline {
-    margin-left: 20px;
 }
 
 input,
@@ -987,31 +1004,31 @@ select:focus {
 }
 
 .input-micro {
-    width: 47px;
+    width: 40px;
 }
 
 .input-mini {
-    width: 60px;
+    width: 70px;
 }
 
 .input-small {
-    width: 90px;
+    width: 110px;
 }
 
 .input-medium {
-    width: 150px;
+    width: 170px;
 }
 
 .input-large {
-    width: 210px;
+    width: 230px;
 }
 
 .input-xlarge {
-    width: 270px;
+    width: 290px;
 }
 
 .input-xxlarge {
-    width: 530px;
+    width: 550px;
 }
 
 .input-allwidth {
@@ -1030,6 +1047,10 @@ input,
 textarea,
 .uneditable-input {
     margin-left: 0;
+}
+
+input.inline + input.inline {
+    margin-left: 16px;
 }
 
 input.span12,
@@ -1455,12 +1476,12 @@ legend + .control-group {
 }
 
 .form-horizontal .control-group {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     *zoom: 1;
 }
 
 .form-horizontal .control-group:first-child {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .form-horizontal .control-group:before,
