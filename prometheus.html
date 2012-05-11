@@ -125,21 +125,6 @@
         </div>
 
     </div> <!-- end of div "box" -->
-
-    <div class="box shadow span6">
-        <h3 class="box-title">Basics: Box Organization</h3>
-
-        <div class="row">
-            <p>Most of the boxes should have a title. It is obtained by a <code>&lt;h3&gt;</code> tag, with the class <code>box-title</code>.</p>
-        </div>
-
-        <div class="separating-dashed-line"></div>
-
-        <div class="row">
-            <p>Each section in a box should be encapsulated in a div with the class <code>row</code>. The sections may or may not be separated by a horizontal line, thanks to the command <code>&lt;div class="separating-dashed-line"&gt;&lt;/div&gt;</code>.</p>
-        </div>
-
-    </div> <!-- end of div "box" -->
     
 </section> <!-- end of section "Basics" -->
 
@@ -150,11 +135,10 @@
     </div>
 
     <div class="box shadow span6">
-        <h3 class="box-title">Grid system: Paragraphs and inline tags</h3>
+        <h3 class="box-title">How to use it?</h3>
 
         <div class="row">
-            <p>The basic <code>&lt;p&gt;</code> tag gives this kind of text. You can add some inline formatting, where the <code>&lt;a&gt;</code> tag would give <a href="#">a link</a>, the <code>&lt;em&gt;</code> tag would give some <em>italic text</em>, the <code>&lt;strong&gt;</code> tag would give some <strong>bold text</strong>, and the <code>&lt;small&gt;</code> tag would give <small>some smaller stuff</small>.</p>
-            <p>Note that paragraphs are separated by some white space when they appear on top of another.</p>
+            <p>You have to assign the width of a box by adding the the class <code>span*</code> where <code>*</code> can take any integer value between <code>1</code> and <code>12</code>. This number corresponds to the number of columns the box will stand. By convention, we will preferably use multiples of 3 (<em>i.e.</em> <code>span3</code>, <code>span6</code>, <code>span9</code> and <code>span12</code>) but when necessary, any combination whose sum is 12 is fine.</p>
         </div>
 
     </div> <!-- end of div "box" -->
@@ -253,72 +237,84 @@
     </div> <!-- end of div "box" -->
 </section>
 
-
-
-<div class="box shadow span3">
-    <h3 class="box-title">Basics</h3>
-
-    <div class="row">
-        <img class="item3-1" src="img/robi.png" alt=""/>
+<section> <!-- beginning of section "Boxes" -->
+    <div class="page-header">
+        <h1>Boxes <small>&mdash; Elementary bricks of the layout explained</small></h1>
     </div>
 
-    <div class="row">
-        <img class="item3-2" src="img/robi.png" alt=""/>
-        <img class="item3-2" src="img/robi.png" alt=""/>
-    </div>
+    <div class="box shadow span6">
+        <h3 class="box-title">In a nutshell</h3>
+        <div class="row">
+            <p>The general constructor for a box is similar to:</p>
+            <pre>&lt;div class=&quot;box shadow span6&quot;&gt;
+    &lt;h3 class=&quot;box-title&quot;&gt;Title&lt;/h3&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;!-- some content --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;separating-dashed-line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;!-- some other content --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;!-- yet some other content --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div> <!-- end of div "box" -->
+    <div class="box shadow span6">
+        <h3 class="box-title">Organization in the document</h3>
+        <div class="row">
+            <p>To create a box, you simply have to create a <code>&lt;div&gt;</code> with the class <code>box</code>. In order to match the grid system, you also have to specify the width of box thanks to one of the classes <code>span*</code>. And finally, add the dropped shadow thanks to the class <code>shadow</code> or add a solid border thanks to the class <code>grey-border</code>, which gives a the render of this box.</p>
+            <p>However, the use of this class will be very sparse throughout the whole website and you should (almost) always use <code>shadow</code>.</p>
+        </div>
+    </div> <!-- end of div "box" -->
+    
+    <div class="box shadow span6">
+        <h3 class="box-title">Inner organization</h3>
+        <div class="row">
+            <p>Most of the boxes should have a title. It is obtained by a <code>&lt;h3&gt;</code> tag, with the class <code>box-title</code>.</p>
+        </div>
+        <div class="separating-dashed-line"></div>
+        <div class="row">
+            <p>Each section in a box should be encapsulated in a <code>&lt;div&gt;</code> with the class <code>row</code>. The sections may or may not be separated by a horizontal line, thanks to the command <code>&lt;div class="separating-dashed-line"&gt;&lt;/div&gt;</code>.</p>
+        </div>
+    </div> <!-- end of div "box" -->
+    
+    <div class="box shadow span9">
+        <h3 class="box-title">Advanced topics</h3>
+        <div class="row">
+            <p>You can easily display a series of row elements in a simple way: Prometheus automatically manages the widths for you.</p>
+        </div>
+        
+        <pre>&lt;div class=&quot;box shadow span6&quot;&gt;
+    &lt;h3 class=&quot;box-title&quot;&gt;Title&lt;/h3&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;img class=&quot;item3-1&quot; src=&quot;img/robi.png&quot; alt=&quot;&quot;/&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;img class=&quot;item3-4&quot; src=&quot;img/robi.png&quot; alt=&quot;&quot;/&gt;
+        &lt;img class=&quot;item3-4&quot; src=&quot;img/robi.png&quot; alt=&quot;&quot;/&gt;
+        &lt;img class=&quot;item3-4&quot; src=&quot;img/robi.png&quot; alt=&quot;&quot;/&gt;
+        &lt;img class=&quot;item3-4&quot; src=&quot;img/robi.png&quot; alt=&quot;&quot;/&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+    </div> <!-- end of div "box" -->
+    
+    <div class="box shadow span3">
 
-    <div class="row">
-        <img class="item3-3" src="img/robi.png" alt=""/>
-        <img class="item3-3" src="img/robi.png" alt=""/>
-        <img class="item3-3" src="img/robi.png" alt=""/>
-    </div>
+        <div class="row">
+            <img class="item3-1" src="img/robi.png" alt=""/>
+        </div>
 
-    <div class="row">
-        <img class="item3-4" src="img/robi.png" alt=""/>
-        <img class="item3-4" src="img/robi.png" alt=""/>
-        <img class="item3-4" src="img/robi.png" alt=""/>
-        <img class="item3-4" src="img/robi.png" alt=""/>
-    </div>
+        <div class="row">
+            <img class="item3-4" src="img/robi.png" alt=""/>
+            <img class="item3-4" src="img/robi.png" alt=""/>
+            <img class="item3-4" src="img/robi.png" alt=""/>
+            <img class="item3-4" src="img/robi.png" alt=""/>
+        </div>
 
-    <div class="row">
-        <img class="item3-5" src="img/robi.png" alt=""/>
-        <img class="item3-5" src="img/robi.png" alt=""/>
-        <img class="item3-5" src="img/robi.png" alt=""/>
-        <img class="item3-5" src="img/robi.png" alt=""/>
-        <img class="item3-5" src="img/robi.png" alt=""/>
-    </div>
+    </div> <!-- end of div "box" -->
 
-    <div class="row">
-        <img class="item3-6" src="img/robi.png" alt=""/>
-        <img class="item3-6" src="img/robi.png" alt=""/>
-        <img class="item3-6" src="img/robi.png" alt=""/>
-        <img class="item3-6" src="img/robi.png" alt=""/>
-        <img class="item3-6" src="img/robi.png" alt=""/>
-        <img class="item3-6" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item3-7" src="img/robi.png" alt=""/>
-        <img class="item3-7" src="img/robi.png" alt=""/>
-        <img class="item3-7" src="img/robi.png" alt=""/>
-        <img class="item3-7" src="img/robi.png" alt=""/>
-        <img class="item3-7" src="img/robi.png" alt=""/>
-        <img class="item3-7" src="img/robi.png" alt=""/>
-        <img class="item3-7" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item3-8" src="img/robi.png" alt=""/>
-        <img class="item3-8" src="img/robi.png" alt=""/>
-        <img class="item3-8" src="img/robi.png" alt=""/>
-        <img class="item3-8" src="img/robi.png" alt=""/>
-        <img class="item3-8" src="img/robi.png" alt=""/>
-        <img class="item3-8" src="img/robi.png" alt=""/>
-        <img class="item3-8" src="img/robi.png" alt=""/>
-        <img class="item3-8" src="img/robi.png" alt=""/>
-    </div>
-
-</div> <!-- end of div "box" -->
 
 <div class="box shadow span6">
 
