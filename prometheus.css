@@ -14,6 +14,24 @@ body {
     font-size: 16px;
 }
 
+section {
+    display: block;
+}
+
+section:before,
+section:after {
+    display: table;
+    content: "";
+}
+
+section:after {
+    clear: both;
+}
+
+.center-text {
+    text-align: center;
+}
+
 
 p {
   margin: 0 0 6px;
@@ -114,6 +132,17 @@ h6 {
     font-size: 11px;
     color: #999999;
     text-transform: uppercase;
+}
+
+.page-header {
+  padding-bottom: 17px;
+  margin: 20px 0 10px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.page-header h1 {
+  line-height: 1;
+  padding: 0 10px;
 }
 
 
@@ -382,6 +411,61 @@ pre code {
 .span1, .span1 fieldset {
     width: 20px;
 }
+
+
+.row > [class*="span"] {
+    margin: 0 0 0 20px;
+}
+.row > .span12 {
+    width: 900px;
+}
+
+.row > .span11 {
+    width: 820px;
+}
+
+.row > .span10 {
+    width: 740px;
+}
+
+.row > .span9 {
+    width: 660px;
+}
+
+.row > .span8 {
+    width: 580px;
+}
+
+.row > .span7 {
+    width: 500px;
+}
+
+.row > .span6 {
+    width: 420px;
+}
+
+.row > .span5 {
+    width: 340px;
+}
+
+.row > .span4 {
+    width: 260px;
+}
+
+.row > .span3 {
+    width: 200px;
+}
+
+.row > .span2 {
+    width: 120px;
+}
+
+.row > .span1 {
+    width: 20px;
+}
+
+
+
 
 .row:before,
 .row:after {
