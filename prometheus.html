@@ -279,23 +279,33 @@
             <p>Each section in a box should be encapsulated in a <code>&lt;div&gt;</code> with the class <code>row</code>. The sections may or may not be separated by a horizontal line, thanks to the command <code>&lt;div class="separating-dashed-line"&gt;&lt;/div&gt;</code>.</p>
         </div>
     </div> <!-- end of div "box" -->
+</section>
+
+<section>
+    
+    <div class="page-header">
+        <h1>Multicolum <small>&mdash; How to display several elements in a row</small></h1>
+    </div>
     
     <div class="box shadow span9">
-        <h3 class="box-title">Advanced topics</h3>
+        <h3 class="box-title">Method 1: manually split the row</h3>
         <div class="row">
             <p>You can easily display a series of row elements in a simple way: Prometheus automatically manages the widths for you.</p>
+            <p>With this technique, all the items you will display in a row will automatically scale to the same width in order to fill the whole width of the box. The only parameters you have to know are the span number of the containing box (<em>i.e.</em> the number in the <code>span*</code> class) and the number of items you want to display in the row. Each object of the row should have the class <code>item[#span]-[#items]</code> where <code>[#span]</code> is the span number and <code>[#items]</code> is the number of items you want to display in the row.</p>
+            <p>For instance, if you want to display a row of 8 items in <code>span6</code> box, each item of the row should have the class <code>item8-6</code>.</p>
+            <p>As another example, here is the code that was used to generate the box on the right:</p>
         </div>
         
-        <pre>&lt;div class=&quot;box shadow span6&quot;&gt;
+        <pre>&lt;div class=&quot;box shadow span3&quot;&gt;
     &lt;h3 class=&quot;box-title&quot;&gt;Title&lt;/h3&gt;
     &lt;div class=&quot;row&quot;&gt;
-        &lt;img class=&quot;item3-1&quot; src=&quot;img/robi.png&quot; alt=&quot;&quot;/&gt;
+        &lt;img class=&quot;item3-1&quot; src=&quot;img/ressources/flower1.jpg&quot; alt=&quot;&quot;/&gt;
     &lt;/div&gt;
     &lt;div class=&quot;row&quot;&gt;
-        &lt;img class=&quot;item3-4&quot; src=&quot;img/robi.png&quot; alt=&quot;&quot;/&gt;
-        &lt;img class=&quot;item3-4&quot; src=&quot;img/robi.png&quot; alt=&quot;&quot;/&gt;
-        &lt;img class=&quot;item3-4&quot; src=&quot;img/robi.png&quot; alt=&quot;&quot;/&gt;
-        &lt;img class=&quot;item3-4&quot; src=&quot;img/robi.png&quot; alt=&quot;&quot;/&gt;
+        &lt;img class=&quot;item3-4&quot; src=&quot;img/ressources/flower2.jpg&quot; alt=&quot;&quot;/&gt;
+        &lt;img class=&quot;item3-4&quot; src=&quot;img/ressources/flower3.jpg&quot; alt=&quot;&quot;/&gt;
+        &lt;img class=&quot;item3-4&quot; src=&quot;img/ressources/flower4.jpg&quot; alt=&quot;&quot;/&gt;
+        &lt;img class=&quot;item3-4&quot; src=&quot;img/ressources/flower5.jpg&quot; alt=&quot;&quot;/&gt;
     &lt;/div&gt;
 &lt;/div&gt;</pre>
     </div> <!-- end of div "box" -->
@@ -303,419 +313,174 @@
     <div class="box shadow span3">
 
         <div class="row">
-            <img class="item3-1" src="img/robi.png" alt=""/>
+            <img class="item3-1" src="img/ressources/flower1.jpg" alt=""/>
         </div>
 
         <div class="row">
-            <img class="item3-4" src="img/robi.png" alt=""/>
-            <img class="item3-4" src="img/robi.png" alt=""/>
-            <img class="item3-4" src="img/robi.png" alt=""/>
-            <img class="item3-4" src="img/robi.png" alt=""/>
+            <img class="item3-4" src="img/ressources/flower2.jpg" alt=""/>
+            <img class="item3-4" src="img/ressources/flower3.jpg" alt=""/>
+            <img class="item3-4" src="img/ressources/flower4.jpg" alt=""/>
+            <img class="item3-4" src="img/ressources/flower5.jpg" alt=""/>
         </div>
 
     </div> <!-- end of div "box" -->
+    
+    <div class="box shadow span3">
+
+        <h3 class="box-title">Notices</h3>
+        <div class="row">
+            <p>We only used images for the examples presented here but this technique can be used on any item.</p>
+        </div>
+        <div class="separating-dashed-line"></div>
+        <div class="row">
+            <p>The feature is currently only supported for <code>span3</code>, <code>span6</code>, <code>span9</code> and <code>span12</code> boxes.</p>
+        </div>
+
+    </div> <!-- end of div "box" -->
+    
+    <div class="box shadow span6">
+        <h3 class="box-title">Method 2: use tables</h3>
+        <div class="row">
+            <p>If you want to draw lines between your columns, you have to use tables. They have to be included in a container <code>div</code> with the class <code>table-container</code>, and the table must have the class <code>split</code>.</p>
+        </div>
+        <div class="table-container">
+            <table class="split">
+                <tr>
+                    <td>
+                        Lorem
+                    </td>
+                    <td>
+                        Ipsum
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="row">
+            <p>Although an HTML table should have the same number of columns, Prometheus allows you to tweak this rule. If you want custom row, you can stack up several tables in the container <code>div</code>. For instance:</p>
+        </div>
+        
+        <div class="table-container">
+            <table class="split">
+                <tr>
+                    <td>
+                        Dolor
+                    </td>
+                    <td>
+                        Sit
+                    </td>
+                    <td>
+                        Amet
+                    </td>
+                </tr>
+            </table>
+
+            <table class="split">
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        3 
+                    </td>
+                    <td>
+                        4 
+                    </td>
+                </tr>
+            </table>
+
+            <table class="split">
+                <tr>
+                    <td style="width: 50%">
+                        50%
+                    </td>
+                    <td>
+                        25%
+                    </td>
+                    <td>
+                        25% 
+                    </td>
+                </tr>
+            </table>
+        </div>
+</section>
 
 
-<div class="box shadow span6">
-
-    <div class="row">
-        <img class="item6-1" src="img/robi.png" alt=""/>
+<section> <!-- beginning of section "Boxes" -->
+    <div class="page-header">
+        <h1>Forms <small>&mdash; Build efficient forms</small></h1>
     </div>
+    
+    <div class="box shadow span6">
+        <h3 class="box-title">Notices</h3>
+        <div class="row">
+            <p>We only used images for the examples presented here but this technique can be used on any item.</p>
+        </div>
+        <div class="table-container">
+            <table class="split">
+                <tr>
+                    <td>
+                        Thursday<span>,</span> March 18
+                    </td>
+                    <td>
+                        7:00 pm <a href="#">+Add to calendar</a>
+                    </td>
+                </tr>
+            </table>
 
-    <div class="row">
-        <img class="item6-2" src="img/robi.png" alt=""/>
-        <img class="item6-2" src="img/robi.png" alt=""/>
-    </div>
+            <table class="split">
+                <tr>
+                    <td>
+                        sdfg
+                    </td>
+                    <td>
+                        Thursday
+                    </td>
+                    <td>
+                        7:00 pm 
+                    </td>
+                </tr>
+            </table>
 
-    <div class="row">
-        <img class="item6-3" src="img/robi.png" alt=""/>
-        <img class="item6-3" src="img/robi.png" alt=""/>
-        <img class="item6-3" src="img/robi.png" alt=""/>
-    </div>
+            <table class="split">
+                <tr>
+                    <td>
+                        sdfg
+                    </td>
+                    <td>
+                        Thursday
+                    </td>
+                    <td>
+                        7:00 pm 
+                    </td>
+                    <td>
+                        7:00 pm 
+                    </td>
+                </tr>
+            </table>
 
-    <div class="row">
-        <img class="item6-4" src="img/robi.png" alt=""/>
-        <img class="item6-4" src="img/robi.png" alt=""/>
-        <img class="item6-4" src="img/robi.png" alt=""/>
-        <img class="item6-4" src="img/robi.png" alt=""/>
-    </div>
+            <table class="split">
+                <tr>
+                    <td style="width: 50%">
+                        sdfg
+                    </td>
+                    <td>
+                        Thursday
+                    </td>
+                    <td>
+                        7:00 pm 
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div> <!-- end of div "box" -->
+</section>
 
-    <div class="row">
-        <img class="item6-5" src="img/robi.png" alt=""/>
-        <img class="item6-5" src="img/robi.png" alt=""/>
-        <img class="item6-5" src="img/robi.png" alt=""/>
-        <img class="item6-5" src="img/robi.png" alt=""/>
-        <img class="item6-5" src="img/robi.png" alt=""/>
-    </div>
 
-    <div class="row">
-        <img class="item6-6" src="img/robi.png" alt=""/>
-        <img class="item6-6" src="img/robi.png" alt=""/>
-        <img class="item6-6" src="img/robi.png" alt=""/>
-        <img class="item6-6" src="img/robi.png" alt=""/>
-        <img class="item6-6" src="img/robi.png" alt=""/>
-        <img class="item6-6" src="img/robi.png" alt=""/>
-    </div>
 
-    <div class="row">
-        <img class="item6-7" src="img/robi.png" alt=""/>
-        <img class="item6-7" src="img/robi.png" alt=""/>
-        <img class="item6-7" src="img/robi.png" alt=""/>
-        <img class="item6-7" src="img/robi.png" alt=""/>
-        <img class="item6-7" src="img/robi.png" alt=""/>
-        <img class="item6-7" src="img/robi.png" alt=""/>
-        <img class="item6-7" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item6-8" src="img/robi.png" alt=""/>
-        <img class="item6-8" src="img/robi.png" alt=""/>
-        <img class="item6-8" src="img/robi.png" alt=""/>
-        <img class="item6-8" src="img/robi.png" alt=""/>
-        <img class="item6-8" src="img/robi.png" alt=""/>
-        <img class="item6-8" src="img/robi.png" alt=""/>
-        <img class="item6-8" src="img/robi.png" alt=""/>
-        <img class="item6-8" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item6-9" src="img/robi.png" alt=""/>
-        <img class="item6-9" src="img/robi.png" alt=""/>
-        <img class="item6-9" src="img/robi.png" alt=""/>
-        <img class="item6-9" src="img/robi.png" alt=""/>
-        <img class="item6-9" src="img/robi.png" alt=""/>
-        <img class="item6-9" src="img/robi.png" alt=""/>
-        <img class="item6-9" src="img/robi.png" alt=""/>
-        <img class="item6-9" src="img/robi.png" alt=""/>
-        <img class="item6-9" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item6-17" src="img/robi.png" alt=""/>
-        <img class="item6-17" src="img/robi.png" alt=""/>
-        <img class="item6-17" src="img/robi.png" alt=""/>
-        <img class="item6-17" src="img/robi.png" alt=""/>
-        <img class="item6-17" src="img/robi.png" alt=""/>
-        <img class="item6-17" src="img/robi.png" alt=""/>
-        <img class="item6-17" src="img/robi.png" alt=""/>
-        <img class="item6-17" src="img/robi.png" alt=""/>
-        <img class="item6-17" src="img/robi.png" alt=""/>
-        <img class="item6-17" src="img/robi.png" alt=""/>
-        <img class="item6-17" src="img/robi.png" alt=""/>
-        <img class="item6-17" src="img/robi.png" alt=""/>
-        <img class="item6-17" src="img/robi.png" alt=""/>
-        <img class="item6-17" src="img/robi.png" alt=""/>
-        <img class="item6-17" src="img/robi.png" alt=""/>
-        <img class="item6-17" src="img/robi.png" alt=""/>
-        <img class="item6-17" src="img/robi.png" alt=""/>
-    </div>
-
-</div> <!-- end of div "box" -->
-
-<div class="box shadow span9">
-
-    <div class="row">
-        <img class="item9-1" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item9-2" src="img/robi.png" alt=""/>
-        <img class="item9-2" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item9-3" src="img/robi.png" alt=""/>
-        <img class="item9-3" src="img/robi.png" alt=""/>
-        <img class="item9-3" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item9-4" src="img/robi.png" alt=""/>
-        <img class="item9-4" src="img/robi.png" alt=""/>
-        <img class="item9-4" src="img/robi.png" alt=""/>
-        <img class="item9-4" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item9-5" src="img/robi.png" alt=""/>
-        <img class="item9-5" src="img/robi.png" alt=""/>
-        <img class="item9-5" src="img/robi.png" alt=""/>
-        <img class="item9-5" src="img/robi.png" alt=""/>
-        <img class="item9-5" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item9-6" src="img/robi.png" alt=""/>
-        <img class="item9-6" src="img/robi.png" alt=""/>
-        <img class="item9-6" src="img/robi.png" alt=""/>
-        <img class="item9-6" src="img/robi.png" alt=""/>
-        <img class="item9-6" src="img/robi.png" alt=""/>
-        <img class="item9-6" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item9-7" src="img/robi.png" alt=""/>
-        <img class="item9-7" src="img/robi.png" alt=""/>
-        <img class="item9-7" src="img/robi.png" alt=""/>
-        <img class="item9-7" src="img/robi.png" alt=""/>
-        <img class="item9-7" src="img/robi.png" alt=""/>
-        <img class="item9-7" src="img/robi.png" alt=""/>
-        <img class="item9-7" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item9-8" src="img/robi.png" alt=""/>
-        <img class="item9-8" src="img/robi.png" alt=""/>
-        <img class="item9-8" src="img/robi.png" alt=""/>
-        <img class="item9-8" src="img/robi.png" alt=""/>
-        <img class="item9-8" src="img/robi.png" alt=""/>
-        <img class="item9-8" src="img/robi.png" alt=""/>
-        <img class="item9-8" src="img/robi.png" alt=""/>
-        <img class="item9-8" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item9-9" src="img/robi.png" alt=""/>
-        <img class="item9-9" src="img/robi.png" alt=""/>
-        <img class="item9-9" src="img/robi.png" alt=""/>
-        <img class="item9-9" src="img/robi.png" alt=""/>
-        <img class="item9-9" src="img/robi.png" alt=""/>
-        <img class="item9-9" src="img/robi.png" alt=""/>
-        <img class="item9-9" src="img/robi.png" alt=""/>
-        <img class="item9-9" src="img/robi.png" alt=""/>
-        <img class="item9-9" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item9-13" src="img/robi.png" alt=""/>
-        <img class="item9-13" src="img/robi.png" alt=""/>
-        <img class="item9-13" src="img/robi.png" alt=""/>
-        <img class="item9-13" src="img/robi.png" alt=""/>
-        <img class="item9-13" src="img/robi.png" alt=""/>
-        <img class="item9-13" src="img/robi.png" alt=""/>
-        <img class="item9-13" src="img/robi.png" alt=""/>
-        <img class="item9-13" src="img/robi.png" alt=""/>
-        <img class="item9-13" src="img/robi.png" alt=""/>
-        <img class="item9-13" src="img/robi.png" alt=""/>
-        <img class="item9-13" src="img/robi.png" alt=""/>
-        <img class="item9-13" src="img/robi.png" alt=""/>
-        <img class="item9-13" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item9-17" src="img/robi.png" alt=""/>
-        <img class="item9-17" src="img/robi.png" alt=""/>
-        <img class="item9-17" src="img/robi.png" alt=""/>
-        <img class="item9-17" src="img/robi.png" alt=""/>
-        <img class="item9-17" src="img/robi.png" alt=""/>
-        <img class="item9-17" src="img/robi.png" alt=""/>
-        <img class="item9-17" src="img/robi.png" alt=""/>
-        <img class="item9-17" src="img/robi.png" alt=""/>
-        <img class="item9-17" src="img/robi.png" alt=""/>
-        <img class="item9-17" src="img/robi.png" alt=""/>
-        <img class="item9-17" src="img/robi.png" alt=""/>
-        <img class="item9-17" src="img/robi.png" alt=""/>
-        <img class="item9-17" src="img/robi.png" alt=""/>
-        <img class="item9-17" src="img/robi.png" alt=""/>
-        <img class="item9-17" src="img/robi.png" alt=""/>
-        <img class="item9-17" src="img/robi.png" alt=""/>
-        <img class="item9-17" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-        <img class="item9-19" src="img/robi.png" alt=""/>
-    </div>
-
-</div> <!-- end of div "box" -->
-
-<div class="box shadow span12">
-
-    <div class="row">
-        <img class="item12-1" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item12-2" src="img/robi.png" alt=""/>
-        <img class="item12-2" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item12-3" src="img/robi.png" alt=""/>
-        <img class="item12-3" src="img/robi.png" alt=""/>
-        <img class="item12-3" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item12-4" src="img/robi.png" alt=""/>
-        <img class="item12-4" src="img/robi.png" alt=""/>
-        <img class="item12-4" src="img/robi.png" alt=""/>
-        <img class="item12-4" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item12-5" src="img/robi.png" alt=""/>
-        <img class="item12-5" src="img/robi.png" alt=""/>
-        <img class="item12-5" src="img/robi.png" alt=""/>
-        <img class="item12-5" src="img/robi.png" alt=""/>
-        <img class="item12-5" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item12-6" src="img/robi.png" alt=""/>
-        <img class="item12-6" src="img/robi.png" alt=""/>
-        <img class="item12-6" src="img/robi.png" alt=""/>
-        <img class="item12-6" src="img/robi.png" alt=""/>
-        <img class="item12-6" src="img/robi.png" alt=""/>
-        <img class="item12-6" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item12-7" src="img/robi.png" alt=""/>
-        <img class="item12-7" src="img/robi.png" alt=""/>
-        <img class="item12-7" src="img/robi.png" alt=""/>
-        <img class="item12-7" src="img/robi.png" alt=""/>
-        <img class="item12-7" src="img/robi.png" alt=""/>
-        <img class="item12-7" src="img/robi.png" alt=""/>
-        <img class="item12-7" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item12-8" src="img/robi.png" alt=""/>
-        <img class="item12-8" src="img/robi.png" alt=""/>
-        <img class="item12-8" src="img/robi.png" alt=""/>
-        <img class="item12-8" src="img/robi.png" alt=""/>
-        <img class="item12-8" src="img/robi.png" alt=""/>
-        <img class="item12-8" src="img/robi.png" alt=""/>
-        <img class="item12-8" src="img/robi.png" alt=""/>
-        <img class="item12-8" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item12-11" src="img/robi.png" alt=""/>
-        <img class="item12-11" src="img/robi.png" alt=""/>
-        <img class="item12-11" src="img/robi.png" alt=""/>
-        <img class="item12-11" src="img/robi.png" alt=""/>
-        <img class="item12-11" src="img/robi.png" alt=""/>
-        <img class="item12-11" src="img/robi.png" alt=""/>
-        <img class="item12-11" src="img/robi.png" alt=""/>
-        <img class="item12-11" src="img/robi.png" alt=""/>
-        <img class="item12-11" src="img/robi.png" alt=""/>
-        <img class="item12-11" src="img/robi.png" alt=""/>
-        <img class="item12-11" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-        <img class="item12-21" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-        <img class="item12-22" src="img/robi.png" alt=""/>
-    </div>
-
-    <div class="row">
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-        <img class="item12-41" src="img/robi.png" alt=""/>
-    </div>
-
-</div> <!-- end of div "box" -->
 
 
 
@@ -727,70 +492,14 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat, massa non ultrices malesuada, urna lectus hendrerit felis, quis ullamcorper lectus nibh commodo lectus. Etiam tellus odio, eleifend non blandit eu, fermentum quis enim. Ut sed sem neque. <br/> <a href="#">... See more</a>
     </div>
 
-    <div class="table-container">
-        <table class="inner">
-            <tr>
-                <td>
-                    Thursday<span>,</span> March 18
-                </td>
-                <td>
-                    7:00 pm <a href="#">+Add to calendar</a>
-                </td>
-            </tr>
-        </table>
-
-        <table class="inner">
-            <tr>
-                <td>
-                    sdfg
-                </td>
-                <td>
-                    Thursday
-                </td>
-                <td>
-                    7:00 pm 
-                </td>
-            </tr>
-        </table>
-
-        <table class="inner">
-            <tr>
-                <td>
-                    sdfg
-                </td>
-                <td>
-                    Thursday
-                </td>
-                <td>
-                    7:00 pm 
-                </td>
-                <td>
-                    7:00 pm 
-                </td>
-            </tr>
-        </table>
-
-        <table class="inner">
-            <tr>
-                <td style="width: 50%">
-                    sdfg
-                </td>
-                <td>
-                    Thursday
-                </td>
-                <td>
-                    7:00 pm 
-                </td>
-            </tr>
-        </table>
-    </div>
+    
 
     <div class="row">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat, massa non ultrices malesuada, urna lectus hendrerit felis, quis ullamcorper lectus nibh commodo lectus. Etiam tellus odio, eleifend non blandit eu, fermentum quis enim. Ut sed sem neque. <br/> <a href="#">... See more</a>
     </div>
 
     <div class="table-container">
-        <table class="inner">
+        <table class="split">
             <tr>
                 <td>
                     Thursday<span>,</span> March 18
@@ -802,52 +511,6 @@
         </table>
     </div>
 
-    <!-- <div class="row split">
-    <div class="row">
-    <div class="item2">
-    Thursday<span>,</span> March 18 <span>at</span>
-    </div>
-    <div class="item2">
-    7:00 pm <span>-</span> <a href="#">+Add to calendar</a>
-    </div>
-    </div>
-    <div class="row">
-    <div class="item3">
-    Thursday
-    </div>
-    <div class="item3">
-    7:00 pm
-    </div>
-    <div class="item3">
-    7:00 pm
-    </div>
-    </div>
-    <div class="row">
-    <div class="item4">
-    Thursday
-    </div>
-    <div class="item4">
-    7:00 pm
-    </div>
-    <div class="item4">
-    7:00 pm 
-    </div>
-    <div class="item4">
-    7:00 pm 
-    </div>
-    </div>
-    <div class="row">
-    <div class="item2">
-    Thursday
-    </div>
-    <div class="item4">
-    7:00 pm 
-    </div>
-    <div class="item4">
-    7:00 pm 
-    </div>
-    </div>      
-    </div> -->
 
     <div class="row">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat, massa non ultrices malesuada, urna lectus hendrerit felis, quis ullamcorper lectus nibh commodo lectus. Etiam tellus odio, eleifend non blandit eu, fermentum quis enim. Ut sed sem neque. <br/> <a href="#">... See more</a>
