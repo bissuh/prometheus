@@ -488,6 +488,10 @@ width: 20px;
   margin: 5px 0;
 }
 
+.row:first-child {
+  margin-top: 0;
+}
+
 .row:last-child {
   margin-bottom: 0;
 }
