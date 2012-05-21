@@ -6,8 +6,13 @@
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
   width: 120px;
   text-overflow: ellipsis;
+=======
+  text-overflow: ellipsis;
+  width: 120px;
+>>>>>>> No-wrap titles
 }
 
 .event-location {
