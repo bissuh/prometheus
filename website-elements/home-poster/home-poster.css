@@ -82,3 +82,7 @@ p.people-attending {
   width: 20px;
   margin-top: 3px;
 }
+
+.social table.share-this a {
+  cursor: pointer;
+}
