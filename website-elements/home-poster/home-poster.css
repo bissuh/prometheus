@@ -6,8 +6,8 @@
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
   width: 120px;
+  text-overflow: ellipsis;
 }
 
 .event-location {
