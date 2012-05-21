@@ -4,6 +4,10 @@
   line-height: 18px;
   color: #333;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 120px;
 }
 
 .event-location {
