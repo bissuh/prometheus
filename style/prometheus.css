@@ -774,75 +774,90 @@ table.split th:first-child {
   *margin-left: 0;
 }
 
-.icon-calendar {
+.icon-description {
   background-position: 0 0;
 }
 
-.icon-clock {
+.icon-calendar {
   background-position: -16px 0;
 }
 
-.text-icon-compass {
-  background:     url("../img/icons/compass-8.png") no-repeat 2px 5px;
+.icon-friend {
+  background-position: -32px 0;
 }
 
-.text-icon-description {
-  background: url("../img/icons/description-8.png") no-repeat 4px 5px;
+.icon-friends {
+  background-position: -48px 0;
 }
 
-.text-icon-friend {
-  background:      url("../img/icons/friend-8.png") no-repeat 3px 6px;
+.icon-settings {
+  background-position: -64px 0;
 }
 
-.text-icon-friends {
-  background:     url("../img/icons/friends-8.png") no-repeat 1px 6px;
+.icon-pin {
+  background-position: -80px 0;
 }
 
-.text-icon-heart {
-  background:       url("img/icons/heart-8.png") no-repeat 3px 5px;
+.icon-clock {
+  background-position: -96px 0;
 }
 
-.text-icon-ingresse {
-  background:    url("../img/icons/ingresse-8.png") no-repeat 3px 4px;
+.icon-compass {
+  background-position: -112px 0;
 }
 
-.text-icon-phone {
-  background:       url("../img/icons/phone-8.png") no-repeat 4px 4px;
+.icon-pin2 {
+  background-position: 0 0;
 }
 
-.text-icon-picture {
-  background:     url("../img/icons/picture-8.png") no-repeat 2px 6px;
+.icon-heart {
+  background-position: -16px -16px;
 }
 
-.text-icon-pin {
-  background:         url("../img/icons/pin-8.png") no-repeat 4px 4px;
+.icon-search {
+  background-position: -32px -16px;
 }
 
-.text-icon-pin2 {
-  background:        url("../img/icons/pin2-8.png") no-repeat 5px 4px;
+.icon-phone {
+  background-position: -48px -16px;
 }
 
-.text-icon-printer {
-  background:     url("../img/icons/printer-8.png") no-repeat 3px 6px;
+.icon-ingresse {
+  background-position: -64px -16px;
 }
 
-.text-icon-search {
-  background:      url("../img/icons/search-8.png") no-repeat 4px 4px;
+.icon-picture {
+  background-position: -80px -16px;
 }
 
-.text-icon-settings {
-  background:    url("../img/icons/settings-8.png") no-repeat 3px 5px;
+.icon-video {
+  background-position: -96px -16px;
 }
 
-.text-icon-ticket {
-  background:      url("../img/icons/ticket-8.png") no-repeat 4px 4px;
+.icon-ticket {
+  background-position: -112px -16px;
 }
 
-.text-icon-video {
-  background:       url("../img/icons/video-8.png") no-repeat 4px 7px;
+.icon-printer {
+  background-position: 0 -32px;
+}
+
+table.text-and-icon {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.text-and-icon tr td {
+  vertical-align: top;
+}
+
+table.text-and-icon .text {
+  padding-left: 4px;
 }
 
 
+
+/*
 [class*="text-icon-"] {
   padding-left: 20px;
   line-height: normal;
@@ -916,7 +931,7 @@ table.split th:first-child {
 .text-icon-video {
   background:       url("../img/icons/video-8.png") no-repeat 4px 7px;
 }
-
+*/
 
 
 
