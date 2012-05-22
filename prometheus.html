@@ -4,7 +4,7 @@
 
 <head>
     <title>Ingresse</title>
-    <link href="prometheus.css" rel="stylesheet" type="text/css"/>
+    <link href="style/prometheus.css" rel="stylesheet" type="text/css"/>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
 </head>
 
@@ -408,33 +408,19 @@
     <div class="box span9 shadow">
         <h3 class="box-title">Icons</h3>
         <div class="row">
-            You can use icons to illustrate the content of a text such as on the box on the right. The <code>&lt;p&gt;</code> tag should have the class <code>text-icon-*</code>, where <code>*</code> is the name of the icon. The following tables lists the icons you can use that the associated class.
+            You can use icons to illustrate the content of a text such as on the box on the right. The icons use the tag <code>&lt;i&gt;</code> and should have the class <code>icon-*</code>, where <code>*</code> is the name of the icon. The following tables lists the icons you can use that the associated class. Several other icons may be created in the future so stay tuned.
         </div>
         <div class="table-container">
             <table class="split">
                 <tr>
                     <td>
-                        <p class="text-icon-calendar"><code>.text-icon-calendar</code></p>
+                        <i class="icon-description"></i><code>.icon-description</code>
                     </td>
                     <td>
-                        <p class="text-icon-clock"><code>.text-icon-clock</code></p>
+                        <i class="icon-calendar"></i><code>.icon-calendar</code>
                     </td>
                     <td>
-                        <p class="text-icon-compass"><code>.text-icon-compass</code></p>
-                    </td>
-                </tr>
-            </table>
-
-            <table class="split">
-                <tr>
-                    <td>
-                        <p class="text-icon-description"><code>.text-icon-description</code></p>
-                    </td>
-                    <td>
-                        <p class="text-icon-friend"><code>.text-icon-friend</code></p>
-                    </td>
-                    <td>
-                        <p class="text-icon-friends"><code>.text-icon-friends</code></p> 
+                        <i class="icon-friend"></i><code>.icon-friend</code>
                     </td>
                 </tr>
             </table>
@@ -442,27 +428,13 @@
             <table class="split">
                 <tr>
                     <td>
-                        <p class="text-icon-heart"><code>.text-icon-heart</code></p>
+                        <i class="icon-friends"></i><code>.icon-friends</code>
                     </td>
                     <td>
-                        <p class="text-icon-ingresse"><code>.text-icon-ingresse</code></p> 
+                        <i class="icon-settings"></i><code>.icon-settings</code>
                     </td>
                     <td>
-                        <p class="text-icon-phone"><code>.text-icon-ingresse</code></p>
-                    </td>
-                </tr>
-            </table>
-
-            <table class="split">
-                <tr>
-                    <td>
-                        <p class="text-icon-picture"><code>.text-icon-ingresse</code></p> 
-                    </td>
-                    <td>
-                        <p class="text-icon-pin"><code>.text-icon-ingresse</code></p>
-                    </td>
-                    <td>
-                        <p class="text-icon-pin2"><code>.text-icon-ingresse</code></p> 
+                        <i class="icon-pin"></i><code>.icon-pin</code>
                     </td>
                 </tr>
             </table>
@@ -470,13 +442,13 @@
             <table class="split">
                 <tr>
                     <td>
-                        <p class="text-icon-printer"><code>.text-icon-printer</code></p>
+                        <i class="icon-clock"></i><code>.icon-clock</code>
                     </td>
                     <td>
-                        <p class="text-icon-search"><code>.text-icon-search</code></p> 
+                        <i class="icon-compass"></i><code>.icon-compass</code>
                     </td>
                     <td>
-                        <p class="text-icon-settings"><code>.text-icon-settings</code></p>
+                        <i class="icon-pin2"></i><code>.icon-pin2</code>
                     </td>
                 </tr>
             </table>
@@ -484,10 +456,38 @@
             <table class="split">
                 <tr>
                     <td>
-                        <p class="text-icon-ticket"><code>.text-icon-ticket</code></p>
+                        <i class="icon-heart"></i><code>.icon-heart</code>
                     </td>
                     <td>
-                        <p class="text-icon-video"><code>.text-icon-video</code></p> 
+                        <i class="icon-search"></i><code>.icon-search</code>
+                    </td>
+                    <td>
+                        <i class="icon-phone"></i><code>.icon-phone</code>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="split">
+                <tr>
+                    <td>
+                        <i class="icon-ingresse"></i><code>.icon-ingresse</code>
+                    </td>
+                    <td>
+                        <i class="icon-picture"></i><code>.icon-picture</code>
+                    </td>
+                    <td>
+                        <i class="icon-video"></i><code>.icon-video</code>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="split">
+                <tr>
+                    <td>
+                        <i class="icon-ticket"></i><code>.icon-ticket</code>
+                    </td>
+                    <td>
+                        <i class="icon-printer"></i><code>.icon-printer</code>
                     </td>
                     <td>
                         <p>to be continued...</p> 
@@ -496,18 +496,113 @@
             </table>
         </div>
         <div class="row">
-            Several other icons may be created in the future so stay tuned...
+            <p>If the text next to the icon is on several lines, the constructor is a bit more complicated: we have to use tables. For instance, the first icon of the example on the right is obtained with:</p>
         </div>
+            <pre>&lt;table class="text-and-icon"&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+      &lt;i class=&quot;icon-calendar&quot;&gt;&lt;/i&gt;
+    &lt;/td&gt;
+    &lt;td class=&quot;text&quot;&gt;
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
     </div>
 
     <div class="box span3 shadow">
         <h3 class="box-title">Example</h3>
         <div class="row">
-            <p class="text-icon-calendar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p class="text-icon-clock">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p class="text-icon-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p class="text-icon-friend">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p class="text-icon-heart">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <table class="text-and-icon">
+                <tr>
+                    <td>
+                        <i class="icon-calendar"></i>
+                    </td>
+                    <td class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </td>
+                </tr>
+            </table>
+            <table class="text-and-icon">
+                <tr>
+                    <td>
+                        <i class="icon-clock"></i>
+                    </td>
+                    <td class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </td>
+                </tr>
+            </table>
+            <table class="text-and-icon">
+                <tr>
+                    <td>
+                        <i class="icon-description"></i>
+                    </td>
+                    <td class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </td>
+                </tr>
+            </table>
+            <table class="text-and-icon">
+                <tr>
+                    <td>
+                        <i class="icon-friend"></i>
+                    </td>
+                    <td class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </td>
+                </tr>
+            </table>
+            <table class="text-and-icon">
+                <tr>
+                    <td>
+                        <i class="icon-heart"></i>
+                    </td>
+                    <td class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </td>
+                </tr>
+            </table>
+            <table class="text-and-icon">
+                <tr>
+                    <td>
+                        <i class="icon-ingresse"></i>
+                    </td>
+                    <td class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </td>
+                </tr>
+            </table>
+            <table class="text-and-icon">
+                <tr>
+                    <td>
+                        <i class="icon-friends"></i>
+                    </td>
+                    <td class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </td>
+                </tr>
+            </table>
+            <table class="text-and-icon">
+                <tr>
+                    <td>
+                        <i class="icon-ticket"></i>
+                    </td>
+                    <td class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </td>
+                </tr>
+            </table>
+            <table class="text-and-icon">
+                <tr>
+                    <td>
+                        <i class="icon-search"></i>
+                    </td>
+                    <td class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </section>
