@@ -61,7 +61,7 @@ p.people-attending {
   color: #333;
   line-height: 30px;
   padding-left: 20px;
-  background: url("../../img/icons/friend-16.png") no-repeat 3px 6px;
+  background: url("../../../img/icons/friend-16.png") no-repeat 3px 6px;
 }
 
 .social table.share-this {
@@ -76,6 +76,7 @@ p.people-attending {
 }
 
 .social table.share-this td {
+  vertical-align: middle;
 }
 
 .social table.share-this img {
@@ -85,4 +86,32 @@ p.people-attending {
 
 .social table.share-this a {
   cursor: pointer;
+}
+
+[class*="social-icon-"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 3px;
+  display: inline-block;
+  background-image: url("../social-icons/social-icons-sprite.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.social-icon-facebook {
+  background-position: 0 0;
+}
+
+.social-icon-twitter {
+  background-position: -20px 0;
+}
+
+.social-icon-google-plus {
+  background-position: -40px 0;
+}
+
+.social-icon-pinterest {
+  background-position: -60px 0;
 }
