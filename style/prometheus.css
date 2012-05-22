@@ -8,7 +8,7 @@
 }
 
 body {
-  background: url('img/bg-pattern.png');
+  background: url('../img/bg-pattern.png');
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -756,34 +756,46 @@ table.split th:first-child {
 /* Icons
 /* * * * */
 
-[class*="text-icon-"] {
-  padding-left: 20px;
-  line-height: normal;
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  *margin-right: .3em;
+  line-height: 16px;
+  vertical-align: text-top;
+  background-image: url("../img/icons/icon-set-8.png");
+  background-position: 16px 16px;
+  background-repeat: no-repeat;
 }
 
-
-.text-icon-calendar {
-  background:    url("img/icons/calendar-8.png") no-repeat 3px 5px;
+[class^="icon-"]:last-child,
+[class*=" icon-"]:last-child {
+  *margin-left: 0;
 }
 
-.text-icon-clock {
-  background:       url("img/icons/clock-8.png") no-repeat 2px 5px;
+.icon-calendar {
+  background-position: 0 0;
+}
+
+.icon-clock {
+  background-position: -16px 0;
 }
 
 .text-icon-compass {
-  background:     url("img/icons/compass-8.png") no-repeat 2px 5px;
+  background:     url("../img/icons/compass-8.png") no-repeat 2px 5px;
 }
 
 .text-icon-description {
-  background: url("img/icons/description-8.png") no-repeat 4px 5px;
+  background: url("../img/icons/description-8.png") no-repeat 4px 5px;
 }
 
 .text-icon-friend {
-  background:      url("img/icons/friend-8.png") no-repeat 3px 6px;
+  background:      url("../img/icons/friend-8.png") no-repeat 3px 6px;
 }
 
 .text-icon-friends {
-  background:     url("img/icons/friends-8.png") no-repeat 1px 6px;
+  background:     url("../img/icons/friends-8.png") no-repeat 1px 6px;
 }
 
 .text-icon-heart {
@@ -791,43 +803,118 @@ table.split th:first-child {
 }
 
 .text-icon-ingresse {
-  background:    url("img/icons/ingresse-8.png") no-repeat 3px 4px;
+  background:    url("../img/icons/ingresse-8.png") no-repeat 3px 4px;
 }
 
 .text-icon-phone {
-  background:       url("img/icons/phone-8.png") no-repeat 4px 4px;
+  background:       url("../img/icons/phone-8.png") no-repeat 4px 4px;
 }
 
 .text-icon-picture {
-  background:     url("img/icons/picture-8.png") no-repeat 2px 6px;
+  background:     url("../img/icons/picture-8.png") no-repeat 2px 6px;
 }
 
 .text-icon-pin {
-  background:         url("img/icons/pin-8.png") no-repeat 4px 4px;
+  background:         url("../img/icons/pin-8.png") no-repeat 4px 4px;
 }
 
 .text-icon-pin2 {
-  background:        url("img/icons/pin2-8.png") no-repeat 5px 4px;
+  background:        url("../img/icons/pin2-8.png") no-repeat 5px 4px;
 }
 
 .text-icon-printer {
-  background:     url("img/icons/printer-8.png") no-repeat 3px 6px;
+  background:     url("../img/icons/printer-8.png") no-repeat 3px 6px;
 }
 
 .text-icon-search {
-  background:      url("img/icons/search-8.png") no-repeat 4px 4px;
+  background:      url("../img/icons/search-8.png") no-repeat 4px 4px;
 }
 
 .text-icon-settings {
-  background:    url("img/icons/settings-8.png") no-repeat 3px 5px;
+  background:    url("../img/icons/settings-8.png") no-repeat 3px 5px;
 }
 
 .text-icon-ticket {
-  background:      url("img/icons/ticket-8.png") no-repeat 4px 4px;
+  background:      url("../img/icons/ticket-8.png") no-repeat 4px 4px;
 }
 
 .text-icon-video {
-  background:       url("img/icons/video-8.png") no-repeat 4px 7px;
+  background:       url("../img/icons/video-8.png") no-repeat 4px 7px;
+}
+
+
+[class*="text-icon-"] {
+  padding-left: 20px;
+  line-height: normal;
+}
+
+
+.text-icon-calendar {
+  background:    url("../img/icons/calendar-8.png") no-repeat 3px 5px;
+}
+
+.text-icon-clock {
+  background:       url("../img/icons/clock-8.png") no-repeat 2px 5px;
+}
+
+.text-icon-compass {
+  background:     url("../img/icons/compass-8.png") no-repeat 2px 5px;
+}
+
+.text-icon-description {
+  background: url("../img/icons/description-8.png") no-repeat 4px 5px;
+}
+
+.text-icon-friend {
+  background:      url("../img/icons/friend-8.png") no-repeat 3px 6px;
+}
+
+.text-icon-friends {
+  background:     url("../img/icons/friends-8.png") no-repeat 1px 6px;
+}
+
+.text-icon-heart {
+  background:       url("img/icons/heart-8.png") no-repeat 3px 5px;
+}
+
+.text-icon-ingresse {
+  background:    url("../img/icons/ingresse-8.png") no-repeat 3px 4px;
+}
+
+.text-icon-phone {
+  background:       url("../img/icons/phone-8.png") no-repeat 4px 4px;
+}
+
+.text-icon-picture {
+  background:     url("../img/icons/picture-8.png") no-repeat 2px 6px;
+}
+
+.text-icon-pin {
+  background:         url("../img/icons/pin-8.png") no-repeat 4px 4px;
+}
+
+.text-icon-pin2 {
+  background:        url("../img/icons/pin2-8.png") no-repeat 5px 4px;
+}
+
+.text-icon-printer {
+  background:     url("../img/icons/printer-8.png") no-repeat 3px 6px;
+}
+
+.text-icon-search {
+  background:      url("../img/icons/search-8.png") no-repeat 4px 4px;
+}
+
+.text-icon-settings {
+  background:    url("../img/icons/settings-8.png") no-repeat 3px 5px;
+}
+
+.text-icon-ticket {
+  background:      url("../img/icons/ticket-8.png") no-repeat 4px 4px;
+}
+
+.text-icon-video {
+  background:       url("../img/icons/video-8.png") no-repeat 4px 7px;
 }
 
 
