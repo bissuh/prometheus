@@ -63,7 +63,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a, {
   margin: 0;
   font-family: inherit;
   font-weight: bold;
@@ -357,6 +363,58 @@ pre code {
   font-weight: 700;
   border-bottom: solid 1px #888;
   margin-bottom: 8px;
+}
+
+.row[class*="span"]{
+  margin: 0;
+}
+
+.row.span12 {
+  width: 960px;
+}
+
+.row.span11 {
+  width: 880px;
+}
+
+.row.span10 {
+  width: 800px;
+}
+
+.row.span9 {
+  width: 720px;
+}
+
+.row.span8 {
+  width: 640px;
+}
+
+.row.span7 {
+  width: 560px;
+}
+
+.row.span6 {
+  width: 480px;
+}
+
+.row.span5 {
+  width: 400px;
+}
+
+.row.span4 {
+  width: 320px;
+}
+
+.row.span3 {
+  width: 240px;
+}
+
+.row.span2 {
+  width: 160px;
+}
+
+.row.span1 {
+  width: 80px;
 }
 
 
