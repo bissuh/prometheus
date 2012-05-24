@@ -2037,3 +2037,74 @@ body {
 .ribbon-edge-bottomright {
   border-width: 0 0 10px 10px;
 }
+
+
+
+
+
+
+
+
+/*
+/* Labels
+/* * * * */
+
+.label {
+  font-size: 11px;
+  font-weight: normal;
+/*  line-height: inherit;*/
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+  vertical-align: text-bottom;
+  background-color: #999999;
+  padding: 2px 9px 1px;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
+}
+
+.label-blue {
+  background-color: #0ca8e9;
+}
+
+.label-orange {
+  background-color: #ff9600;
+}
+
+.label-green {
+  background-color: #89e400;
+}
+
+.label-grey {
+  background-color: #444;
+}
+
+[class*=label-border-] {
+  background-color: #ffffff;
+  padding: 1px 9px 0;
+  text-shadow: none;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.label-border-blue {
+  color: #0084ff;
+  border-color:#0084ff;
+}
+
+.label-border-orange {
+  color: #ff7516;
+  border-color: #ff7516;
+}
+
+.label-border-green {
+  color: #5aa500;
+  border-color: #5aa500;
+}
+
+.label-border-grey {
+  color: #333;
+  border-color:#333;
+}
