@@ -832,6 +832,10 @@ table.split th:first-child {
   *margin-left: 0;
 }
 
+.orange-icons {
+  background-image: url("../img/icons/icon-set-8-orange.png");
+}
+
 .icon-description {
   background-position: 0 0;
 }
