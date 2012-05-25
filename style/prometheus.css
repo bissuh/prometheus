@@ -900,6 +900,10 @@ table.split th:first-child {
   background-position: 0 -32px;
 }
 
+.icon-arrow {
+  background-position: -16px -32px;
+}
+
 table.text-and-icon {
   width: 100%;
   border-collapse: collapse;
@@ -1263,7 +1267,11 @@ select:focus {
 }
 
 .input-xxlarge {
-  width: 550px;
+  width: 350px;
+}
+
+.input-xxxlarge {
+  width: 410px;
 }
 
 .input-allwidth {

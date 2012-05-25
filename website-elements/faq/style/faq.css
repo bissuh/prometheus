@@ -1,0 +1,21 @@
+.search-faq {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.search-faq input {
+  height: 30px;
+  font-size: 22px;
+  width: 720px;
+  border-right: none;
+}
+
+.search-faq .button {
+  font-size: 22px;
+  padding: 7px 20px;
+  width: 172px;
+  margin: 0;
+}
+
+.search-faq .button-container {
+}
