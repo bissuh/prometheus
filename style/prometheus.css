@@ -869,7 +869,7 @@ table.split th:first-child {
 }
 
 .icon-pin2 {
-  background-position: 0 0;
+  background-position: 0 -16px;
 }
 
 .icon-heart {
@@ -907,6 +907,23 @@ table.split th:first-child {
 .icon-arrow {
   background-position: -16px -32px;
 }
+
+.icon-facebook {
+  background-position: -32px -32px;
+}
+
+.icon-twitter {
+  background-position: -48px -32px;
+}
+
+.icon-myspace {
+  background-position: -64px -32px;
+}
+
+.icon-link {
+  background-position: -80px -32px;
+}
+
 
 table.text-and-icon {
   width: 100%;
