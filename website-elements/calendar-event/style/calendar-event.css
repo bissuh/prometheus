@@ -1,0 +1,106 @@
+body {
+  background: url('../img/bg-pattern.png');
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.calendar {
+  margin: 10px;
+  width: 220px;
+  float: left;
+  position: relative;
+}
+
+.main, .box-footer {
+  position: relative;
+  padding: 20px;
+  background: white;
+  z-index: 1;
+}
+
+.main {
+  padding-bottom: 5px;
+}
+
+.social {
+  position: relative;
+  z-index: 0;
+}
+
+table.calendar-table {
+  background: #fafafa;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  vertical-align: middle;
+  border-bottom: solid 1px #ddd;
+  border-top: solid 1px #fff;
+}
+
+table.calendar-table tr {
+  height: 60px;
+}
+
+table.calendar-table:last-child {
+  border-bottom: none;
+}
+
+table.calendar-table .calendar-date {
+  width: 60px;
+  background: #f2f2f2; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f2f2f2 0%, #e5e5e5 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f2f2f2 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #f2f2f2 0%,#e5e5e5 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #f2f2f2 0%,#e5e5e5 100%); /* IE10+ */
+  background: linear-gradient(top,  #f2f2f2 0%,#e5e5e5 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+  
+}
+
+table.calendar-table .calendar-date .date {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 2px 0 0 0;
+  color: #555;
+}
+
+table.calendar-table .calendar-date .month {
+  font-weight: 700;
+  color: #999;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+table.calendar-table .calendar-time {
+  text-align: right;
+  padding-right: 5px;
+  font-weight: 700;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+table.calendar-table .calendar-time .sold-out {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #86133E;
+}
+
+table.calendar-table .calendar-time .last-tickets {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #DD2067;
+}
+
+table.calendar-table td {
+  vertical-align: middle;
+}
+
+
+.button.all-width {
+  width: 138px;
+}
