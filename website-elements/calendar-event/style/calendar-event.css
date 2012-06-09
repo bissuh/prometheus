@@ -12,15 +12,15 @@ body {
   position: relative;
 }
 
-.main, .box-footer {
+.box-header, .box-footer {
   position: relative;
   padding: 20px;
   background: white;
   z-index: 1;
 }
 
-.main {
-  padding-bottom: 5px;
+.box-header {
+  padding-bottom: 10px;
 }
 
 .social {
