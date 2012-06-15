@@ -812,7 +812,9 @@ table.split th:first-child {
 /* * * * */
 
 [class^="icon-"],
-[class*=" icon-"] {
+[class*=" icon-"],
+[class^="big-icon-"],
+[class*="big-icon-"] {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -822,6 +824,15 @@ table.split th:first-child {
   background-image: url("../img/icons/icon-set-8.png");
   background-position: 16px 16px;
   background-repeat: no-repeat;
+}
+
+[class^="big-icon-"],
+[class*="big-icon-"] {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background-image: url("../img/icons/icon-set-16.png");
+  background-position: 32px 32px;
 }
 
 [class^="icon-"]:last-child,
@@ -919,6 +930,94 @@ table.split th:first-child {
 
 .icon-link {
   background-position: -80px -32px;
+}
+
+.big-icon-description {
+  background-position: 0 0;
+}
+
+.big-icon-calendar {
+  background-position: -32px 0;
+}
+
+.big-icon-friend {
+  background-position: -64px 0;
+}
+
+.big-icon-friends {
+  background-position: -96px 0;
+}
+
+.big-icon-settings {
+  background-position: -128px 0;
+}
+
+.big-icon-pin {
+  background-position: -160px 0;
+}
+
+.big-icon-clock {
+  background-position: -192px 0;
+}
+
+.big-icon-compass {
+  background-position: -224px 0;
+}
+
+.big-icon-pin2 {
+  background-position: 0 -32px;
+}
+
+.big-icon-heart {
+  background-position: -32px -32px;
+}
+
+.big-icon-search {
+  background-position: -64px -32px;
+}
+
+.big-icon-phone {
+  background-position: -96px -32px;
+}
+
+.big-icon-ingresse {
+  background-position: -128px -32px;
+}
+
+.big-icon-picture {
+  background-position: -160px -32px;
+}
+
+.big-icon-video {
+  background-position: -192px -32px;
+}
+
+.big-icon-ticket {
+  background-position: -224px -32px;
+}
+
+.big-icon-printer {
+  background-position: 0 -64px;
+}
+
+.big-icon-arrow {
+  background-position: -32px -64px;
+}
+
+.big-icon-facebook {
+  background-position: -64px -64px;
+}
+
+.big-icon-twitter {
+  background-position: -96px -64px;
+}
+
+.big-icon-myspace {
+  background-position: -128px -64px;
+}
+
+.big-icon-link {
+  background-position: -160px -64px;
 }
 
 
