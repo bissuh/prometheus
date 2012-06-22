@@ -106,7 +106,7 @@
 	display: inline-block;
 }
 
-#menu-bar ul li a.list-layout-button i {
+#menu-bar ul li a.list-layout-button i, #menu-bar ul li a.list-layout-button.selected:active i {
 	background: url(../img/homepage-sprite.png) no-repeat -56px -40px;
 }
 
@@ -114,7 +114,7 @@
 	background: url(../img/homepage-sprite.png) no-repeat -26px -40px;
 }
 
-#menu-bar ul li a.grid-layout-button i {
+#menu-bar ul li a.grid-layout-button i, #menu-bar ul li a.grid-layout-button.selected:active i {
 	background: url(../img/homepage-sprite.png) no-repeat -56px 0px;
 }
 
