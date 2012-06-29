@@ -32,21 +32,24 @@ body {
   z-index: 0;
 }
 
-table.calendar-table {
+table.calendar-table, table.calendar-table-hover, table.calendar-table-active {
   background: #fafafa;
   width: 100%;
   border-collapse: collapse;
   vertical-align: middle;
 }
 
-table.calendar-table tr {
+table.calendar-table tr, table.calendar-table-hover tr, table.calendar-table-active tr {
   height: 70px;
 }
 
-table.calendar-table .calendar-date {
+table.calendar-table .calendar-date, table.calendar-table-hover .calendar-date, table.calendar-table-active .calendar-date, table.calendar-table.sold-out-date .calendar-date {
   width: 140px;
   text-align: left;
   padding: 3px 10px;
+}
+
+table.calendar-table .calendar-date {
   background: #f2f2f2; /* Old browsers */
   background: -moz-linear-gradient(top,  #f2f2f2 0%, #e5e5e5 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
@@ -59,7 +62,40 @@ table.calendar-table .calendar-date {
   border-top: solid 1px #fff;
 }
 
-table.calendar-table .calendar-date .date {
+table.calendar-table-hover .calendar-date {
+  background: #eee; /* Old browsers */
+  background: -moz-linear-gradient(top,  #eee 0%, #ddd 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eee), color-stop(100%,#ddd)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #eee 0%,#ddd 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #eee 0%,#ddd 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #eee 0%,#ddd 100%); /* IE10+ */
+  background: linear-gradient(top,  #eee 0%,#ddd 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+  border-bottom: solid 1px #cfcfcf;
+  border-top: solid 1px #fff;
+}
+
+table.calendar-table-active .calendar-date {
+  padding: 4px 9px 2px 11px;
+  background: #aaa; /* Old browsers */
+  background: -moz-linear-gradient(top,  #bbb 0%, #aaa 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbb), color-stop(100%,#aaa)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #bbb 0%,#aaa 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #bbb 0%,#aaa 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #bbb 0%,#aaa 100%); /* IE10+ */
+  background: linear-gradient(top,  #bbb 0%,#aaa 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+  border-bottom: solid 1px #999;
+  border-top: solid 1px #bbb;
+}
+
+table.calendar-table.sold-out-date .calendar-date {
+  background: #ddd;
+  border-bottom: solid 1px #ddd;
+  border-top: solid 1px #ddd;
+}
+
+table.calendar-table .calendar-date .date, table.calendar-table-hover .calendar-date .date, table.calendar-table-active .calendar-date .date {
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
@@ -67,7 +103,11 @@ table.calendar-table .calendar-date .date {
   color: #555;
 }
 
-table.calendar-table .calendar-date .time {
+table.calendar-table.sold-out-date .calendar-date .date {
+  color: #aaa;
+}
+
+table.calendar-table .calendar-date .time, table.calendar-table-hover .calendar-date .time, table.calendar-table-active .calendar-date .time {
   font-weight: 300;
   color: #888;
   font-size: 12px;
@@ -75,7 +115,7 @@ table.calendar-table .calendar-date .time {
   margin-bottom: 5px;
 }
 
-table.calendar-table .calendar-ticket, table.calendar-table.sold-out-date .calendar-ticket {
+table.calendar-table .calendar-ticket, table.calendar-table-hover .calendar-ticket, table.calendar-table.sold-out-date .calendar-ticket {
   padding: 0;
   width: 60px;
   height: 70px;
@@ -94,44 +134,74 @@ table.calendar-table .calendar-ticket {
   border-top: solid 1px #ffbb66;
 }
 
+table.calendar-table-hover .calendar-ticket {
+  background: #FF6900;
+  background: -moz-linear-gradient(top,  #EB9500 0%, #FF6900 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EB9500), color-stop(100%,#FF6900));
+  background: -webkit-linear-gradient(top,  #EB9500 0%,#FF6900 100%);
+  background: -o-linear-gradient(top,  #EB9500 0%,#FF6900 100%);
+  background: -ms-linear-gradient(top,  #EB9500 0%,#FF6900 100%);
+  background: linear-gradient(to bottom,  #EB9500 0%,#FF6900 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1a400', endColorstr='#ff7516',GradientType=0 );
+  border-bottom: solid 1px #f16633;
+  border-top: solid 1px #ffbb66;
+}
+
+table.calendar-table-active .calendar-ticket {
+  background: #f1a400;
+  background: -moz-linear-gradient(top,  #ff7516 0%, #D65700 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7516), color-stop(100%,#D65700));
+  background: -webkit-linear-gradient(top,  #ff7516 0%,#D65700 100%);
+  background: -o-linear-gradient(top,  #ff7516 0%,#D65700 100%);
+  background: -ms-linear-gradient(top,  #ff7516 0%,#D65700 100%);
+  background: linear-gradient(to bottom,  #ff7516 0%,#D65700 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7516', endColorstr='#D65700',GradientType=0 );
+  border-bottom: solid 1px #f16633;
+  border-top: solid 1px #FF8836;
+}
+
 table.calendar-table.sold-out-date .calendar-ticket {
   background: #ccc;
   border-bottom: solid 1px #ccc;
   border-top: solid 1px #ccc;
 }
 
-table.calendar-table .calendar-ticket i, table.calendar-table.soldout-date .calendar-ticket i {
+table.calendar-table .calendar-ticket i, table.calendar-table-hover .calendar-ticket i, table.calendar-table-active .calendar-ticket i {
   height: 70px;
   width: 60px;
   line-height: 70px;
   display: block;
 }
 
-table.calendar-table .calendar-ticket i {
+table.calendar-table .calendar-ticket i, table.calendar-table-hover .calendar-ticket i {
   background: url('../img/sprite-calendar-ticket.png') no-repeat;
+}
+
+table.calendar-table-active .calendar-ticket i {
+  background: url('../img/sprite-calendar-ticket.png') no-repeat 1px 1px;
 }
 
 table.calendar-table.sold-out-date .calendar-ticket i {
   background: #ccc url('../img/sprite-calendar-ticket.png') no-repeat -60px;
 }
 
-table.calendar-table .calendar-date .buy-tickets,
-table.calendar-table .calendar-date .sold-out,
-table.calendar-table .calendar-date .last-tickets {
+.calendar-date .buy-tickets,
+.calendar-date .sold-out,
+.calendar-date .last-tickets {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
 }
 
-table.calendar-table .calendar-date .buy-tickets {
+.calendar-date .buy-tickets {
   color: #ff9600;
 }
 
-table.calendar-table .calendar-date .last-tickets {
+.calendar-date .last-tickets {
   color: #0ca8e9;
 }
 
-table.calendar-table .calendar-date .sold-out {
+.calendar-date .sold-out {
   color: #888;
 }
 
