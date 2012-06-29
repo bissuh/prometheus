@@ -1,5 +1,5 @@
 body {
-  background: url('../img/bg-pattern.png');
+  background: url('../../../img/bg-pattern.png');
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -23,6 +23,10 @@ body {
   padding-bottom: 10px;
 }
 
+.box-footer {
+  padding-bottom: 0;
+}
+
 .social {
   position: relative;
   z-index: 0;
@@ -31,23 +35,18 @@ body {
 table.calendar-table {
   background: #fafafa;
   width: 100%;
-  text-align: center;
   border-collapse: collapse;
   vertical-align: middle;
-  border-bottom: solid 1px #ddd;
-  border-top: solid 1px #fff;
 }
 
 table.calendar-table tr {
-  height: 60px;
-}
-
-table.calendar-table:last-child {
-  border-bottom: none;
+  height: 70px;
 }
 
 table.calendar-table .calendar-date {
-  width: 60px;
+  width: 140px;
+  text-align: left;
+  padding: 3px 10px;
   background: #f2f2f2; /* Old browsers */
   background: -moz-linear-gradient(top,  #f2f2f2 0%, #e5e5e5 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
@@ -56,44 +55,84 @@ table.calendar-table .calendar-date {
   background: -ms-linear-gradient(top,  #f2f2f2 0%,#e5e5e5 100%); /* IE10+ */
   background: linear-gradient(top,  #f2f2f2 0%,#e5e5e5 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
-  
+  border-bottom: solid 1px #ddd;
+  border-top: solid 1px #fff;
 }
 
 table.calendar-table .calendar-date .date {
   font-weight: 700;
-  font-size: 32px;
-  line-height: 32px;
-  margin: 2px 0 0 0;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 4px;
   color: #555;
 }
 
-table.calendar-table .calendar-date .month {
-  font-weight: 700;
-  color: #999;
+table.calendar-table .calendar-date .time {
+  font-weight: 300;
+  color: #888;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 5px;
+}
+
+table.calendar-table .calendar-ticket, table.calendar-table.sold-out-date .calendar-ticket {
+  padding: 0;
+  width: 60px;
+  height: 70px;
+}
+
+table.calendar-table .calendar-ticket {
+  background: #f1a400;
+  background: -moz-linear-gradient(top,  #f1a400 0%, #ff7516 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1a400), color-stop(100%,#ff7516));
+  background: -webkit-linear-gradient(top,  #f1a400 0%,#ff7516 100%);
+  background: -o-linear-gradient(top,  #f1a400 0%,#ff7516 100%);
+  background: -ms-linear-gradient(top,  #f1a400 0%,#ff7516 100%);
+  background: linear-gradient(to bottom,  #f1a400 0%,#ff7516 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1a400', endColorstr='#ff7516',GradientType=0 );
+  border-bottom: solid 1px #f16633;
+  border-top: solid 1px #ffbb66;
+}
+
+table.calendar-table.sold-out-date .calendar-ticket {
+  background: #ccc;
+  border-bottom: solid 1px #ccc;
+  border-top: solid 1px #ccc;
+}
+
+table.calendar-table .calendar-ticket i, table.calendar-table.soldout-date .calendar-ticket i {
+  height: 70px;
+  width: 60px;
+  line-height: 70px;
+  display: block;
+}
+
+table.calendar-table .calendar-ticket i {
+  background: url('../img/sprite-calendar-ticket.png') no-repeat;
+}
+
+table.calendar-table.sold-out-date .calendar-ticket i {
+  background: #ccc url('../img/sprite-calendar-ticket.png') no-repeat -60px;
+}
+
+table.calendar-table .calendar-date .buy-tickets,
+table.calendar-table .calendar-date .sold-out,
+table.calendar-table .calendar-date .last-tickets {
+  text-transform: uppercase;
   font-size: 14px;
-  line-height: 14px;
-  text-transform: uppercase;
-}
-
-table.calendar-table .calendar-time {
-  text-align: right;
-  padding-right: 5px;
   font-weight: 700;
-  color: #ccc;
-  font-size: 14px;
-  line-height: 18px;
 }
 
-table.calendar-table .calendar-time .sold-out {
-  text-transform: uppercase;
-  font-size: 16px;
-  color: #86133E;
+table.calendar-table .calendar-date .buy-tickets {
+  color: #ff9600;
 }
 
-table.calendar-table .calendar-time .last-tickets {
-  text-transform: uppercase;
-  font-size: 16px;
-  color: #DD2067;
+table.calendar-table .calendar-date .last-tickets {
+  color: #0ca8e9;
+}
+
+table.calendar-table .calendar-date .sold-out {
+  color: #888;
 }
 
 table.calendar-table td {
