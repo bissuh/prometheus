@@ -100,25 +100,6 @@ body {
   top: -1px;
 }
 
-/*#menu-bar {
-  margin: 0;
-  padding: 0;
-  background: #F7F7F7;
-  overflow: hidden;
-  border-bottom: none;
-  line-height: 40px;
-  box-shadow:     inset 0 1px #fff, 0 1px 3px rgba(34, 25, 25, 0.4);
-  -moz-box-shadow:  inset 0 1px #fff, 0 1px 3px rgba(34, 25, 25, 0.4);
-  -webkit-box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34, 25, 25, 0.4);
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  height: 40px;
-  text-shadow: 0 1px 
-  rgba(255, 255, 255, 0.9);
-  z-index: 1000;
-}*/
-
 #menu-bar .fixed-container {
 	overflow: hidden;
 	margin: 0px auto -1px;
@@ -214,7 +195,7 @@ body {
 	height: inherit;
 	line-height: 30px;
 	display: inline-block;
-		width: 30px;
+	width: 30px;
 }
 
 #menu-bar ul li a.list-layout-button i, #menu-bar ul li a.list-layout-button.selected:active i {
@@ -241,18 +222,26 @@ body {
 / EVENTS CODE 
 /======================================================================*/
 
-#event-list .event {
+#event-list .event,
+#event-list .event-short {
   padding: 0;
   width: 940px;
   font-size: 16px;
 }
 
-#event-list .event .main {
+#event-list .main {
   float: left;
+}
+
+#event-list .event .main {
   height: 120px;
 }
 
-#event-list .event .main .event-info {
+#event-list .event-short .main {
+  height: 90px;
+}
+
+#event-list .main .event-info {
   float: left;
   position: relative;
   padding: 0;
@@ -261,7 +250,7 @@ body {
   z-index: 500;
 }
 
-#event-list .event .main .event-info .event-poster {
+#event-list .main .event-info .event-poster {
   float: left;
 }
 
@@ -271,40 +260,67 @@ body {
   display: block;
 }
 
-#event-list .event .main .event-info .content {
+#event-list .event-short .main .event-info .event-poster img {
+  width: 60px;
+  height: 90px;
+  display: block;
+}
+
+#event-list .main .event-info .content {
   float: left;
-  width: 590px;
-  height: 80px;
   padding: 20px;
 }
 
-#event-list .event .main .event-info .content .title {
+#event-list .event .main .event-info .content {
+  width: 590px;
+}
+
+#event-list .event-short .main .event-info .content {
+  width: 620px;
+}
+
+#event-list .event .main .event-info .content {
+  height: 80px;
+}
+
+#event-list .event-short .main .event-info .content {
+  /******************/
+}
+
+#event-list .main .event-info .content .title {
   float: left;
 }
 
-#event-list .event .main .event-info .content h2 {
+#event-list .main .event-info .content h2 {
   line-height: 28px;
 }
 
-#event-list .event .main .event-info .content .title .city {
+#event-list .main .event-info .content .title .city {
   font-style: italic;
   color: #999;
+}
+
+#event-list .event-short .main .event-info .content .title .city,
+#event-list .event-short .main .event-info .content .date-and-status .time {
+  margin-top: 4px;
 }
 
 #event-list .event .main .event-info .content .category-list {
   margin-top: 15px;
 }
 
-#event-list .event .main .event-info .content .date-and-status {
+#event-list .main .event-info .content .date-and-status {
   float: right;
   text-align: right;
 }
 
-#event-list .event .main .event-info .content .date-and-status .time {
+#event-list .event .main .event-info .content .date-and-status .time,
+#event-list .event-short .main .event-info .content .date-and-status .time {
   color: #999;
 }
 
-#event-list .event .main .event-info .content .date-and-status .status-published, #event-list .event .main .event-info .content .date-and-status .status-hidden {
+#event-list .event .main .event-info .content .date-and-status .status-published,
+#event-list .event .main .event-info .content .date-and-status .status-hidden {
   margin-top: 15px;
   font-size: 16px;
   font-weight: 700;
@@ -321,7 +337,9 @@ body {
 #event-list .event .main .event-info .content .date-and-status .status-published .big-icon-published,
 #event-list .event .main .event-info .content .date-and-status .status-hidden .big-icon-hidden,
 #event-list .event .se-panel .people-attending .big-icon-friends,
-#event-list .event .se-panel .close-sales .big-icon-cross {
+#event-list .event .se-panel .close-sales .big-icon-cross,
+#event-list .event-short .se-panel .individual-print-button .big-icon-print,
+#event-list .event-short .se-panel .individual-send_phone-button .big-icon-send_phone {
   height: 18px;
   background-image: url("../img/profile-sprite.png");
 }
@@ -331,54 +349,103 @@ body {
 }
 
 #event-list .event .main .event-info .content .date-and-status .status-hidden .big-icon-hidden {
-  background-position: -330px -18px;
+  background-position: -330px -20px;
 }
 
 #event-list .event .se-panel .close-sales .big-icon-cross {
-  background-position: -330px -36px;
+  background-position: -330px -40px;
 }
 
 #event-list .event .se-panel .close-sales:active .big-icon-cross {
-  background-position: -330px -54px;
+  background-position: -330px -60px;
 }
 
 #event-list .event .se-panel .people-attending .big-icon-friends {
-  background-position: -330px -72px;
+  background-position: -330px -80px;
 }
 
 #event-list .event .se-panel .people-attending:active .big-icon-friends {
-  background-position: -330px -90px;
+  background-position: -330px -100px;
 }
 
-#event-list .event .right-panel {
+#event-list .event-short .se-panel .individual-print-button .big-icon-print {
+  background-position: -330px -120px;
+}
+
+#event-list .event-short .se-panel .individual-print-button:active .big-icon-print {
+  background-position: -330px -140px;
+}
+
+#event-list .event-short .se-panel .individual-send_phone-button .big-icon-send_phone {
+  background-position: -330px -160px;
+}
+
+#event-list .event-short .se-panel .individual-send_phone-button:active .big-icon-send_phone {
+  background-position: -330px -180px;
+}
+
+#event-list .right-panel {
   width: 220px;
-  height: 120px;
   float: left;
   position: relative;
   background: #e6e6e6;
   z-index: 400;
 }
 
-#event-list .event .right-panel .actions div {
+#event-list .event .right-panel {
+  height: 120px;
+}
+
+#event-list .event-short .right-panel {
+  height: 90px;
+}
+
+#event-list .right-panel .actions div {
   float: left;
-  height: 23px;
-  width: 109px;
   text-align: center;
   font-weight: 700;
-  padding-top: 36px;
   background-image: url(../img/profile-sprite.png);
   cursor: pointer;
 }
 
-#event-list .event .right-panel .actions div:hover {
+#event-list .event .right-panel .actions div {
+  height: 23px;
+  width: 109px;
+  padding-top: 36px;
+}
+
+#event-list .event-short .right-panel .actions div {
+  padding-top: 46px;
+  padding-bottom: 6px;
+  width: 110px;
+}
+
+#event-list .right-panel .actions div:hover,
+#event-list .se-panel .tickets-table-actions tbody tr td:hover {
   background-color: #ccc;
 }
 
-#event-list .event .right-panel .actions div:active {
+#event-list .right-panel .actions div:active,
+#event-list .se-panel .tickets-table-actions tbody tr td:active {
+  color: #fff;
   background-color: #555;
 }
 
-#event-list .event .right-panel .actions .hide-button, #event-list .event .right-panel .actions .publish-button {
+#event-list .se-panel .tickets-table-actions tbody tr td:active {
+  border-top: #555;
+  border-bottom: #555;
+}
+
+#event-list .se-panel .tickets-table-actions tbody tr:first-child td:active {
+  border-top: none;
+}
+
+#event-list .se-panel .tickets-table-actions tbody tr:last-child td:active {
+  border-bottom: none;
+}
+
+#event-list .event .right-panel .actions .hide-button,
+#event-list .event .right-panel .actions .publish-button {
   border-bottom: 1px solid #B3B3B3;
   border-right: 1px solid #B3B3B3;
 }
@@ -391,8 +458,24 @@ body {
     background-position: -110px 0;
 }
 
-#event-list .event .right-panel .actions .hide-button:active, #event-list .event .right-panel .actions .publish-button:active {
-  color: #fff;
+#event-list .event-short .right-panel .actions .print-button {
+    background-position: 0 -240px;
+}
+
+#event-list .event-short .right-panel .actions .print-button:active {
+    background-position: 0 -330px;
+}
+
+#event-list .event-short .right-panel .actions .send_phone-button {
+    background-position: -110px -240px;
+}
+
+#event-list .event-short .right-panel .actions .send_phone-button:active {
+    background-position: -110px -330px;
+}
+
+#event-list .event .right-panel .actions .hide-button:active,
+#event-list .event .right-panel .actions .publish-button:active {
   border-bottom: 1px solid #555;
   border-right: 1px solid #555;
 }
@@ -468,8 +551,6 @@ body {
 #event-list .event .right-panel .social-stats .profile-pictures img:last-child {
   margin-right: 0;
 }
-
-
 
 #event-list .event .right-panel .going-button,
 #event-list .event .right-panel .tickets-button {
@@ -562,55 +643,118 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7516', end
   background-color: #555;
 }
 
-#event-list .event .right-panel .actions .hide-button, #event-list .event .right-panel .actions .publish-button {
+#event-list .event .right-panel .actions .hide-button,
+#event-list .event .right-panel .actions .publish-button {
   border-bottom: 1px solid #B3B3B3;
   border-right: 1px solid #B3B3B3;
 }
 
-#event-list .event .sales-stats {
+#event-list .event-short .right-panel .no-tickets {
+  line-height: 90px;
+  text-align: center;
+  font-weight: 700;
+}
+
+#event-list .sw-panel {
   float: left;
   position: relative;
   padding: 0;
   width: 720px;
-  height: 60px;
   z-index: 300;
   background: #f7f7f7;
 }
 
-#event-list .event .sales-stats table {
+#event-list .sw-panel table,
+#event-list .se-panel table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
   text-align: right;
 }
 
-#event-list .event .sales-stats table thead th {
+#event-list .sw-panel table tbody tr td,
+#event-list .sw-panel table thead tr th,
+#event-list .se-panel table tbody tr td,
+#event-list .se-panel table thead tr th {
+  padding: 0 10px;
+  height: 28px;
+  line-height: 28px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#event-list .se-panel table tbody tr td,
+#event-list .se-panel table thead tr th {
+  border-bottom-color: #ddd;
+  cursor: pointer;
+}
+
+#event-list .sw-panel table tbody tr:first-child td,
+#event-list .sw-panel table thead tr:first-child th,
+#event-list .se-panel table tbody tr:first-child td,
+#event-list .se-panel table thead tr:first-child th {
+  height: 29px;
+  line-height: 29px;
+  border-top: none;
+}
+
+#event-list .sw-panel table tbody tr:last-child td,
+#event-list .sw-panel table thead tr:last-child th,
+#event-list .se-panel table tbody tr:last-child td,
+#event-list .se-panel table thead tr:last-child th {
+  height: 29px;
+  border-bottom: none;
+}
+
+#event-list .event .sw-panel table.sales-stats thead th {
   font-weight: 700;
   border-bottom: 1px solid #e6e6e6;
 }
 
-#event-list .event .sales-stats table tbody td {
+#event-list .event .sw-panel table.sales-stats tbody td {
   border-top: 1px solid #fff;
 }
 
-#event-list .event .sales-stats table tr td, #event-list .event .sales-stats table tr th {
-  padding: 0 10px;
-  height: 29px;
-  line-height: 29px;
+#event-list .event .sw-panel table.sales-stats tr td:last-child,
+#event-list .event .sw-panel table tr th:last-child {
+  padding-right: 20px;
 }
 
-#event-list .event .sales-stats table tr .sales-quantity {
+#event-list .event .sw-panel table.sales-stats tr .sales-quantity {
   text-align: left;
 }
 
-#event-list .event .se-panel {
+#event-list .sw-panel table.tickets-table tr .number {
+  width: 40px;
+}
+
+#event-list .sw-panel table.tickets-table tr .ticket-name {
+  text-align: left;
+  font-weight: 700;
+  padding-left: 20px;
+  width: 240px;
+}
+
+#event-list .sw-panel table.tickets-table tr .owner-name {
+  text-align: left;
+  width: 220px;
+}
+
+#event-list .sw-panel table.tickets-table tr .ticket-name {
+}
+
+#event-list .event .se-panel,
+#event-list .event-short .se-panel {
   float: left;
   position: relative;
   padding: 0;
   width: 220px;
-  height: 60px;
   z-index: 200;
   background: #ededed;
+}
+
+#event-list .event .se-panel {
+  height: 60px;
 }
 
 #event-list .event .se-panel div {
@@ -645,4 +789,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7516', end
 
 #event-list .event .se-panel .close-sales:active {
   border-top: solid 1px #555;
+}
+
+#event-list .se-panel .tickets-table-actions {
+  text-align: center;
 }
