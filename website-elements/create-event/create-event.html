@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Ingresse &mdash; Event Calendar</title>
+	<link href="../../style/prometheus.css" rel="stylesheet" type="text/css"/>
+	<link href="style/create-event.css" rel="stylesheet" type="text/css"/>
+	<link href="style/style.css" rel="stylesheet" type="text/css"/>
+	<link href="style/jquery-ui-1.8.21.custom.css" rel="stylesheet" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
+	<link rel="stylesheet" type="text/css" href="style/engage.itoggle.css"/>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/engage.itoggle.1.7-2.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#public-event').iToggle({
+			easing: 'easeOutExpo'
+		});
+	});
+	$(function() {
+		// setup master volume
+		$( "#feeSlider" ).slider({
+			value: 50,
+			orientation: "horizontal",
+			range: "min",
+			animate: true
+		});
+	});
+	</script>
+</head>
+
+<body id="createEvent">
+
+	<div id="container" class="container center">
+
+		<div class="box shadow span12">
+			<h1>Create event <small>&mdash; The simplest way to publish an event </small></h1>
+		</div>
+
+		<div id="createEventBox" class="box shadow span9">
+			<h3 class="box-title">Create a new event</h3>
+			<div class="row">
+
+				<!-- Form -->
+				<form class="form-horizontal" id="mainForm">
+					<fieldset>
+						<div class="control-group">
+							<label class="control-label" for="eventName"><strong>What*</strong></label>
+							<div class="controls">
+								<input type="text" id="eventName" placeholder="Title"></input>
+							</div>
+						</div>
+
+						<div class="control-group hidden-field">
+							<label class="control-label" for="eventLabels">Labels</label>
+							<div class="controls">
+								<input type="text" id="eventLabels" placeholder="Labels"></input>
+								<a href="#" class="input-action">+ Add labels to help users find your event</a>
+							</div>
+						</div>
+
+						<div id="descriptionControlGroup" class="control-group hidden-field">
+							<label class="control-label" for="description">Description</label>
+							<div class="controls">
+								<textarea id="description" placeholder="Generally, shorter is better…"></textarea>
+								<a href="#" class="input-action">+ Add a description</a>
+							</div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label" for="eventLocation"><strong>Where*</strong></label>
+							<div class="controls">
+								<input type="text" id="eventLocation" placeholder="Location"></input>
+							</div>
+						</div>
+
+						<div id="dateAndTime" class="control-group">
+							<label class="control-label" for="dateAndTimeControls"><strong>When*</strong></label>
+							<div class="controls" id="dateAndTimeControls">
+								<input id="eventDate" type="text" placeholder="Date"></input>
+								<input id="eventStartingTime" type="text" placeholder="Time"></input>
+								<input id="eventEndingTime" type="text" placeholder="Time" class="hidden"></input>
+							</div>
+						</div>
+
+						<div class="control-group" id="public-event">
+							<label class="control-label" for="public-event-toggle"><strong>Public event*</strong></label>
+							<input type="checkbox" id="public-event-toggle" checked="checked"></input>
+						</div>
+					</fieldset>
+				</form>
+
+				<!-- Event poster -->
+				<div class="upload-poster">
+					<img src="img/upload-poster.png" alt="Upload the poster of your event"></img>
+					<div class="picture-actions">
+						<a href="#">change</a> &#124; <a href="#">remove</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="sideBox" class="span3">
+			<div class="box-header shadow">
+				<h3 class="box-title">Get started!</h3>
+				Want to publish your event in less than 1 min? Fill the first box on the right and click on publish!
+			</div>
+			<div class="box-back shadow">
+				<div>
+					<div id="saveEventButton" class="blue-gradient">
+						Save
+					</div>
+					<div id="previewEventButton" class="green-gradient">
+						Preview
+					</div>
+				</div>
+				<div id="publishEventButton" class="orange-gradient">
+					Publish
+				</div>
+			</div>
+		</div>
+		
+		<div id="addTicketsBox" class="span9">
+			<div class="box-header shadow">
+			<h3 class="box-title">Tickets <small>&mdash; If you are selling for this event</small></h3>
+			</div>
+			<div class="box-back shadow">
+				
+				<table id="ticketSummary">
+					<thead>
+						<tr>
+							<th class="ticket-type">
+								Ticket type
+							</th>
+							<th>
+								Sales start
+							</th>
+							<th>
+								Sales end
+							</th>
+							<th>
+								Price
+							</th>
+							<th>
+								Fee
+							</th>
+							<th>
+								Qtd.
+							</th>
+							<th>
+								Edit
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="ticket-type">
+								General entrance
+							</td>
+							<td>
+								Jun 22, 2012
+							</td>
+							<td>
+								Jun 24, 2012
+							</td>
+							<td>
+								R$30.00
+							</td>
+							<td>
+								R$5.00
+							</td>
+							<td>
+								300
+							</td>
+							<td>
+								<a href="#">Edit</a>
+							</td>
+						</tr>
+							<td class="ticket-type">
+								General entrance
+							</td>
+							<td>
+								Jun 22, 2012
+							</td>
+							<td>
+								Jun 24, 2012
+							</td>
+							<td>
+								R$30.00
+							</td>
+							<td>
+								R$5.00
+							</td>
+							<td>
+								300
+							</td>
+							<td>
+								<a href="#">Edit</a>
+							</td>
+						</tr>
+							<td class="ticket-type">
+								General entrance
+							</td>
+							<td>
+								Jun 22, 2012
+							</td>
+							<td>
+								Jun 24, 2012
+							</td>
+							<td>
+								R$30.00
+							</td>
+							<td>
+								R$5.00
+							</td>
+							<td>
+								300
+							</td>
+							<td>
+								<a href="#">Edit</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</div>
+			<div class="box-footer shadow">
+				<div class="row">
+
+					<!-- Form -->
+					<form id="ticketForm">
+						<fieldset>
+							<div class="column">
+								<div id="ticketNameControlGroup" class="control-group">
+									<label class="control-label" for="ticketName"><strong>Name*</strong></label>
+									<div class="controls">
+										<input id="ticketName"></input>
+									</div>
+								</div>
+								<div id="ticketOffersControlGroup" class="control-group">
+									<label class="control-label" for="name"><strong>Offers &amp; Discounts</strong></label>
+									<div class="controls">
+										<label class="checkbox inline">
+											<input id="specialOffer" type="checkbox"></input> Special Offer
+										</label>
+										<label class="checkbox inline">
+											<input id="studentTicket" type="checkbox"></input> Student Ticket
+										</label>
+									</div>
+								</div>
+								<div id="ticketDescriptionControlGroup" class="control-group hidden-field">
+									<label class="control-label" for="ticketDescription"><strong>Description</strong></label>
+									<div class="controls">
+										<textarea id="ticketDescription"></textarea>
+										<a href="#" class="input-action">+ Add a description for this ticket</a>
+									</div>
+								</div>
+							</div>
+							<div class="column">
+								<div id="ticketQuantityControlGroup" class="control-group">
+									<label class="control-label" for="ticketQuantity"><strong>Quantity*</strong></label>
+									<div class="controls">
+										<input id="ticketQuantity"></input>
+									</div>
+								</div>
+								<div id="ticketPriceControlGroup" class="control-group">
+									<label class="control-label" for="ticketPrice"><strong>Price*</strong></label>
+									<div class="controls">
+										<input id="ticketPrice"></input>
+									</div>
+								</div>
+								<div id="ticketFreeControlGroup" class="control-group">
+									<label class="control-label" for="name">Free</label>
+									<div class="controls">
+										<input id="freeTicket" type="checkbox"></input>
+									</div>
+								</div>
+								<div id="ticketFeeControlGroup" class="control-group">
+									<label class="control-label" for="ticketFee"><strong>Fee*</strong></label>
+									<div class="controls">
+										<div id="feeSlider" style="width:320px; margin-top: 15px; margin-bottom: 7px"></div>
+										<table>
+											<tbody>
+												<tr>
+													<td>
+														You pay: <strong>R$2.5</strong>
+													</td>
+													<td>
+														The buyer pays: <strong>R$2.5</strong>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div id="ticketDatesControlGroup" class="control-group hidden-field">
+									<label class="control-label" for="ticketSalesDates"><strong>Sales Dates</strong></label>
+									<div class="controls" id="ticketSalesDates">
+										<table>
+											<tbody>
+												<tr>
+													<td colspan=2>
+														<label class="control-label" for="ticketSalesStart">Sales start:</label>
+													</td>
+													<td colspan=2>
+														<label class="control-label" for="ticketSalesEnd">Sales end:</label>
+													</td>
+												</tr>
+												<tr>
+													<td class="date1">
+														<input id="ticketSalesStartDate" type="text" placeholder="Date" class="date-input"></input>
+													</td>
+													<td class="time1">
+														<input id="ticketSalesStartTime" type="text" placeholder="Time" class="time-input"></input>
+													</td>
+													<td class="date2">
+														<input id="ticketSalesEndDate" type="text" placeholder="Date" class="date-input"></input>
+													</td>
+													<td class="time2">
+														<input id="ticketSalesEndTime" type="text" placeholder="Time" class="time-input"></input>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<p class="input-action">By default, sales will start when you publish the event and end when the event begins. <a href="#">Change this</a></p>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div class="row">
+					<div class="ticket-total-cost">
+						Total cost for the buyer: <span>R$</span><span id="ticketTotalCost">XX</span>
+					</div>
+					<div id="addTicketButton" class="button orange float-right">
+						Add ticket
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+</body>
+</html>
