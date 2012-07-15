@@ -1,0 +1,103 @@
+.box-footer-thin {
+	position: relative;
+  padding-top: 10px;
+  background: white;
+  z-index: 1;
+}
+
+.poster-container {
+	position: relative;
+	cursor: pointer;
+}
+
+.profile-picture {
+	  width: 178px;
+	  height: 240px;
+	  display: block;
+	  border: solid 1px #888;
+}
+
+.co_founder-ribbon {
+  background-image: url("../img/cofounder-ribbon.png");
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  z-index: 2;
+}
+
+#aboutUs .member-name {
+	text-align: center;
+	font-weight: 400;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+#aboutUs .member-function {
+	color: #888;
+	text-shadow: 0 1px #fff;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: url(../img/bg.png);
+}
+
+#aboutUs .member-function p {
+	line-height: 30px;
+}
+
+
+
+
+/* TO BE UPDATED IN PROMETHEUS
+---------------------------------------------------------------------------------------------------- */
+
+[class*="span"] {float: left; margin: 10px;}
+
+.span12 {width: 940px;}
+.span11 {width: 860px;}
+.span10 {width: 780px;}
+.span9 {width: 700px;}
+.span8 {width: 620px;}
+.span7 {width: 540px;}
+.span6 {width: 460px;}
+.span5 {width: 380px;}
+.span4 {width: 300px;}
+.span3 {width: 220px;}
+.span2 {width: 140px;}
+.span1 {width: 60px;}
+
+.box.span12, .span12 fieldset {width: 900px;}
+.box.span11, .span11 fieldset {width: 820px;}
+.box.span10, .span10 fieldset {width: 740px;}
+.box.span9, .span9 fieldset {width: 660px;}
+.box.span8, .span8 fieldset {width: 580px;}
+.box.span7, .span7 fieldset {width: 500px;}
+.box.span6, .span6 fieldset {width: 420px;}
+.box.span5, .span5 fieldset {width: 340px;}
+.box.span4, .span4 fieldset {width: 260px;}
+.box.span3, .span3 fieldset {width: 180px;}
+.box.span2, .span2 fieldset {width: 100px;}
+.box.span1, .span1 fieldset {width: 20px;}
+
+.box-back {
+	width: 100%
+}
+
+.column[class*="span"] {
+	margin: 0;
+}
+
+.column.span12 {width: 960px;}
+.column.span11 {width: 880px;}
+.column.span10 {width: 800px;}
+.column.span9 {width: 720px;}
+.column.span8 {width: 640px;}
+.column.span7 {width: 560px;}
+.column.span6 {width: 480px;}
+.column.span5 {width: 400px;}
+.column.span4 {width: 320px;}
+.column.span3 {width: 240px;}
+.column.span2 {width: 160px;}
+.column.span1 {width: 80px;}

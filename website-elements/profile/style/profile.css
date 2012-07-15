@@ -10,8 +10,6 @@ body {
 
 
 
-
-
 /*======================================================================/
 / PROFILE HEADER CODE
 /======================================================================*/
@@ -221,26 +219,26 @@ body {
 / EVENTS CODE 
 /======================================================================*/
 
-#event-list .event,
-#event-list .event-short {
+#eventList .event,
+#eventList .event-short {
   padding: 0;
   width: 940px;
   font-size: 16px;
 }
 
-#event-list .main {
+#eventList .main {
   float: left;
 }
 
-#event-list .event .main {
+#eventList .event .main {
   height: 120px;
 }
 
-#event-list .event-short .main {
+#eventList .event-short .main {
   height: 90px;
 }
 
-#event-list .main .event-info {
+#eventList .main .event-info {
   float: left;
   position: relative;
   padding: 0;
@@ -249,141 +247,133 @@ body {
   z-index: 500;
 }
 
-#event-list .main .event-info .event-poster {
+#eventList .main .event-info .event-poster {
   float: left;
 }
 
-#event-list .event .main .event-info .event-poster img {
+#eventList .event .main .event-info .event-poster img {
   width: 90px;
   height: 120px;
   display: block;
 }
 
-#event-list .event-short .main .event-info .event-poster img {
+#eventList .event-short .main .event-info .event-poster img {
   width: 60px;
   height: 90px;
   display: block;
 }
 
-#event-list .main .event-info .content {
+#eventList .main .event-info .content {
   float: left;
   padding: 20px;
 }
 
-#event-list .event .main .event-info .content {
+#eventList .event .main .event-info .content {
   width: 590px;
 }
 
-#event-list .event-short .main .event-info .content {
+#eventList .event-short .main .event-info .content {
   width: 620px;
 }
 
-#event-list .event .main .event-info .content {
+#eventList .event .main .event-info .content {
   height: 80px;
 }
 
-#event-list .event-short .main .event-info .content {
+#eventList .event-short .main .event-info .content {
   /******************/
 }
 
-#event-list .main .event-info .content .title {
+#eventList .main .event-info .content .title {
   float: left;
 }
 
-#event-list .main .event-info .content h2 {
+#eventList .main .event-info .content h2 {
   line-height: 28px;
+	max-width: 450px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
-#event-list .main .event-info .content .title .city {
+#eventList .main .event-info .content .title .city {
   font-style: italic;
   color: #999;
 }
 
-#event-list .event-short .main .event-info .content .title .city,
-#event-list .event-short .main .event-info .content .date-and-status .time {
+#eventList .event-short .main .event-info .content .title .city,
+#eventList .event-short .main .event-info .content .date-and-status .time {
   margin-top: 4px;
 }
 
-#event-list .event .main .event-info .content .category-list {
+#eventList .event .main .event-info .content .category-list {
   margin-top: 15px;
 }
 
-#event-list .main .event-info .content .date-and-status {
+#eventList .main .event-info .content .date-and-status {
   float: right;
   text-align: right;
 }
 
-#event-list .event .main .event-info .content .date-and-status .time,
-#event-list .event-short .main .event-info .content .date-and-status .time {
+#eventList .event .main .event-info .content .date-and-status .time,
+#eventList .event-short .main .event-info .content .date-and-status .time {
   color: #999;
 }
 
-#event-list .event .main .event-info .content .date-and-status .status-published,
-#event-list .event .main .event-info .content .date-and-status .status-hidden {
+#eventList .event .main .event-info .content .date-and-status .status-published,
+#eventList .event .main .event-info .content .date-and-status .status-hidden {
   margin-top: 15px;
   font-size: 16px;
   font-weight: 700;
 }
 
-#event-list .event .main .event-info .content .date-and-status .status-published {
+#eventList .event .main .event-info .content .date-and-status .status-published {
   color: #5AA500
 }
 
-#event-list .event .main .event-info .content .date-and-status .status-hidden {
+#eventList .event .main .event-info .content .date-and-status .status-hidden {
   color: #ff9600
 }
 
-#event-list .event .main .event-info .content .date-and-status .status-published .big-icon-published,
-#event-list .event .main .event-info .content .date-and-status .status-hidden .big-icon-hidden,
-#event-list .event .se-panel .people-attending .big-icon-friends,
-#event-list .event .se-panel .close-sales .big-icon-cross,
-#event-list .event-short .se-panel .individual-print-button .big-icon-print,
-#event-list .event-short .se-panel .individual-send_phone-button .big-icon-send_phone {
+#eventList .event .main .event-info .content .date-and-status .status-published .big-icon-published,
+#eventList .event .main .event-info .content .date-and-status .status-hidden .big-icon-hidden,
+#eventList .event .se-panel .people-attending .big-icon-friends,
+#eventList .event .se-panel .close-sales .big-icon-cross,
+#eventList .event-short .se-panel .individual-print-button .big-icon-print,
+#eventList .event-short .se-panel .individual-send_phone-button .big-icon-send_phone {
   height: 18px;
   background-image: url("../img/profile-sprite.png");
 }
 
-#event-list .event .main .event-info .content .date-and-status .status-published .big-icon-published {
+#eventList .event .main .event-info .content .date-and-status .status-published .big-icon-published {
   background-position: -330px 0px;
 }
 
-#event-list .event .main .event-info .content .date-and-status .status-hidden .big-icon-hidden {
+#eventList .event .main .event-info .content .date-and-status .status-hidden .big-icon-hidden {
   background-position: -330px -20px;
 }
 
-#event-list .event .se-panel .close-sales .big-icon-cross {
+#eventList .event .se-panel .close-sales .big-icon-cross {
   background-position: -330px -40px;
 }
 
-#event-list .event .se-panel .close-sales:active .big-icon-cross {
+#eventList .event .se-panel .close-sales:active .big-icon-cross {
   background-position: -330px -60px;
 }
 
-#event-list .event .se-panel .people-attending .big-icon-friends {
+#eventList .event .se-panel .people-attending .big-icon-friends {
   background-position: -330px -80px;
 }
 
-#event-list .event .se-panel .people-attending:active .big-icon-friends {
+#eventList .event .se-panel .people-attending:active .big-icon-friends {
   background-position: -330px -100px;
 }
 
-#event-list .event-short .se-panel .individual-print-button .big-icon-print {
-  background-position: -330px -120px;
-}
 
-#event-list .event-short .se-panel .individual-print-button:active .big-icon-print {
-  background-position: -330px -140px;
-}
+/* BEGIN RIGHT-PANEL REDESIGN
+---------------------------------------------------------------------------------------------------- */
 
-#event-list .event-short .se-panel .individual-send_phone-button .big-icon-send_phone {
-  background-position: -330px -160px;
-}
-
-#event-list .event-short .se-panel .individual-send_phone-button:active .big-icon-send_phone {
-  background-position: -330px -180px;
-}
-
-#event-list .right-panel {
+#eventList .right-panel {
   width: 220px;
   float: left;
   position: relative;
@@ -391,142 +381,226 @@ body {
   z-index: 400;
 }
 
-#event-list .event .right-panel {
+#eventList .event .right-panel {
   height: 120px;
 }
 
-#event-list .event-short .right-panel {
+#eventList .event-short .right-panel {
   height: 90px;
 }
 
-#event-list .right-panel .actions div {
+
+#eventList .action-button {
   float: left;
   text-align: center;
-  font-weight: 700;
-  background-image: url(../img/profile-sprite.png);
+  font-weight: 400;
   cursor: pointer;
 }
 
-#event-list .event .right-panel .actions div {
-  height: 23px;
+#eventList .right-panel .action-button {
+  height: 59px;
   width: 109px;
-  padding-top: 36px;
+  font-weight: 700;
 }
 
-#event-list .event-short .right-panel .actions div {
-  padding-top: 46px;
-  padding-bottom: 6px;
-  width: 110px;
+#eventList .event-short .right-panel .action-button {
+	height: 90px;
 }
 
-#event-list .right-panel .actions div:hover,
-#event-list .se-panel .tickets-table-actions tbody tr td:hover {
+#eventList .action-button span {
+  color: #333;
+}
+
+#eventList .action-button:active span {
+  color: #fff;
+}
+
+#eventList .action-button:hover {
   background-color: #ccc;
+  text-decoration: none;
 }
 
-#event-list .right-panel .actions div:active,
-#event-list .se-panel .tickets-table-actions tbody tr td:active {
+#eventList .action-button:active {
   color: #fff;
   background-color: #555;
 }
 
-#event-list .se-panel .tickets-table-actions tbody tr td:active {
-  border-top: #555;
-  border-bottom: #555;
-}
-
-#event-list .se-panel .tickets-table-actions tbody tr:first-child td:active {
-  border-top: none;
-}
-
-#event-list .se-panel .tickets-table-actions tbody tr:last-child td:active {
-  border-bottom: none;
-}
-
-#event-list .event .right-panel .actions .hide-button,
-#event-list .event .right-panel .actions .publish-button {
+#eventList .action-button.hide-button,
+#eventList .action-button.publish-button {
   border-bottom: 1px solid #B3B3B3;
   border-right: 1px solid #B3B3B3;
 }
 
-#event-list .event .right-panel .actions .publish-button {
-    background-position: 0 0;
-}
-
-#event-list .event .right-panel .actions .hide-button {
-    background-position: -110px 0;
-}
-
-#event-list .event-short .right-panel .actions .print-button {
-    background-position: 0 -240px;
-}
-
-#event-list .event-short .right-panel .actions .print-button:active {
-    background-position: 0 -330px;
-}
-
-#event-list .event-short .right-panel .actions .send_phone-button {
-    background-position: -110px -240px;
-}
-
-#event-list .event-short .right-panel .actions .send_phone-button:active {
-    background-position: -110px -330px;
-}
-
-#event-list .event .right-panel .actions .hide-button:active,
-#event-list .event .right-panel .actions .publish-button:active {
+#eventList .action-button.hide-button:active,
+#eventList .action-button.publish-button:active {
   border-bottom: 1px solid #555;
   border-right: 1px solid #555;
 }
 
-#event-list .event .right-panel .actions .publish-button:active {
-    background-position: 0 -120px;
-}
-
-#event-list .event .right-panel .actions .hide-button:active {
-    background-position: -110px -120px;
-}
-
-#event-list .event .right-panel .actions .dashboard-button {
+#eventList .action-button.dashboard-button {
   border-left: 1px solid #fff;
   border-bottom: 1px solid #B3B3B3;
-  background-position: -220px 0;
 }
 
-#event-list .event .right-panel .actions .dashboard-button:active {
-  background-position: -220px -120px;
-  color: #fff;
+#eventList .action-button.dashboard-button:active {
   border-left: 1px solid #555;
   border-bottom: 1px solid #555;
 }
 
-#event-list .event .right-panel .actions .edit-button {
+#eventList .action-button.edit-button {
   border-right: 1px solid #B3B3B3;
   border-top: 1px solid #fff;
-  background-position: -110px -60px;
 }
 
-#event-list .event .right-panel .actions .edit-button:active {
-  background-position: -110px -180px;
-  color: #fff;
+#eventList .action-button.edit-button:active {
   border-right: 1px solid #555;
   border-top: 1px solid #555;
 }
 
-#event-list .event .right-panel .actions .preview-button {
+#eventList .action-button.preview-button {
   border-left: 1px solid #fff;
   border-top: 1px solid #fff;
-  background-position: -220px -60px;
 }
 
-#event-list .event .right-panel .actions .preview-button:active {
-  background-position: -220px -180px;
-  color: #fff;
+#eventList .action-button.preview-button:active {
   border-left: 1px solid #555;
   border-top: 1px solid #555;
 }
 
-#event-list .event .right-panel .social-stats {
+#eventList .action-button.print_all-button {
+  border-right: 1px solid #b3b3b3;
+}
+
+#eventList .action-button.print_all-button:active {
+  border-right: 1px solid #555;
+}
+
+#eventList .action-button.send_all_sms-button {
+  border-left: 1px solid #fff;
+}
+
+#eventList .action-button.send_all_sms-button:active {
+  border-left: 1px solid #555;
+}
+
+#eventList .right-panel .icon_wrapper {
+  margin-top: 8px;
+  margin-bottom: 2px;
+  padding: 1px 42px;
+}
+
+#eventList .event-short .right-panel .icon_wrapper {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  padding: 1px 39px;
+}
+
+#eventList .action-button .icon {
+  background: url(../img/profile-sprite.png) no-repeat;
+  display: block;
+}
+
+#eventList .publish-button .icon {
+  background-position: -6px -6px;
+  width: 24px;
+  height: 24px;
+}
+
+#eventList .publish-button:active .icon {
+  background-position: -6px -42px;
+}
+
+#eventList .hide-button .icon_wrapper {
+  padding: 7px 34px;
+}
+
+#eventList .hide-button .icon {
+  background-position: -220px -12px;
+  width: 40px;
+  height: 12px;
+}
+
+#eventList .hide-button:active .icon {
+  background-position: -220px -48px;
+}
+
+#eventList .dashboard-button .icon_wrapper {
+  padding: 0px 40px;
+  margin-top: 8px;
+}
+
+#eventList .dashboard-button .icon {
+  background-position: -76px -4px;
+  width: 28px;
+  height: 26px;
+}
+
+#eventList .dashboard-button:active .icon {
+  background-position: -76px -40px;
+}
+
+#eventList .edit-button .icon_wrapper {
+  padding: 1px 37px 1px 43px;
+}
+
+#eventList .edit-button .icon {
+  background-position: -42px -6px;
+  width: 28px;
+  height: 24px;
+}
+
+#eventList .edit-button:active .icon {
+  background-position: -42px -42px;
+}
+
+#eventList .preview-button .icon_wrapper {
+  padding: 5px 40px;
+}
+
+#eventList .preview-button .icon {
+  background-position: -112px -10px;
+  width: 28px;
+  height: 16px;
+}
+
+#eventList .preview-button:active .icon {
+  background-position: -112px -46px;
+}
+
+#eventList .print_all-button .icon_wrapper {
+  padding-top: 2px !important;
+	padding-bottom: 2px !important;
+}
+
+#eventList .print_all-button .icon {
+  background-position: -146px -4px;
+  width: 32px;
+  height: 28px;
+}
+
+#eventList .print_all-button:active .icon {
+  background-position: -146px -40px;
+}
+
+#eventList .send_all_sms-button .icon_wrapper {
+  padding-left: 46px !important;
+	padding-right: 46px !important;
+}
+
+#eventList .send_all_sms-button .icon {
+  background-position: -190px -3px;
+  width: 16px;
+  height: 30px;
+}
+
+#eventList .send_all_sms-button:active .icon {
+  background-position: -190px -39px;
+}
+/* END RIGHT-PANEL REDESIGN
+---------------------------------------------------------------------------------------------------- */
+
+
+#eventList .event .right-panel .social-stats {
   width: 206px;
   height: 75px;
   border-bottom: 1px solid #b3b3b3;
@@ -534,12 +608,12 @@ body {
   font-weight: 400;
 }
 
-#event-list .event .right-panel .social-stats .profile-pictures {
+#eventList .event .right-panel .social-stats .profile-pictures {
   margin-bottom: 5px;
   display: inline-block;
 }
 
-#event-list .event .right-panel .social-stats .profile-pictures img {
+#eventList .event .right-panel .social-stats .profile-pictures img {
   float:left;
   display: block;
   width: 24px;
@@ -547,12 +621,12 @@ body {
   margin-right: 2px;
 }
 
-#event-list .event .right-panel .social-stats .profile-pictures img:last-child {
+#eventList .event .right-panel .social-stats .profile-pictures img:last-child {
   margin-right: 0;
 }
 
-#event-list .event .right-panel .going-button,
-#event-list .event .right-panel .tickets-button {
+#eventList .event .right-panel .going-button,
+#eventList .event .right-panel .tickets-button {
   float: left;
   height: 29px;
   width: 109px;
@@ -564,7 +638,7 @@ body {
   text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
 }
 
-#event-list .event .right-panel .going-button {
+#eventList .event .right-panel .going-button {
   background: #35c4ff;
   background: -moz-linear-gradient(top,  #35c4ff 0%, #0084ff 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#35c4ff), color-stop(100%,#0084ff));
@@ -577,7 +651,7 @@ body {
   border-right: 1px solid #004fbb;
 }
 
-#event-list .event .right-panel .going-button:hover {
+#eventList .event .right-panel .going-button:hover {
   background: #4fcdff;
   background: -moz-linear-gradient(top,  #4fcdff 0%, #1e96ff 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4fcdff), color-stop(100%,#1e96ff));
@@ -588,7 +662,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fcdff', endColorstr='#1e96ff',GradientType=0 );
 }
 
-#event-list .event .right-panel .going-button:active {
+#eventList .event .right-panel .going-button:active {
 background: #0084ff;
 background: -moz-linear-gradient(top,  #0084ff 0%, #35c4ff 100%);
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0084ff), color-stop(100%,#35c4ff));
@@ -599,7 +673,7 @@ background: linear-gradient(to bottom,  #0084ff 0%,#35c4ff 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0084ff', endColorstr='#35c4ff',GradientType=0 );
 }
 
-#event-list .event .right-panel .tickets-button {
+#eventList .event .right-panel .tickets-button {
   background: #f1a400;
   background: -moz-linear-gradient(top,  #f1a400 0%, #ff7516 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1a400), color-stop(100%,#ff7516));
@@ -612,7 +686,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0084ff', end
   border-left: 1px solid #F1C781;
 }
 
-#event-list .event .right-panel .tickets-button:hover {
+#eventList .event .right-panel .tickets-button:hover {
   background: #f4b300;
   background: -moz-linear-gradient(top,  #f4b300 0%, #ff802b 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4b300), color-stop(100%,#ff802b));
@@ -623,7 +697,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0084ff', end
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4b300', endColorstr='#ff802b',GradientType=0 );
 }
 
-#event-list .event .right-panel .tickets-button:active {
+#eventList .event .right-panel .tickets-button:active {
 background: #ff7516;
 background: -moz-linear-gradient(top,  #ff7516 0%, #f1a400 100%);
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7516), color-stop(100%,#f1a400));
@@ -634,27 +708,27 @@ background: linear-gradient(to bottom,  #ff7516 0%,#f1a400 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7516', endColorstr='#f1a400',GradientType=0 );
 }
 
-#event-list .event .right-panel  {
+#eventList .event .right-panel  {
   background-color: #ddd;
 }
 
-#event-list .event .right-panel .actions div:active {
+#eventList .event .right-panel .actions div:active {
   background-color: #555;
 }
 
-#event-list .event .right-panel .actions .hide-button,
-#event-list .event .right-panel .actions .publish-button {
+#eventList .event .right-panel .actions .hide-button,
+#eventList .event .right-panel .actions .publish-button {
   border-bottom: 1px solid #B3B3B3;
   border-right: 1px solid #B3B3B3;
 }
 
-#event-list .event-short .right-panel .no-tickets {
+#eventList .event-short .right-panel .no-tickets {
   line-height: 90px;
   text-align: center;
   font-weight: 700;
 }
 
-#event-list .sw-panel {
+#eventList .sw-panel {
   float: left;
   position: relative;
   padding: 0;
@@ -663,18 +737,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7516', end
   background: #f7f7f7;
 }
 
-#event-list .sw-panel table,
-#event-list .se-panel table {
+#eventList .sw-panel table,
+#eventList .se-panel table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
   text-align: right;
 }
 
-#event-list .sw-panel table tbody tr td,
-#event-list .sw-panel table thead tr th,
-#event-list .se-panel table tbody tr td,
-#event-list .se-panel table thead tr th {
+#eventList .sw-panel table tbody tr td,
+#eventList .sw-panel table thead tr th {
   padding: 0 10px;
   height: 28px;
   line-height: 28px;
@@ -682,68 +754,64 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7516', end
   border-bottom: 1px solid #e6e6e6;
 }
 
-#event-list .se-panel table tbody tr td,
-#event-list .se-panel table thead tr th {
+#eventList .se-panel table tbody tr td,
+#eventList .se-panel table thead tr th {
   border-bottom-color: #ddd;
   cursor: pointer;
 }
 
-#event-list .sw-panel table tbody tr:first-child td,
-#event-list .sw-panel table thead tr:first-child th,
-#event-list .se-panel table tbody tr:first-child td,
-#event-list .se-panel table thead tr:first-child th {
+#eventList .sw-panel table tbody tr:first-child td,
+#eventList .sw-panel table thead tr:first-child th {
   height: 29px;
   line-height: 29px;
   border-top: none;
 }
 
-#event-list .sw-panel table tbody tr:last-child td,
-#event-list .sw-panel table thead tr:last-child th,
-#event-list .se-panel table tbody tr:last-child td,
-#event-list .se-panel table thead tr:last-child th {
+#eventList .sw-panel table tbody tr:last-child td,
+#eventList .sw-panel table thead tr:last-child th {
   height: 29px;
   border-bottom: none;
 }
 
-#event-list .event .sw-panel table.sales-stats thead th {
+#eventList .event .sw-panel table.sales-stats thead th {
   font-weight: 700;
   border-bottom: 1px solid #e6e6e6;
 }
 
-#event-list .event .sw-panel table.sales-stats tbody td {
+#eventList .event .sw-panel table.sales-stats tbody td {
   border-top: 1px solid #fff;
 }
 
-#event-list .event .sw-panel table.sales-stats tr td:last-child,
-#event-list .event .sw-panel table tr th:last-child {
+#eventList .event .sw-panel table.sales-stats tr td:last-child,
+#eventList .event .sw-panel table tr th:last-child {
   padding-right: 20px;
 }
 
-#event-list .event .sw-panel table.sales-stats tr .sales-quantity {
+#eventList .event .sw-panel table.sales-stats tr .sales-quantity {
   text-align: left;
 }
 
-#event-list .sw-panel table.tickets-table tr .number {
+#eventList .sw-panel table.tickets-table tr .number {
   width: 40px;
 }
 
-#event-list .sw-panel table.tickets-table tr .ticket-name {
+#eventList .sw-panel table.tickets-table tr .ticket-name {
   text-align: left;
   font-weight: 700;
   padding-left: 20px;
   width: 240px;
 }
 
-#event-list .sw-panel table.tickets-table tr .owner-name {
+#eventList .sw-panel table.tickets-table tr .owner-name {
   text-align: left;
   width: 220px;
 }
 
-#event-list .sw-panel table.tickets-table tr .ticket-name {
+#eventList .sw-panel table.tickets-table tr .ticket-name {
 }
 
-#event-list .event .se-panel,
-#event-list .event-short .se-panel {
+#eventList .event .se-panel,
+#eventList .event-short .se-panel {
   float: left;
   position: relative;
   padding: 0;
@@ -752,44 +820,254 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7516', end
   background: #ededed;
 }
 
-#event-list .event .se-panel {
+#eventList .event .se-panel {
   height: 60px;
 }
 
-#event-list .event .se-panel div {
-  height: 29px;
-  width: 220px;
-  text-align: center;
-  line-height: 29px;
-  font-weight: 400;
-  cursor: pointer;
+
+
+
+/* BEGIN STATUS REDESIGN
+---------------------------------------------------------------------------------------------------- */
+
+#eventList .status-container {
+  display: block;
+  clear: both;
+  float: right;
 }
 
-#event-list .event .se-panel div:hover {
+#eventList .event-status {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#eventList .event-status .icon_wrapper {
+  margin-right: 4px;
+  display: block;
+  height: inherit;
+  float: left;
+}
+
+#eventList .event-status .icon {
+  display: block;
+  float: left;
+  background: url(../img/profile-sprite.png) no-repeat;
+}
+
+#eventList .closed_sales-event span {
+  color: #5aa500;
+}
+
+#eventList .closed_sales-event .icon_wrapper {
+  padding: 2px 0 1px 0;
+}
+
+#eventList .closed_sales-event .icon {
+  background-position: -100px -76px;
+  width: 16px;
+  height: 16px;
+}
+
+#eventList .published-event span {
+  color: #5aa500;
+}
+
+#eventList .published-event .icon_wrapper {
+  padding: 2px 0 1px 0;
+}
+
+#eventList .published-event .icon {
+  background-position: -124px -100px;
+  width: 16px;
+  height: 16px;
+}
+
+#eventList .canceled-event span {
+  color: #cc0000;
+}
+
+#eventList .canceled-event .icon_wrapper {
+  padding: 2px 0 1px 0;
+}
+
+#eventList .canceled-event .icon {
+  background-position: -124px -76px;
+  width: 16px;
+  height: 16px;
+}
+
+#eventList .particular-event span {
+  color: #0071bc;
+}
+
+#eventList .particular-event .icon_wrapper {
+  padding: 2px 0 1px 0;
+}
+
+#eventList .particular-event .icon {
+  background-position: -148px -100px;
+  width: 16px;
+  height: 16px;
+}
+
+#eventList .hidden-event span {
+  color: #ff9600;
+}
+
+#eventList .hidden-event .icon_wrapper {
+  padding: 6px 0 5px 0;
+}
+
+#eventList .hidden-event .icon {
+  background-position: -144px -80px;
+  width: 24px;
+  height: 8px;
+}
+
+#eventList .draft-event .icon_wrapper {
+  padding: 2px 0;
+}
+
+#eventList .draft-event .icon {
+  background-position: -174px -100px;
+  width: 12px;
+  height: 15px;
+}
+/* END STATUS REDESIGN
+---------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* BEGIN SE-PANEL REDESIGN
+---------------------------------------------------------------------------------------------------- */
+
+#eventList .se-panel table {
+	table-layout: fixed;
+}
+
+#eventList .se-panel td {
+  height: 28px;
+  line-height: 28px;
+  border-top: 1px solid #fff;
+	border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #fff;
+}
+
+#eventList .se-panel td:hover {
   background-color: #e6e6e6;
 }
 
-#event-list .event .se-panel div:active {
-  background-color: #555;
+#eventList .se-panel td:active {
   color: #fff;
+  background-color: #555;
+	border-color: #555;
 }
 
-#event-list .event .se-panel .people-attending {
-  border-bottom: solid 1px #ccc;
+#eventList .se-panel tr:first-child td {
+	height: 29px;
+  line-height: 29px;
+  border-top: none;
 }
 
-#event-list .event .se-panel .people-attending:active {
-  border-bottom: solid 1px #555;
+#eventList .se-panel tr:last-child td {
+	height: 29px;
+  line-height: 29px;
+  border-bottom: none;
 }
 
-#event-list .event .se-panel .close-sales {
-  border-top: solid 1px #fff;
+#eventList .se-panel td:first-child {
+  border-left: none;
 }
 
-#event-list .event .se-panel .close-sales:active {
-  border-top: solid 1px #555;
+#eventList .se-panel td:last-child{
+  border-right: none;
 }
 
-#event-list .se-panel .tickets-table-actions {
-  text-align: center;
+#eventList table .action-button {
+	float: none;
 }
+
+#eventList .se-panel .action-button {
+  font-weight: 400;
+}
+
+#eventList .closed_sales-button span, #eventList .closed_sales-button:active span {
+  color: #ccc;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.9);
+}
+
+#eventList .closed_sales-button, #eventList .closed_sales-button:hover, #eventList .closed_sales-button:active {
+  background: #eee !important;
+  cursor: not-allowed;
+	border-color: #eee !important;
+}
+
+#eventList .se-panel .icon_wrapper {
+  margin-right: 2px;
+}
+
+#eventList .se-panel .action-button .icon {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+#eventList .people_attending-button .icon {
+  background-position: -48px -77px;
+  width: 24px;
+  height: 16px;
+}
+
+#eventList .people_attending-button:active .icon {
+  background-position: -48px -101px;
+}
+
+#eventList .close_sales-button .icon {
+  background-position: -76px -76px;
+  width: 16px;
+  height: 16px;
+}
+
+#eventList .close_sales-button:active .icon {
+  background-position: -76px -100px;
+}
+
+#eventList .closed_sales-button .icon {
+  background-position: -100px -100px;
+  width: 16px;
+  height: 16px;
+}
+
+/* My tickets */
+#eventList .print_one-button .icon {
+  background-position: -4px -77px;
+  width: 16px;
+  height: 14px;
+}
+
+#eventList .print_one-button:active .icon {
+  background-position: -4px -101px;
+}
+
+#eventList .send_one_sms-button .icon_wrapper {
+}
+
+#eventList .send_one_sms-button .icon {
+  background-position: -31px -75px;
+  width: 10px;
+  height: 17px;
+}
+
+#eventList .send_one_sms-button:active .icon {
+  background-position: -31px -99px;
+}
+
+/* END SE-PANEL REDESIGN
+---------------------------------------------------------------------------------------------------- */
