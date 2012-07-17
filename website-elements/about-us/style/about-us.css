@@ -1,3 +1,4 @@
+
 .box-footer-thin {
 	position: relative;
   padding-top: 10px;
@@ -55,7 +56,7 @@
 	padding-top: 40px;
 }
 
-#aboutUs .pop-up .profile-picture-container {
+.about-us-pop-up .profile-picture-container {
 	float: left;
 	-webkit-box-shadow: inset -8px 0px 20px -6px rgba(0, 0, 0, 0.5);
 	   -moz-box-shadow: inset -8px 0px 20px -6px rgba(0, 0, 0, 0.5);
@@ -64,7 +65,7 @@
 	position: relative;
 }
 
-#aboutUs .pop-up img {
+.about-us-pop-up img {
 	width: 300px;
 	height: 400px;
 	display: block;
@@ -72,7 +73,7 @@
 	position: relative;
 }
 
-#aboutUs .pop-up .description-frame {
+.about-us-pop-up .description-frame {
 	width: 260px;
 	height: 360px;
 	float: left;
@@ -83,11 +84,32 @@
 	        box-shadow: inset 8px 0px 12px -6px rgba(0, 0, 0, 0.5);
 }
 
-#aboutUs .pop-up .description-frame > div {
+.about-us-pop-up .description-frame > div {
 	overflow: scroll;
 	width: 260px;
 	height: 360px;
 }
+
+
+
+
+
+
+
+/* NEW CODE */
+
+#aboutUs .text-description {
+	float: left;
+	width: 440px;
+	padding-right: 20px;
+}
+
+#aboutUs .description iframe {
+	float: left;
+}
+
+
+
 
 
 
