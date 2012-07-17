@@ -4,10 +4,14 @@
 
 <head>
     <title>Ingresse &ndash; About us</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css"/>
     <link href="../../style/prometheus.css" rel="stylesheet" type="text/css"/>
     <link href="style/about-us.css" rel="stylesheet" type="text/css"/>
-    <link href="style/style.css" rel="stylesheet" type="text/css"/>
+    <link href="source/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+        <script src="source/jquery.fancybox.js" type="text/javascript"></script>
+    
 </head>
 
 <body id="aboutUs">
@@ -15,7 +19,7 @@
     <div class="container center">
 
         <div class="box shadow span12">
-            <h1>About us <small>&mdash; Discover the incredible team behind the start-up!</small></h1>
+            <h1>About us <small>&mdash; What we do, who we are</small></h1>
         </div>
         
         <div class="box shadow span12">
@@ -27,7 +31,13 @@
 
         </div>
 
-        <div class="poster-container span3">
+
+        <section>
+            <!-- <div class="page-header">
+                <h1>The team <small>&mdash; Discover the amazing people behind the product</small></h1>
+            </div> -->
+
+        <a class="poster-container span3" href="#adrian" rel="team-members">
             <div class="box-header shadow">
                     <img class="profile-picture" src="img/team/adrian-mini.jpg" alt=""/>
                 <p class="member-name">Adrian</p>
@@ -36,9 +46,9 @@
                 <p><em>o veloz</em></p>
             </div>
             <div class="box-footer-thin shadow"></div>
-        </div>
+        </a>
 
-        <div class="poster-container span3">
+        <a class="poster-container span3" href="#anthony" rel="team-members">
             <div class="box-header shadow">
                     <img class="profile-picture" src="img/team/anthony-mini.jpg" alt=""/>
                 <p class="member-name">Anthony</p>
@@ -47,20 +57,20 @@
                 <p><em>o homem de "Java"</em></p>
             </div>
             <div class="box-footer-thin shadow"></div>
-        </div>
+        </a>
         
-        <div class="poster-container span3">
+        <a class="poster-container span3" href="#ayrton" rel="team-members">
             <div class="box-header shadow">
                     <img class="profile-picture" src="img/team/ayrton-mini.jpg" alt=""/>
                 <p class="member-name">Ayrton</p>
             </div>
             <div class="box-back shadow member-function">
-                <p><em>developman</em></p>
+                <p><em>the ninja</em></p>
             </div>
             <div class="box-footer-thin shadow"></div>
-        </div>
+        </a>
         
-        <div class="poster-container span3">
+        <a class="poster-container span3" href="#edvan" rel="team-members">
             <div class="box-header shadow">
                     <img class="profile-picture" src="img/team/edvan-mini.jpg" alt=""/>
                 <p class="member-name">Edvan</p>
@@ -69,9 +79,9 @@
                 <p><em>o aprendiz</em></p>
             </div>
             <div class="box-footer-thin shadow"></div>
-        </div>
+        </a>
         
-        <div class="poster-container span3">
+        <a class="poster-container span3" href="#gabriel" rel="team-members">
             <div class="box-header shadow">
                     <img class="profile-picture" src="img/team/gabriel-mini.jpg" alt=""/>
                 <p class="member-name">Gabriel</p>
@@ -81,9 +91,9 @@
             </div>
             <div class="box-footer-thin shadow"></div>
             <div class="co_founder-ribbon"></div>
-        </div>
+        </a>
         
-        <div class="poster-container span3">
+        <a class="poster-container span3" href="#hiara" rel="team-members">
             <div class="box-header shadow">
                     <img class="profile-picture" src="img/team/hiara-mini.jpg" alt=""/>
                 <p class="member-name">Hiara</p>
@@ -92,20 +102,20 @@
                 <p><em>a princesa dourada</em></p>
             </div>
             <div class="box-footer-thin shadow"></div>
-        </div>
+        </a>
         
-        <div class="poster-container span3">
+        <a class="poster-container span3" href="#henrique" rel="team-members">
             <div class="box-header shadow">
-                    <img class="profile-picture" src="../../img/ressources/feist.jpg" alt=""/>
-                <p class="member-name">Leandro</p>
+                    <img class="profile-picture" src="img/team/henrique-mini.jpg" alt=""/>
+                <p class="member-name">Henrique</p>
             </div>
             <div class="box-back shadow member-function">
                 <p><em>o illustrador</em></p>
             </div>
             <div class="box-footer-thin shadow"></div>
-        </div>
+        </a>
         
-        <div class="poster-container span3">
+        <a class="poster-container span3" href="#marcelo" rel="team-members">
             <div class="box-header shadow">
                     <img class="profile-picture" src="img/team/marcelo-mini.jpg" alt=""/>
                 <p class="member-name">Marcelo</p>
@@ -115,9 +125,9 @@
             </div>
             <div class="box-footer-thin shadow"></div>
             <div class="co_founder-ribbon"></div>
-        </div>
+        </a>
         
-        <div class="poster-container span3">
+        <a class="poster-container span3" href="#marcello" rel="team-members">
             <div class="box-header shadow">
                     <img class="profile-picture" src="img/team/marcello-mini.jpg" alt=""/>
                 <p class="member-name">Marcello</p>
@@ -126,53 +136,42 @@
                 <p><em>o charada</em></p>
             </div>
             <div class="box-footer-thin shadow"></div>
-        </div>
+        </a>
         
-        <div class="poster-container span3">
+        <a class="poster-container span3" href="#mario" rel="team-members">
             <div class="box-header shadow">
-                    <img class="profile-picture" src="../../img/ressources/feist.jpg" alt=""/>
-                <p class="member-name">Megan</p>
-            </div>
-            <div class="box-back shadow member-function">
-                <p><em>mulher maravilha</em></p>
-            </div>
-            <div class="box-footer-thin shadow"></div>
-        </div>
-        
-        <div class="poster-container span3">
-            <div class="box-header shadow">
-                    <img class="profile-picture" src="../../img/ressources/feist.jpg" alt=""/>
+                    <img class="profile-picture" src="img/team/mario-mini.jpg" alt=""/>
                 <p class="member-name">Mario</p>
             </div>
             <div class="box-back shadow member-function">
                 <p><em>mestre jedi</em></p>
             </div>
             <div class="box-footer-thin shadow"></div>
-        </div>
+        </a>
         
-        <div class="poster-container span3">
+        <a class="poster-container span3" href="#pedro" rel="team-members">
             <div class="box-header shadow">
-                    <img class="profile-picture" src="../../img/ressources/feist.jpg" alt=""/>
+                    <img class="profile-picture" src="img/team/pedro-mini.jpg" alt=""/>
                 <p class="member-name">Pedro</p>
             </div>
             <div class="box-back shadow member-function">
                 <p><em>caçador de talentos</em></p>
             </div>
             <div class="box-footer-thin shadow"></div>
-        </div>
+        </a>
         
-        <div class="poster-container span3">
+        <a class="poster-container span3" href="#rafael" rel="team-members">
             <div class="box-header shadow">
-                    <img class="profile-picture" src="../../img/ressources/feist.jpg" alt=""/>
+                    <img class="profile-picture" src="img/team/rafael-mini.jpg" alt=""/>
                 <p class="member-name">Rafael</p>
             </div>
             <div class="box-back shadow member-function">
                 <p><em>o dono da festa</em></p>
             </div>
             <div class="box-footer-thin shadow"></div>
-        </div>
+        </a>
         
-        <div class="poster-container span3">
+        <a class="poster-container span3" href="#robi" rel="team-members">
             <div class="box-header shadow">
                     <img class="profile-picture" src="img/team/robi-mini.jpg" alt=""/>
                 <p class="member-name">Robi</p>
@@ -182,9 +181,9 @@
             </div>
             <div class="box-footer-thin shadow"></div>
             <div class="co_founder-ribbon"></div>
-        </div>
+        </a>
         
-        <div class="poster-container span3">
+        <a class="poster-container span3" href="#rodrigo" rel="team-members">
             <div class="box-header shadow">
                     <img class="profile-picture" src="img/team/rodrigo-mini.jpg" alt=""/>
                 <p class="member-name">Rodrigo</p>
@@ -193,19 +192,293 @@
                 <p><em>designando idéias</em></p>
             </div>
             <div class="box-footer-thin shadow"></div>
-        </div>
+        </a>
         
-        <div class="poster-container span3">
+        <a class="poster-container span3" href="#thiago" rel="team-members">
             <div class="box-header shadow">
-                    <img class="profile-picture" src="../../img/ressources/feist.jpg" alt=""/>
+                    <img class="profile-picture" src="img/team/thiago-mini.jpg" alt=""/>
                 <p class="member-name">Thiago</p>
             </div>
             <div class="box-back shadow member-function">
                 <p><em>coletor de eventos</em></p>
             </div>
             <div class="box-footer-thin shadow"></div>
+        </a>
+    </section>
+        
+        
+    <section>
+        <div class="page-header">
+            <h1>Social networks <small>&mdash; What people say about us</small></h1>
         </div>
         
+        <div class="box shadow span6">
+            <iframe id="f8943d49c" name="f7f5794d4" scrolling="no" style="border: none; overflow: hidden; height: 260px; width: 420px; " class="fb_ltr" src="https://www.facebook.com/plugins/likebox.php?api_key=209768912441343&amp;border_color=%23ffffff&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D9%23cb%3Df61236668%26origin%3Dhttps%253A%252F%252Fwww.ingresse.com.br%252Ff2c06c2034%26domain%3Dwww.ingresse.com.br%26relation%3Dparent.parent&amp;colorscheme=light&amp;header=false&amp;height=258&amp;href=http%3A%2F%2Fwww.facebook.com%2Fingresse&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=347"></iframe></iframe>
+        </div>
+        <div class="box shadow span6" style="height: 263px">
+        <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+        <script>
+        new TWTR.Widget({
+          version: 2,
+          type: 'profile',
+          rpp: 3,
+          interval: 30000,
+          width: 420,
+          height: 320,
+          theme: {
+            shell: {
+              background: '#ffffff',
+              color: '#333333'
+            },
+            tweets: {
+              background: '#ffffff',
+              color: '#5c5c5c',
+              links: '#ff9500'
+            }
+          },
+          features: {
+            scrollbar: false,
+            loop: false,
+            live: false,
+            behavior: 'all'
+          }
+        }).render().setUser('ingresse').start();
+        </script>
+        </div>
+        </section>
+        
+        <section>
+            <div class="page-header">
+                <h1>About <small>&mdash; Presentation video and event guide</small></h1>
+            </div>
+        <div class="box shadow span6">
+            <iframe src="http://player.vimeo.com/video/33843608" width="420" height="236" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+        
+        <div class="box shadow span6 guia">
+            <a href="htpp://guia.ingresse.com.br/" target="blank"><img src="http://guia.ingresse.com.br/wp-content/uploads/2011/11/header_guia_ingresse.png" width="350px" alt="Guia Ingresse"/></a>
+            <p>Visite o nosso guia de eventos</p>
+        </div>
+        </section>
     </div>
+    
+    
+    
+    
+    
+    <div style="display:none">
+        <div id="adrian" class="pop-up">
+            <div class="profile-picture-container">
+                <img src="img/team/adrian.jpg"></img>
+            </div>
+            <div class="description-frame">
+                <div>
+                <h3>Adrian Ibarra, the fast <small>&mdash; promoter e representante de vendas</small></h3>
+                <p>Manauense, 24 anos, Adrian é rápido em associação e execução de tarefas, cultiva bons relacionamentos interpessoais e visa sempre contribuir de forma significativa no Ingresse. Adora músicas, carros, esportes, adrenalina, aventuras e está sempre bem disposto. Baladeiro de plantão, Adrian está sempre por dentro das melhores baladas da cidade e do mundo. Sempre muito criativo, Adrian sai caçando eventos pela cidade como Blade caça vampiros.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="anthony" class="pop-up">
+               <div class="profile-picture-container">
+                   <img src="img/team/anthony.jpg"></img>
+               </div>
+               <div class="description-frame">
+                   <div>
+                   <h3>Anthony Marques, o homem de "Java" <small>&mdash; desenvolvedor</small></h3>
+                   <p>Manauense, estudante Tecnologia em Desenvolvimento de Software, apaixonado por Java e Arquitetura de Software. Anthony já trabalhou no time de gestão da informação voluntariamente na AIESEC. Atualmente, é membro do time de desenvolvimento estratégico - colaborando em fóruns sobre computação. Desenvolveu o "LeDinamica", sistema para gerenciar dinâmicas de programação. É apaixonado por carnaval, tecnologia e exercícios físicos.</p>
+                   </div>
+               </div>
+           </div>
+           
+           
+           <div id="ayrton" class="pop-up">
+               <div class="profile-picture-container">
+                   <img src="img/team/ayrton.jpg"></img>
+               </div>
+               <div class="description-frame">
+                   <div>
+                   <h3>Ayrton Araújo, the ninja <small>&mdash; desenvolvedor</small></h3>
+                   <p>Conquistou o 2o lugar no hackatona, primeira edição em Manaus, em seu primeiro período de curso com o projeto "Recomendação de Eventos através da API do Last.fm", em 2012. Ayrton tem feito bom proveitos dos prêmios e sua camisa do Iron Man é tão disputada que mal parou em suas mãos. Ativo na comunidade open source deste 2007, tornou-se membro do Conselho Brasileiro da Comunidade Ubuntu, em 2012. Já realizou palestras em congressos e universidades com temas relacionados a programação, desenvolvimento, open source e acessibilidade, desde 2008.</p>
+                   </div>
+               </div>
+           </div>
+           
+           <div id="edvan" class="pop-up">
+               <div class="profile-picture-container">
+                   <img src="img/team/edvan.jpg"></img>
+               </div>
+               <div class="description-frame">
+                   <div>
+                   <h3>Edvan Fleury, o aprendiz <small>&mdash; chefe de comunicação</small></h3>
+                   <p>Um sonhador por definição. Ele acredita que sempre é possível aprender em todos os momentos da vida. Edvan é fascinado por tecnologia, música, séries de Tv e ama projetos em comunicação de baixo custo. Concorreu duas vezes ao Intercom, evento de comunicação mais importante do Brasil, onde ganhou três vezes o primeiro lugar com projetos de vídeo e de rádio, sendo um voltado para a área empresarial. Antes de estudar comunicação, se aventurou em telecomunicações, engenharia, química e letras, mas sua paixão mesmo sempre foi a arte de comunicar. A prova disso foi quando largou tudo para estudar Comunicação Social na Universidade Federal do Amazonas (Ufam). Edvan já trabalhou como repórter de economia, de cidades, em televisão, em revista, em assessoria de comunicação e também já foi supervisor de marketing em uma rede de lojas em Manaus, no Amazonas.</p>
+                   <p>Artigos:</p>
+                   <ul>
+                       <li><a target="_blank" href="http://www.intercom.org.br/papers/nacionais/2009/expocom/EX18-0210-1.pdf">Intercom: Cartas de Margot</a></li>
+                       <li><a target="_blank" href="http://www.intercom.org.br/papers/nacionais/2011/expocom/EX26-0083-1.pdf">Intercom: Radiojornal Saúde &amp; Você</a></li>
+                       <li><a target="_blank" href="http://dap.ufam.edu.br/congresso/Resumos/humanas/PIB-H_0057_2008.pdf">XVIII Congresso de Iniciação Científica da UFAM: Resumo da pesquisa sobre a cultura juvenil indie no Amazonas (Pibic 2008)</a></li>
+                       <li><a target="_blank" href="http://www.intercom.org.br/papers/nacionais/2011/expocom/EX26-0078-1.pdf">Intercom: Documentário em aúdio “Fala Pirata”</a></li>
+                   </ul>
+                   </div>
+               </div>
+           </div>
+        
+    <div id="gabriel" class="pop-up">
+        <div class="profile-picture-container">
+            <img src="img/team/gabriel.jpg"></img>
+        </div>
+        <div class="description-frame">
+            <div>
+            <h3>Gabriel Benarrós, o pensador <small>&mdash; co-fundador, CEO</small></h3>
+            <p>Manauense, Gabriel estudou Economia Comportamental na Universidade de Stanford. Gabriel é fascinado por estudos comportamentais, técnicas de negociação e mediação de conflitos. Membro da companhia teatral Stanford Improvisers (SIMPS), lidera workshops para grupos de trabalho que visam melhorar a comunicação e estimular a criatividade de seus membros. Gabriel finalizou o Ensino Médio em dois anos, sendo aceito em Medicina e Direito e em 16 faculdades americanas. Designer amador (<a href="http://www.bielart.com/" target="_blank">www.bielart.com</a>), Gabriel trabalhou como tradutor na Itália, mochilou pela Venezuela e organizou +100 eventos como social manager no Vale do Silício, Califórnia.</p>
+            <p>Artigos:</p>
+            <ul>
+                <li><a target="_blank" href="http://www.estudar.org.br/institucional/casos-de-sucesso/gabriel-rabelo">Fundação Estudar: Histórias Inspiradoras</a></li>
+                <li><a target="_blank" href="http://veja.abril.com.br/210508/p_116.shtml">Artigo Veja: Harvard ficou mais perto</a></li>
+                <li><a target="_blank" href="http://www.estudar.org.br/universo-fe/inspiracao/corram-mais-riscos---bolsista-gabriel-benarros">Fundação Estudar: Corram Mais Riscos</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="hiara" class="pop-up">
+        <div class="profile-picture-container">
+            <img src="img/team/hiara.jpg"></img>
+        </div>
+        <div class="description-frame">
+            <div>
+            <h3>Hiara <small>&mdash; time junior</small></h3>
+            <p>Paulista e nômade, Henrique tem 16 anos e domina 12 linguagens de programação. Atualmente, treina para maratonas de programação com professores do ITA que o aceitaram pelo seu excelente desempenho acadêmico. Ele é apaixonado por empreendedorismo e produtos Apple. Almeja lançar um aplicativo na App Store. Fan da área de jogos online, trabalha também como COO da startup Rise Games. Ele sonha cursar graduação na universidade de Stanford, como vários de seus colegas de equipe. Stanford que se prepare.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="henrique" class="pop-up">
+        <div class="profile-picture-container">
+            <img src="img/team/henrique.jpg"></img>
+        </div>
+        <div class="description-frame">
+            <div>
+            <h3>Henrique Dubugras, menino prodígio <small>&mdash; time junior</small></h3>
+            <p>Paulista e nômade, Henrique tem 16 anos e domina 12 linguagens de programação. Atualmente, treina para maratonas de programação com professores do ITA que o aceitaram pelo seu excelente desempenho acadêmico. Ele é apaixonado por empreendedorismo e produtos Apple. Almeja lançar um aplicativo na App Store. Fan da área de jogos online, trabalha também como COO da startup Rise Games. Ele sonha cursar graduação na universidade de Stanford, como vários de seus colegas de equipe. Stanford que se prepare.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="marcelo" class="pop-up">
+        <div class="profile-picture-container">
+            <img src="img/team/marcelo.jpg"></img>
+        </div>
+        <div class="description-frame">
+            <div>
+            <h3>Marcelo Henrique, o arquiteto <small>&mdash; co-fundador, CWA</small></h3>
+            <p>Manauense, estuda ciência da computação e trabalha há +3 anos com construção de ferramentas e interfaces para a Internet. Marcelo gere os nossos projetos desenhando toneladas de mockups, diagramas e Google docs. Ele é a conexão entre as ideias e o código. Desenvolve mantendo sempre em mente o usuário do produto e a equipe de programadores. Marcelo foi diretor da área de gestão da informação voluntário na AIESEC. Durante o Ensino Médio idealizou e desenvolveu o Áudioteste, software apresentado na FEBRACE e SBC, que auxilia deficientes visuais a navegar na Internet. Marcelo é apaixonado por Economia e autor do blog <a href="http://www.henriquediz.com.br" target="_blank">www.henriquediz.com.br</a>. Logo ele terá que contar aos pais que fundou esta empresa.</p>
+            <p>Artigos:</p>
+            <ul>
+                                   <li><a target="_blank" href="http://www.educacional.com.br/entrevistas/ent_educ_texto.asp?Id=270576">Educacional: Entrevista sobre projeto ÁudioTeste</a></li>
+                                   <li><a target="_blank" href="http://www.ufcg.edu.br/prt_ufcg/assessoria_imprensa/mostra_noticia.php?codigo=8455">Artigo Universidade Federal de Campina Grande: Projeto ÁudioTeste</a></li>
+                                   <li><a target="_blank" href="http://acritica.uol.com.br/manaus/Amazonas-Amazonia-Manaus-sedia-reality-show-informatica_0_643135732.html">Portal aCrítica: Manaus sedia reality show de informática</a></li>
+                               </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="marcello" class="pop-up">
+        <div class="profile-picture-container">
+            <img src="img/team/marcello.jpg"></img>
+        </div>
+        <div class="description-frame">
+            <div>
+            <h3>Marcello Henrique, o arquiteto <small>&mdash; CWA</small></h3>
+            <p>Manauense, estuda ciência da computação e trabalha há +3 anos com construção de ferramentas e interfaces para a Internet. Marcelo gere os nossos projetos desenhando toneladas de mockups, diagramas e Google docs. Ele é a conexão entre as ideias e o código. Desenvolve mantendo sempre em mente o usuário do produto e a equipe de programadores. Marcelo foi diretor da área de gestão da informação voluntário na AIESEC. Durante o Ensino Médio idealizou e desenvolveu o Áudioteste, software apresentado na FEBRACE e SBC, que auxilia deficientes visuais a navegar na Internet. Marcelo é apaixonado por Economia e autor do blog <a href="http://www.henriquediz.com.br" target="_blank">www.henriquediz.com.br</a>. Logo ele terá que contar aos pais que fundou esta empresa.</p>
+
+            </div>
+        </div>
+    </div>
+    
+    <div id="mario" class="pop-up">
+        <div class="profile-picture-container">
+            <img src="img/team/mario.jpg"></img>
+        </div>
+        <div class="description-frame">
+            <div>
+            <h3>Mario Bittencourt, Mestre Jedi <small>&mdash; desenvolvedor</small></h3>
+            <p>Manauense. Muitas coisas, jovem padawan, Mário já viu. Mário foi professor na Fundação Centro de Análise, Pesquisa e Inovação Tecnológica (FUCAPI) e no Instituto Federal de Educação Tecnológica. Também trabalhou como analista na IBM Brasil e desenvolveu +200 sites (desde sites de vendas coletivas até sites intranet) como CIO por 14 anos. Mário é faixa-preta em testes de unidade e perito em arquitetura de programação. A força, com ele, está.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="pedro" class="pop-up">
+        <div class="profile-picture-container">
+            <img src="img/team/pedro.jpg"></img>
+        </div>
+        <div class="description-frame">
+            <div>
+            <h3>Pedro Sanzovo, o multiplicador de valor <small>&mdash; relações humanas, chefe de recrutameto</small></h3>
+            <p>Paulista, Pedro é mais um da equipe a estudar em Stanford. Aluno de Ciência da Computação e Economia, Pedro fundou junto com amigos o BSCUE – instituição que orienta e aconselha alunos brasileiros interessados em cursar universidade nos EUA. Pedro é medalista na Olimpíada Brasileira de Astronomia, Olimpíada Brasileira de Física e Olimpíada Estadual de Química em São Paulo. Logo no primeiro trimestre em Stanford, recebeu o Boothe Prize - o mais alto prêmio concedido aos calouros de Stanford - pela sua tese que demonstra as inconsistências na antiga república americana. Apaixonado por futebol e pelo Palmeiras, Pedro ainda acompanha de perto seu time de coração mesmo morando nos EUA.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="rafael" class="pop-up">
+        <div class="profile-picture-container">
+            <img src="img/team/rafael.jpg"></img>
+        </div>
+        <div class="description-frame">
+            <div>
+            <h3>Rafael Castro, o dono da festa <small>&mdash; editor Guia Ingresse</small></h3>
+            <p>Amazonense, estudante de Ciências Contábeis, mas apaixonado por Marketing e tudo o que envolva “Comunicação”. Rafael é baladeiro de plantão criou em parceria com 3 amigos o ManausNight, blog especializado em divulgação de eventos. O website cresceu atingindo 40 mil acessos/mês. Rafael tem a vida noturna de Manaus na palma da mão, mantendo contato direto com os principais organizadores de eventos. Extremamente comunicativo, Rafael administra o nosso Guia Ingresse, organiza promoções e move as redes sociais.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="robi" class="pop-up">
+        <div class="profile-picture-container">
+            <img src="img/team/robi.jpg"></img>
+        </div>
+        <div class="description-frame">
+            <div>
+            <h3>Sébastien Robaszkiewicz (a.k.a. Robi), designerd <small>&mdash; co-fundador, CCO</small></h3>
+            <p>Francês, Robi é um empreendedor recorrente com um olho (geralmente dois) para design. Fundou e desenvolveu a imagem visual da startup francesa Pionid (<a href="http://www.pionid.com" target="_blank">www.pionid.com</a>). Robi é o idelizador da nossa interface e o artista por trás da Ingresse. Apaixonado por música e arte, trabalhou por três meses na Universal Music no Departamento de Inovação. Robi é mestrando em Ciência da Computação na Universidade de Stanford. Foi vocalista da Jack’s Brothers, banda representante da École Polytechnique, onde concluiu sua graduação em engenharia após fundar a University Radio. Robi morou por um ano em alto mar a serviço da marinha francesa.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="rodrigo" class="pop-up">
+        <div class="profile-picture-container">
+            <img src="img/team/rodrigo.jpg"></img>
+        </div>
+        <div class="description-frame">
+            <div>
+            <h3>Rodrigo Oliveira, designando idéias <small>&mdash; design</small></h3>
+            <p>Manauense, estudante Tecnologia em Desenvolvimento de Software, apaixonado por Java e Arquitetura de Software. Anthony já trabalhou no time de gestão da informação voluntariamente na AIESEC. Atualmente, é membro do time de desenvolvimento estratégico - colaborando em fóruns sobre computação. Desenvolveu o "LeDinamica", sistema para gerenciar dinâmicas de programação. É apaixonado por carnaval, tecnologia e exercícios físicos.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="thiago" class="pop-up">
+        <div class="profile-picture-container">
+            <img src="img/team/thiago.jpg"></img>
+        </div>
+        <div class="description-frame">
+            <div>
+            <h3>Thiago Makal, coletor de eventos <small>&mdash; promoter e representante de vendas</small></h3>
+            <p>Manauense, estudante Tecnologia em Desenvolvimento de Software, apaixonado por Java e Arquitetura de Software. Anthony já trabalhou no time de gestão da informação voluntariamente na AIESEC. Atualmente, é membro do time de desenvolvimento estratégico - colaborando em fóruns sobre computação. Desenvolveu o "LeDinamica", sistema para gerenciar dinâmicas de programação. É apaixonado por carnaval, tecnologia e exercícios físicos.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+    	$("a.poster-container").fancybox({
+    		'margin'        :   0,
+    		'padding'       :   0,
+    	});
+
+    });
+    </script>
 </body>
 </html>

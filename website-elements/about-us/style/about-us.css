@@ -5,9 +5,11 @@
   z-index: 1;
 }
 
-.poster-container {
+.poster-container, .poster-container:hover, .poster-container:visited {
 	position: relative;
 	cursor: pointer;
+	text-decoration: none;
+	color: #333;
 }
 
 .profile-picture {
@@ -45,6 +47,46 @@
 
 #aboutUs .member-function p {
 	line-height: 30px;
+}
+
+#aboutUs .guia {
+	text-align: center;
+	height: 219px;
+	padding-top: 40px;
+}
+
+#aboutUs .pop-up .profile-picture-container {
+	float: left;
+	-webkit-box-shadow: inset -8px 0px 20px -6px rgba(0, 0, 0, 0.5);
+	   -moz-box-shadow: inset -8px 0px 20px -6px rgba(0, 0, 0, 0.5);
+	        box-shadow: inset -8px 0px 20px -6px rgba(0, 0, 0, 0.5);
+	z-index: 8036 !important;
+	position: relative;
+}
+
+#aboutUs .pop-up img {
+	width: 300px;
+	height: 400px;
+	display: block;
+	z-index: 8035;
+	position: relative;
+}
+
+#aboutUs .pop-up .description-frame {
+	width: 260px;
+	height: 360px;
+	float: left;
+	background: #fff;
+	padding: 20px;
+	-webkit-box-shadow: inset 8px 0px 12px -6px rgba(0, 0, 0, 0.5);
+	   -moz-box-shadow: inset 8px 0px 12px -6px rgba(0, 0, 0, 0.5);
+	        box-shadow: inset 8px 0px 12px -6px rgba(0, 0, 0, 0.5);
+}
+
+#aboutUs .pop-up .description-frame > div {
+	overflow: scroll;
+	width: 260px;
+	height: 360px;
 }
 
 
