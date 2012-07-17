@@ -50,12 +50,6 @@
 	line-height: 30px;
 }
 
-#aboutUs .guia {
-	text-align: center;
-	height: 219px;
-	padding-top: 40px;
-}
-
 .about-us-pop-up .profile-picture-container {
 	float: left;
 	-webkit-box-shadow: inset -8px 0px 20px -6px rgba(0, 0, 0, 0.5);
@@ -106,6 +100,11 @@
 
 #aboutUs .description iframe {
 	float: left;
+}
+
+#aboutUs .guia {
+	text-align: center;
+	padding-bottom: 36px;
 }
 
 
