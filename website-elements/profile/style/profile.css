@@ -212,6 +212,37 @@ body {
 }
 
 
+#menu-bar #myEventsSearchTerm {
+	float: right;
+	width: 220px;
+	margin-top: 7px;
+}
+
+#menu-bar #myEventsSearchTerm input {
+	width: 182px;
+	margin: 0;
+	float: right;
+}
+
+#menu-bar .search-button {
+	width: 26px;
+	height: 26px;
+	float: right;
+}
+
+#menu-bar .search-button .icon_wrapper {
+  margin: 4px;
+}
+
+#menu-bar .search-button .icon {
+  background: url(../img/profile-sprite.png) no-repeat;
+  display: block;
+  background-position: -171px -75px;
+  width: 18px;
+  height: 18px;
+}
+
+
 
 
 

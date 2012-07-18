@@ -20,201 +20,205 @@
             <div class="page-header">
                 <h1>HTML basics <small>&mdash; Get started</small></h1>
             </div>
+            
+            <!-- beginning of left column -->
+            <div class="column span6">
+                <div class="box shadow span6">
+                    <h3 class="box-title">Basics: Paragraphs and inline tags</h3>
+                    <div class="row">
+                        <p>The basic <code>&lt;p&gt;</code> tag gives this kind of text. You can add some inline formatting, where the <code>&lt;a&gt;</code> tag would give <a href="#">a link</a>, the <code>&lt;em&gt;</code> tag would give some <em>italic text</em>, the <code>&lt;strong&gt;</code> tag would give some <strong>bold text</strong>, and the <code>&lt;small&gt;</code> tag would give <small>some smaller stuff</small>.</p>
+                        <p>Note that paragraphs are separated by some white space when they appear on top of another. This is automatically handled by Prometheus.</p>
+                    </div>
+                </div>
+                <!-- end of box -->
 
-            <div class="box shadow span6">
-                <h3 class="box-title">Basics: Lists</h3>
-
+                <div class="box shadow span6">
+                    <h3 class="box-title">Basics: Headings</h3>
+                    <p>Headings are already preformated. Use the tags <code>&lt;h*&gt;</code> as you would normally do in a HTML document. You can also add a tag <code>&lt;small&gt;</code> for a subtitle or an explanatory line.</p>
+                    <div class="row">
+                        <h1>h1. Heading <small>&mdash; And some stuff</small></h1>
+                        <h2>h2. Heading <small>&mdash; And some stuff</small></h2>
+                        <h3>h3. Heading <small>&mdash; And some stuff</small></h3>
+                        <h4>h4. Heading <small>&mdash; And some stuff</small></h4>
+                        <h5>h5. Heading <small>&mdash; And some stuff</small></h5>
+                        <h6>h6. Heading <small>&mdash; And some stuff</small></h6>
+                    </div>
+                </div>
+                <!-- end of box -->
+            </div>
+            <!-- end of left column -->
+            
+            <!-- beginning of right column -->
+            <div class="column span6">
+                <div class="box shadow span6">
+                    <h3 class="box-title">Basics: Lists</h3>
+                    <div class="row">
+                        <h4>Unordered list</h4>
+                        <p><code>&lt;ul&gt;</code></p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <ul>
+                                <li>Phasellus iaculis neque</li>
+                                <li>Purus sodales ultricies</li>
+                            </ul>
+                        </li>
+                        <li>Faucibus porta lacus fringilla vel</li>
+                    </ul>
+                </div>
+                <div class="separating-dashed-line"></div>
                 <div class="row">
-                    <h4>Unordered list</h4>
-                    <p><code>&lt;ul&gt;</code></p>
-                    <ul>
+                    <h4>Unstyled list</h4>
+                    <p><code>&lt;ul class="unstyled"&gt;</code></p>
+                    <ul class="unstyled">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
                         <ul>
                             <li>Phasellus iaculis neque</li>
                             <li>Purus sodales ultricies</li>
                         </ul>
-                    </li>
-                    <li>Faucibus porta lacus fringilla vel</li>
-                </ul>
-            </div>
-
-            <div class="separating-dashed-line"></div>
-
-            <div class="row">
-                <h4>Unstyled list</h4>
-                <p><code>&lt;ul class="unstyled"&gt;</code></p>
-                <ul class="unstyled">
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Consectetur adipiscing elit</li>
-                    <ul>
-                        <li>Phasellus iaculis neque</li>
-                        <li>Purus sodales ultricies</li>
+                        <li>Faucibus porta lacus fringilla vel</li>
                     </ul>
-                </li>
-                <li>Faucibus porta lacus fringilla vel</li>
-            </ul>
+                </div>
+                <div class="separating-dashed-line"></div>
+                <div class="row">
+                    <h4>Ordered list</h4>
+                    <p><code>&lt;ol&gt;</code></p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipiscing elit</li>
+                        <li>Integer molestie lorem at massa</li>
+                    </ol>
+                </div>
+                <div class="separating-dashed-line"></div>
+                <div class="row">
+                    <h4>Description</h4>
+                    <p><code>&lt;dl&gt;</code></p>
+                    <dl>
+                        <dt>Description lists</dt>
+                        <dd>A description list is perfect for defining terms.</dd>
+                        <dt>Euismod</dt>
+                        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                    </dl>
+                </div>
+                <div class="separating-dashed-line"></div>
+                <div class="row">
+                    <h4>Horizontal description</h4>
+                    <p><code>&lt;dl class="dl-horizontal"&gt;</code></p>
+                    <dl class="dl-horizontal">
+                        <dt>Description lists</dt>
+                        <dd>A description list is perfect for defining terms.</dd>
+                        <dt>Note</dt>
+                        <dd>Horizontal description lists will truncate terms that are too long to fit in the left column fix <code>text-overflow</code>.</dd>
+                        <dt>Felis euismod semper eget lacinia</dt>
+                        <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- end of box -->
+        </div>
+        <!-- end of right column -->
+
+    </section>
+
+
+
+    <!-- GRID SYSTEM
+    ============================================================ -->
+    <section>
+        <div class="page-header">
+            <h1>Grid system <small>&mdash; 12 columns to rule them all</small></h1>
         </div>
 
-        <div class="separating-dashed-line"></div>
+        <div class="box shadow span12">
+            <h3 class="box-title">How to use it?</h3>
+            <div class="row">
+                <p>You have to assign the width of a box by adding the the class <code>span*</code> where <code>*</code> can take any integer value between <code>1</code> and <code>12</code>. This number corresponds to the number of columns the box will stand. By convention, we will preferably use multiples of 3 (<em>i.e.</em> <code>span3</code>, <code>span6</code>, <code>span9</code> and <code>span12</code>) but when necessary, any combination whose sum is 12 is fine.</p>
+            </div>
+        </div> <!-- end of div "box" -->
 
-        <div class="row">
-            <h4>Ordered list</h4>
-            <p><code>&lt;ol&gt;</code></p>
-            <ol>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Consectetur adipiscing elit</li>
-                <li>Integer molestie lorem at massa</li>
-            </ol>
+        <div class="box shadow span12">
+            <div class="row">
+                <p class="center-text"><code>span12</code></p>
+            </div>
+        </div> <!-- end of div "box" -->
+
+        <div class="box shadow span3">
+            <div class="row">
+                <p class="center-text"><code>span3</code></p>
+            </div>
+        </div> <!-- end of div "box" -->
+
+        <div class="box shadow span9">
+            <div class="row">
+                <p class="center-text"><code>span9</code></p>
+            </div>
+        </div> <!-- end of div "box" -->
+
+        <div class="box shadow span6">
+            <div class="row">
+                <p class="center-text"><code>span6</code></p>
+            </div>
+        </div> <!-- end of div "box" -->
+
+        <div class="box shadow span6">
+            <div class="row">
+                <p class="center-text"><code>span6</code></p>
+            </div>
+        </div> <!-- end of div "box" -->
+
+        <div class="box shadow span3">
+            <div class="row">
+                <p class="center-text"><code>span3</code></p>
+            </div>
+        </div> <!-- end of div "box" -->
+
+        <div class="box shadow span3">
+            <div class="row">
+                <p class="center-text"><code>span3</code></p>
+            </div>
+        </div> <!-- end of div "box" -->
+
+        <div class="box shadow span3">
+            <div class="row">
+                <p class="center-text"><code>span3</code></p>
+            </div>
+        </div> <!-- end of div "box" -->
+
+        <div class="box shadow span3">
+            <div class="row">
+                <p class="center-text"><code>span3</code></p>
+            </div>
+        </div> <!-- end of div "box" -->
+
+        <div class="box shadow span6">
+            <h3 class="box-title">Forcing boxes to belong to columns</h3>
+            <p>By default, the boxes are floating on the left. This can produce conflicts and inelegant layouts in some circumstances. It is possible to force boxes to belong to a particular column of the page. For that, you have to encapsulate the boxes into some <code>div</code> (the columns) whose classes are <code>column span*</code>.</p>
+            <p>This is what has been used in the HTML Basics section above. If there were no column encapsulation, it wouldn't be possible to have two short boxes on the left and a longer one on the right. See the example code on the right to see how to achieve this.</p>
         </div>
+        <!-- end of box -->
 
-        <div class="separating-dashed-line"></div>
-
-        <div class="row">
-            <h4>Description</h4>
-            <p><code>&lt;dl&gt;</code></p>
-            <dl>
-                <dt>Description lists</dt>
-                <dd>A description list is perfect for defining terms.</dd>
-                <dt>Euismod</dt>
-                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-                <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-            </dl>
+        <div class="box shadow span6">
+            <h3 class="box-title">Forcing columns: code</h3>
+            <div class="row">
+                <p>The general constructor to force boxes to stay in particular columns looks like:</p>
+                <pre>&lt;div class=&quot;column span6&quot;&gt;
+    &lt;div class=&quot;box shadow span6&quot;&gt;
+        &lt;!-- "paragraphs" content --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;box shadow span6&quot;&gt;
+        &lt;!-- "headings" content --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;column span6&quot;&gt;
+    &lt;div class=&quot;box shadow span6&quot;&gt;
+        &lt;!-- "lists" content --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
         </div>
-
-        <div class="separating-dashed-line"></div>
-
-        <div class="row">
-            <h4>Horizontal description</h4>
-            <p><code>&lt;dl class="dl-horizontal"&gt;</code></p>
-            <dl class="dl-horizontal">
-                <dt>Description lists</dt>
-                <dd>A description list is perfect for defining terms.</dd>
-                <dt>Note</dt>
-                <dd>Horizontal description lists will truncate terms that are too long to fit in the left column fix <code>text-overflow</code>.</dd>
-                <dt>Felis euismod semper eget lacinia</dt>
-                <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
-            </dl>
-        </div>
-
-
-    </div> <!-- end of div "box" -->
-
-    <div class="box shadow span6">
-        <h3 class="box-title">Basics: Paragraphs and inline tags</h3>
-
-        <div class="row">
-            <p>The basic <code>&lt;p&gt;</code> tag gives this kind of text. You can add some inline formatting, where the <code>&lt;a&gt;</code> tag would give <a href="#">a link</a>, the <code>&lt;em&gt;</code> tag would give some <em>italic text</em>, the <code>&lt;strong&gt;</code> tag would give some <strong>bold text</strong>, and the <code>&lt;small&gt;</code> tag would give <small>some smaller stuff</small>.</p>
-            <p>Note that paragraphs are separated by some white space when they appear on top of another.</p>
-        </div>
-
-    </div> <!-- end of div "box" -->
-
-    <div class="box shadow span6">
-        <h3 class="box-title">Basics: Headings</h3>
-
-        Headings are already preformated. Use the tags <code>&lt;h*&gt;</code> as you would normally do in a HTML document. You can also add a tag <code>&lt;small&gt;</code> for a subtitle or an explanatory line.
-
-        <div class="row">
-            <h1>h1. Heading <small>&mdash; And some stuff</small></h1>
-            <h2>h2. Heading <small>&mdash; And some stuff</small></h2>
-            <h3>h3. Heading <small>&mdash; And some stuff</small></h3>
-            <h4>h4. Heading <small>&mdash; And some stuff</small></h4>
-            <h5>h5. Heading <small>&mdash; And some stuff</small></h5>
-            <h6>h6. Heading <small>&mdash; And some stuff</small></h6>
-        </div>
-
-    </div> <!-- end of div "box" -->
-
-</section> <!-- end of section "Basics" -->
-
-
-<section> <!-- beginning of section "Grid system" -->
-    <div class="page-header">
-        <h1>Grid system <small>&mdash; 12 columns to rule them all</small></h1>
-    </div>
-
-    <div class="box shadow span12">
-        <h3 class="box-title">How to use it?</h3>
-
-        <div class="row">
-            <p>You have to assign the width of a box by adding the the class <code>span*</code> where <code>*</code> can take any integer value between <code>1</code> and <code>12</code>. This number corresponds to the number of columns the box will stand. By convention, we will preferably use multiples of 3 (<em>i.e.</em> <code>span3</code>, <code>span6</code>, <code>span9</code> and <code>span12</code>) but when necessary, any combination whose sum is 12 is fine.</p>
-        </div>
-
-    </div> <!-- end of div "box" -->
-
-
-<div class="box shadow span12">
-
-    <div class="row">
-        <p class="center-text"><code>span12</code></p>
-    </div>
-
-</div> <!-- end of div "box" -->
-
-<div class="box shadow span3">
-
-    <div class="row">
-        <p class="center-text"><code>span3</code></p>
-    </div>
-
-</div> <!-- end of div "box" -->
-
-<div class="box shadow span9">
-
-    <div class="row">
-        <p class="center-text"><code>span9</code></p>
-    </div>
-
-</div> <!-- end of div "box" -->
-
-<div class="box shadow span6">
-
-    <div class="row">
-        <p class="center-text"><code>span6</code></p>
-    </div>
-
-</div> <!-- end of div "box" -->
-
-<div class="box shadow span6">
-
-    <div class="row">
-        <p class="center-text"><code>span6</code></p>
-    </div>
-
-</div> <!-- end of div "box" -->
-
-<div class="box shadow span3">
-
-    <div class="row">
-        <p class="center-text"><code>span3</code></p>
-    </div>
-
-</div> <!-- end of div "box" -->
-
-<div class="box shadow span3">
-
-    <div class="row">
-        <p class="center-text"><code>span3</code></p>
-    </div>
-
-</div> <!-- end of div "box" -->
-
-<div class="box shadow span3">
-
-    <div class="row">
-        <p class="center-text"><code>span3</code></p>
-    </div>
-
-</div> <!-- end of div "box" -->
-
-<div class="box shadow span3">
-
-    <div class="row">
-        <p class="center-text"><code>span3</code></p>
-    </div>
-
-</div> <!-- end of div "box" -->
+        <!-- end of box -->
 </section>
 
 <section> <!-- beginning of section "Boxes" -->
@@ -222,11 +226,51 @@
         <h1>Boxes <small>&mdash; Elementary bricks of the layout explained</small></h1>
     </div>
 
-    <div class="box shadow span6">
-        <h3 class="box-title">In a nutshell</h3>
-        <div class="row">
-            <p>The general constructor for a box is similar to:</p>
-            <pre>&lt;div class=&quot;box shadow span6&quot;&gt;
+    <div class="column span6">
+        <div class="box shadow span6">
+            <h3 class="box-title">Organization in the document</h3>
+            <div class="row">
+                <p>To create a box, you simply have to create a <code>&lt;div&gt;</code> with the class <code>box</code>. In order to match the grid system, you also have to specify the width of box thanks to one of the classes <code>span*</code>. And finally, add the dropped shadow thanks to the class <code>shadow</code>.</p>
+            </div>
+        </div> <!-- end of div "box" -->
+
+        <div class="box shadow span6">
+            <h3 class="box-title">Inner organization</h3>
+            <div class="row">
+                <p>Most of the boxes should have a title. It is obtained by a <code>&lt;h3&gt;</code> tag, with the class <code>box-title</code>.</p>
+            </div>
+            <div class="separating-dashed-line"></div>
+            <div class="row">
+                <p>Each section in a box should be encapsulated in a <code>&lt;div&gt;</code> with the class <code>row</code>. The sections may or may not be separated by a horizontal line, thanks to the command <code>&lt;div class="separating-dashed-line"&gt;&lt;/div&gt;</code>.</p>
+            </div>
+        </div>
+        <!-- end of div "box" -->
+        
+        <div class="span6">
+            <div class="box-header shadow">
+                <h3 class="box-title">Boxes with back panels</h3>
+                <p>You can create this effect by encapsulating the structure of a box in a <code>div</code> with the class <code>span*</code>. Inside it, there will be 2 or 3 other divs, starting with a div with the class <code>box-header</code>.</p>
+            </div>
+            <div class="box-back shadow" style="text-align: center; padding: 5px 20px; padding">
+                <p>The user should take care of the style inside the <code>box-back</code>.</p>
+            </div>
+            <div class="box-footer shadow">
+                <p>And you finally may (or may not) close it thanks to a div with the class <code>box-footer</code>. If there is no content in the footer, using <code>box-footer-thin</code> (10px high) or <code>box-footer-closing</code> (20px high) is recommended.</p>
+                <p>See the code on the right for an example.</p>
+            </div>
+            
+        </div>
+        <!-- end of div "box" -->
+    </div>
+    <!-- end of left column -->
+    
+    <!-- beginning of right column -->
+    <div class="column span6">
+        <div class="box shadow span6">
+            <h3 class="box-title">In a nutshell</h3>
+            <div class="row">
+                <p>The general constructor for a box is similar to:</p>
+                <pre>&lt;div class=&quot;box shadow span6&quot;&gt;
     &lt;h3 class=&quot;box-title&quot;&gt;Title&lt;/h3&gt;
     &lt;div class=&quot;row&quot;&gt;
         &lt;!-- some content --&gt;
@@ -239,26 +283,30 @@
         &lt;!-- yet some other content --&gt;
     &lt;/div&gt;
 &lt;/div&gt;</pre>
+            </div>
         </div>
-    </div> <!-- end of div "box" -->
-    <div class="box shadow span6">
-        <h3 class="box-title">Organization in the document</h3>
-        <div class="row">
-            <p>To create a box, you simply have to create a <code>&lt;div&gt;</code> with the class <code>box</code>. In order to match the grid system, you also have to specify the width of box thanks to one of the classes <code>span*</code>. And finally, add the dropped shadow thanks to the class <code>shadow</code> or add a solid border thanks to the class <code>grey-border</code>, which gives a the render of this box.</p>
-                <p>However, the use of this class will be very sparse throughout the whole website and you should (almost) always use <code>shadow</code>.</p>
-        </div>
-    </div> <!-- end of div "box" -->
-
-    <div class="box shadow span6">
-        <h3 class="box-title">Inner organization</h3>
-        <div class="row">
-            <p>Most of the boxes should have a title. It is obtained by a <code>&lt;h3&gt;</code> tag, with the class <code>box-title</code>.</p>
-        </div>
-            <div class="separating-dashed-line"></div>
-        <div class="row">
-            <p>Each section in a box should be encapsulated in a <code>&lt;div&gt;</code> with the class <code>row</code>. The sections may or may not be separated by a horizontal line, thanks to the command <code>&lt;div class="separating-dashed-line"&gt;&lt;/div&gt;</code>.</p>
-        </div>
-    </div> <!-- end of div "box" -->
+        <!-- end of box -->
+        
+            <div class="box shadow span6">
+                <h3 class="box-title">Back panels: code</h3>
+                <div class="row">
+                    <p>The general constructor for a box with a back panel is similar to:</p>
+                    <pre>&lt;div class=&quot;span6&quot;&gt;
+    &lt;div class=&quot;box-header shadow&quot;&gt;
+        &lt;!-- box header content --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;box-back shadow&quot;&gt;
+        &lt;!-- back panel content --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;box-footer shadow&quot;&gt;
+        &lt;!-- box footer content --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                </div>
+            </div>
+            <!-- end of box -->
+    </div>
+    <!-- end of right column -->
 </section>
 
 <section>
@@ -313,7 +361,7 @@
         </div>
         <div class="separating-dashed-line"></div>
         <div class="row">
-            <p>Prometheus doesn't crop the images for you. Before using this functionality, you must ensure that the images to be displayed in a row have the <strong>same ratio height/width</strong>.</p>
+            <p>Prometheus doesn't crop the images for you. Before using this functionality, you must ensure that the <strong>images</strong> to be displayed in a row <strong>have the same ratio height/width</strong>.</p>
         </div>
         <div class="separating-dashed-line"></div>
         <div class="row">
@@ -659,10 +707,10 @@
         </div>
         <div class="separating-dashed-line"></div>
         <div class="row">
-            <div class="button orange">Button</div>
-            <div class="button blue">Button</div>
-            <div class="button smaller green">Button</div>
-            <div class="button smaller grey">Button</div>
+            <div class="button orange-gradient orange-border">Button</div>
+            <div class="button blue-gradient blue-border">Button</div>
+            <div class="button smaller green-gradient green-border">Button</div>
+            <div class="button smaller darkgrey-gradient darkgrey-border">Button</div>
             <div class="button smaller disabled">Button</div>
         </div>
 
@@ -822,8 +870,8 @@
                         </div>
                     </div>
                     <div class="form-actions">
-                        <button type="submit" class="button smaller orange">Save changes</button>
-                        <button class="button smaller blue">Cancel</button>
+                        <button type="submit" class="button smaller orange-gradient orange-border">Save changes</button>
+                        <button class="button smaller blue-gradient blue-border">Cancel</button>
                     </div>
                 </fieldset>
             </form>
@@ -876,8 +924,8 @@
                         </div>
                     </div>
                     <div class="form-actions">
-                        <button type="submit" class="button smaller orange">Save changes</button>
-                        <button class="button smaller blue">Cancel</button>
+                        <button type="submit" class="button smaller orange-gradient orange-border">Save changes</button>
+                        <button class="button smaller blue-gradient blue-border">Cancel</button>
                     </div>
                 </fieldset>
             </form>
@@ -929,7 +977,7 @@
                         <label class="control-label" for="appendedInputButtons">Button append</label>
                         <div class="controls">
                             <div class="input-append">
-                                <input class="span4" id="appendedInputButtons" size="16" type="text"/><button class="button smaller orange" type="button">Search</button>
+                                <input class="span4" id="appendedInputButtons" size="16" type="text"/><button class="button smaller orange-gradient orange-border" type="button">Search</button>
                             </div>
                         </div>
                     </div>
@@ -948,8 +996,8 @@
                         </div>
                     </div>
                     <div class="form-actions">
-                        <button type="submit" class="button smaller orange">Save changes</button>
-                        <button class="button smaller blue">Cancel</button>
+                        <button type="submit" class="button smaller orange-gradient orange-border">Save changes</button>
+                        <button class="button smaller blue-gradient blue-border">Cancel</button>
                     </div>
                 </fieldset>
             </form>
