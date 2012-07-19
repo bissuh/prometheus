@@ -1102,3 +1102,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7516', end
 
 /* END SE-PANEL REDESIGN
 ---------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* NEW HEADER
+---------------------------------------------------------------------------------------------------- */
+
+.stat-box {
+	text-align: center;
+}
+
+.stat-box h4 {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 300;
+}
+
+.stat-box p {
+	font-size: 12px;
+	line-height: 12px;
+	margin-top: 4px;
+	text-transform: uppercase;
+}
+
+/* END NEW HEADER
+---------------------------------------------------------------------------------------------------- */
