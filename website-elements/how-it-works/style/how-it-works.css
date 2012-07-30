@@ -1,0 +1,16 @@
+.test {
+	float: left;
+	font-size: 40px;
+	font-weight: 700;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	border-left: 10px solid green;
+/*	-webkit-mask-image: url(../img/noise.png);
+	-o-mask-image: url(../img/noise.png);
+	-moz-mask-image: url(../img/noise.png);
+	-ms-mask-image: url(../img/noise.png);
+	mask-image: url(../img/noise.png);*/
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
