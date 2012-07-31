@@ -195,19 +195,20 @@ pre code {padding: 0; color: inherit; background-color: transparent; border: 0;}
 .item12-41 {width: 20px; margin-left: 2px;}
 
 /* Sub-columns in a row */
-.row[class*="span"]{margin: 0;}
-.row.span12 {width: 960px;}
-.row.span11 {width: 880px;}
-.row.span10 {width: 800px;}
-.row.span9 {width: 720px;}
-.row.span8 {width: 640px;}
-.row.span7 {width: 560px;}
-.row.span6 {width: 480px;}
-.row.span5 {width: 400px;}
-.row.span4 {width: 320px;}
-.row.span3 {width: 240px;}
-.row.span2 {width: 160px;}
-.row.span1 {width: 80px;}
+.row[class*="span"]{margin-right: 20px;}
+.row[class*="span"]:last-child {margin-right: 0;}
+.row.span12 {width: 940px;}
+.row.span11 {width: 840px;}
+.row.span10 {width: 760px;}
+.row.span9 {width: 680px;}
+.row.span8 {width: 600px;}
+.row.span7 {width: 520px;}
+.row.span6 {width: 440px;}
+.row.span5 {width: 360px;}
+.row.span4 {width: 280px;}
+.row.span3 {width: 200px;}
+.row.span2 {width: 120px;}
+.row.span1 {width: 40px;}
 
 .table-container {margin: 12px 0;}
 .table-container:last-child {margin-bottom: 0;}

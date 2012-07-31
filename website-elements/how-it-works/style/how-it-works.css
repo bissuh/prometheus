@@ -1,16 +1,65 @@
-.test {
-	float: left;
-	font-size: 40px;
-	font-weight: 700;
-	border-top: 25px solid transparent;
-	border-bottom: 25px solid transparent;
-	border-left: 10px solid green;
-/*	-webkit-mask-image: url(../img/noise.png);
-	-o-mask-image: url(../img/noise.png);
-	-moz-mask-image: url(../img/noise.png);
-	-ms-mask-image: url(../img/noise.png);
-	mask-image: url(../img/noise.png);*/
-  -moz-box-shadow:    3px 3px 5px 6px #ccc;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-  box-shadow:         3px 3px 5px 6px #ccc;
+#howItWorks #findEvents h2, #howItWorks #sellTickets h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 28px;
+}
+
+#howItWorks #findEvents h4, #howItWorks #sellTickets h4 {
+	font-size: 22px;
+	font-weight: 400;
+}
+
+#howItWorks #findEvents h2, #howItWorks #findEvents h4 {
+	color: #ff9600;
+}
+
+#howItWorks #sellTickets h2, #howItWorks #sellTickets h4 {
+	color: #0ca8e9;
+}
+
+#howItWorks .pick-event {
+	background: url(../img/pick-event.png) no-repeat right top;
+	height: 173px;
+	padding-right: 200px;
+	padding-top: 90px;
+}
+
+#howItWorks .buy-tickets {
+	background: url(../img/buy-tickets.png) no-repeat left top;
+	height: 151px;
+	padding-left: 220px;
+	padding-top: 12px;
+}
+
+#howItWorks .print-phone {
+		background: url(../img/print-phone.png) no-repeat right top;
+		padding-right: 165px;
+		padding-top: 100px;
+}
+
+#howItWorks .create-event {
+	background: url(../img/create-event.png) no-repeat right top;
+	padding-right: 100px;
+	padding-top: 90px;
+}
+
+#howItWorks .social-networks {
+	background: url(../img/social-networks.png) no-repeat left top;
+	height: 200px;
+	padding-left: 130px;
+	padding-top: 93px;
+}
+
+#howItWorks .receive-money {
+	background: url(../img/receive-money.png) no-repeat right top;
+/*	height: 200px;*/
+	padding-right: 180px;
+	padding-top: 51px;
+}
+
+#howItWorks #moip {
+		background: url(../img/moip.png) no-repeat 710px 0;
+		padding-right: 270px;
+		padding-top: 14px;
+		height: 53px;
 }
