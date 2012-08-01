@@ -37,6 +37,10 @@
 		padding-top: 100px;
 }
 
+#howItWorks #findEvents .video {
+	padding-top: 20px;
+}
+
 #howItWorks .create-event {
 	background: url(../img/create-event.png) no-repeat right top;
 	padding-right: 100px;
@@ -55,6 +59,10 @@
 /*	height: 200px;*/
 	padding-right: 180px;
 	padding-top: 51px;
+}
+
+#howItWorks #sellTickets .video {
+	padding-top: 76px;
 }
 
 #howItWorks #moip {
