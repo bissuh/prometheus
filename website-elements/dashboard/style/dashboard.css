@@ -1200,12 +1200,13 @@ body {
 	border: none;
 	border-top: solid 1px #fff;
 	border-bottom: 1px solid #B3B3B3;
-	  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+	text-shadow: 0 1px rgba(255, 255, 255, 0.5);
 }
 
 #eventList .inline-menu .action-button:active {
 	border-top: solid 1px #555;
 	border-bottom: 1px solid #555;
+	text-shadow: none;
 }
 
 #eventList .inline-menu .action-button.selected,
@@ -1299,4 +1300,27 @@ margin: 0;
 
 #eventList .inline-menu .edit-button:active .icon {
   background-position: -52px -28px;
+}
+
+.dashboard-table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.dashboard-table td {
+	padding: 5px 0;
+}
+
+.dashboard-table td:first-child {
+	font-weight: bold;
+}
+
+.dashboard-table td:last-child {
+	text-align: right;
+}
+
+.dashboard-table .table-footer {
+	font-weight: bold;
+	font-size: 18px;
+	border-top: 1px solid #888;
 }
