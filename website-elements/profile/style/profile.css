@@ -719,6 +719,24 @@ body {
 #eventList .send_all_sms-button:active .icon {
   background-position: -46px -39px !important;
 }
+
+
+#eventList .action-button.big-loader, #eventList .action-button.big-loader:hover, #eventList .action-button.big-loader:active {
+  border-left: 1px solid #fff;
+	cursor: not-allowed;
+	background: #E6E6E6;
+}
+
+#eventList .big-loader .icon_wrapper {
+  padding: 4px 43px !important;
+}
+
+#eventList .big-loader .icon {
+	background: url(../img/big-loader.gif) !important;
+  width: 24px;
+  height: 24px;
+}
+
 /* END RIGHT-PANEL REDESIGN
 ---------------------------------------------------------------------------------------------------- */
 
@@ -1253,6 +1271,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7516', end
 #eventList .send_one_sms-button:active .icon {
   background-position: -103px -27px !important;
 }
+
+#eventList .small-loader, #eventList .small-loader:hover, #eventList .small-loader:active {
+	cursor: not-allowed;
+	background: #ededed !important;
+}
+
+#eventList .small-loader .icon {
+	background: url(../img/small-loader.gif) !important;
+  width: 16px;
+  height: 16px;
+}
+
+
+
 
 /* END SE-PANEL REDESIGN
 ---------------------------------------------------------------------------------------------------- */
