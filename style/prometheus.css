@@ -1083,6 +1083,10 @@ legend + .control-group {
   *line-height: 26px;
 }
 
+a.button, a.button:hover, a.button:active {
+	text-decoration: none;
+}
+
 .button + .button, button.button + button.button {
   margin-left: 5px;
 }
@@ -1206,6 +1210,7 @@ button.button.smaller {
 ---------------------------------------------------------------------------------------------------- */
 
 .orange-gradient, .blue-gradient, .green-gradient, .darkgrey-gradient {color: #ffffff; text-shadow: 0 1px 0px rgba(0, 0, 0, 0.3);}
+.orange-gradient:active, .blue-gradient:active, .green-gradient:active, .darkgrey-gradient:active {color: #ffffff !important; text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3);}
 .grey-gradient {color: #ccc; text-shadow: 0 1px rgba(255, 255, 255, 0.9); font-weight: 300}
 
 .orange-gradient {background: #ff9600; background: -moz-linear-gradient(top,  #f1a400 0%, #ff7516 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1a400), color-stop(100%, #ff7516)); background: -webkit-linear-gradient(top,  #f1a400 0%, #ff7516 100%); background: -o-linear-gradient(top, #f1a400 0%, #ff7516 100%); background: -ms-linear-gradient(top, #f1a400 0%, #ff7516 100%); background: linear-gradient(to bottom, #f1a400 0%, #ff7516 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1a400', endColorstr='#ff7516', GradientType=0);}

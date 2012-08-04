@@ -65,6 +65,12 @@
 	padding-top: 76px;
 }
 
+#howItWorks #sellTickets a, #howItWorks #findEvents a {
+	width: 420px;
+	height: 40px;
+	line-height: 40px;
+}
+
 #howItWorks #moip {
 		background: url(../img/moip.png) no-repeat 710px 0;
 		padding-right: 270px;
