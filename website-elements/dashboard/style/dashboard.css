@@ -1324,3 +1324,41 @@ margin: 0;
 	font-size: 18px;
 	border-top: 1px solid #888;
 }
+
+
+.table-container {
+	margin: 0 20px;
+}
+
+
+.people-attending-list {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.people-attending-list thead {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+}
+
+.people-attending-list thead td {
+	border-bottom: 1px solid #888;
+}
+
+.people-attending-list tr {
+	border-bottom: 1px solid #ccc;
+}
+
+.people-attending-list tr:last-child {
+	border-bottom: none;
+}
+
+.people-attending-list td {
+	padding: 8px 0;
+}
+
+.back-table td:first-child, .back-table-header td:first-child {
+	width: 240px;
+	text-align: left;
+}
