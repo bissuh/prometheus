@@ -1462,3 +1462,16 @@ float: left;
 .nav-button:first-child {
 	margin-left: 0;
 }
+
+#dashboardNotifications textarea {
+	height: 200px;
+}
+
+#dashboardNotifications .send-later-container span {
+	color: #333;
+	margin-right: 10px;
+}
+
+#dashboardNotifications button {
+	float: right;
+}
