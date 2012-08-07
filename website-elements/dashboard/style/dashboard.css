@@ -307,82 +307,208 @@ body {
   width: 620px;
 }
 
+#eventList .event-info table {
+	border-collapse: collapse;
+}
+
+#eventList .event .event-info table {
+	height: 80px;
+}
+
+#eventList .event-info table tr:first-child {
+	vertical-align: top;
+}
+
+#eventList .event-info table tr:last-child {
+	vertical-align: bottom;
+	line-height: 16px;
+}
+
+#eventList .event-info td {
+	max-width: 590px;
+	white-space: nowrap;
+	overflow: hidden;
+	background: #fff;
+}
+
+#eventList .event-info table.info {
+	position: absolute;
+}
+
+#eventList .event-info table.date {
+	position: absolute;
+	right: 20px;
+	text-align: right;
+}
+
+#eventList .event-info table.date td:last-child {
+	padding-left: 10px;
+}
+
+#eventList .event-info table.date .fade {
+	width: 40px;
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+}
+
+
+
+
+
+
+
 #eventList .event .main .event-info .content {
-  height: 80px;
+	height: 80px;
+  position: relative;	
 }
 
-#eventList .event-short .main .event-info .content {
-  /******************/
-}
-
-#eventList .main .event-info .content .title {
-  float: left;
-}
 
 #eventList .main .event-info .content h2 {
   line-height: 28px;
-	max-width: 450px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
 }
 
-#eventList .main .event-info .content .title .city {
+#eventList .event-info .city {
   font-style: italic;
   color: #999;
 }
 
-#eventList .event-short .main .event-info .content .title .city,
-#eventList .event-short .main .event-info .content .date-and-status .time {
+#eventList .event-short .event-info .city,
+#eventList .event-short .event-info .time {
   margin-top: 4px;
 }
 
-#eventList .event .main .event-info .content .category-list {
-  margin-top: 15px;
-}
-
-#eventList .main .event-info .content .date-and-status {
-  float: right;
-  text-align: right;
-}
-
-#eventList .event .main .event-info .content .date-and-status .time,
-#eventList .event-short .main .event-info .content .date-and-status .time {
+#eventList .event-info .time,
+#eventList .event-info .time {
   color: #999;
 }
 
-#eventList .event .main .event-info .content .date-and-status .status-published,
-#eventList .event .main .event-info .content .date-and-status .status-hidden {
-  margin-top: 15px;
-  font-size: 16px;
+
+
+
+
+
+
+#eventList .information {
   font-weight: 700;
+  font-size: 16px;
 }
 
-#eventList .event .main .event-info .content .date-and-status .status-published {
-  color: #5AA500
+#eventList .information .icon_wrapper {
+  margin-right: 4px;
+  display: block;
+  height: inherit;
+  float: left;
 }
 
-#eventList .event .main .event-info .content .date-and-status .status-hidden {
-  color: #ff9600
+#eventList .information .icon {
+  display: block;
+  float: left;
+  background: url(../img/my_events-sprite.png) no-repeat;
 }
 
-#eventList .event .main .event-info .content .date-and-status .status-published .big-icon-published,
-#eventList .event .main .event-info .content .date-and-status .status-hidden .big-icon-hidden,
-#eventList .event .se-panel .people-attending .big-icon-friends,
-#eventList .event .se-panel .close-sales .big-icon-cross,
-#eventList .event-short .se-panel .individual-print-button .big-icon-print,
-#eventList .event-short .se-panel .individual-send_phone-button .big-icon-send_phone {
-  height: 18px;
-  background-image: url("../img/profile-sprite.png");
+
+
+
+
+
+#eventList .people-attending.information span {
+	color: #333;
+	font-weight: 300;
 }
 
-#eventList .event .main .event-info .content .date-and-status .status-published .big-icon-published {
-  background-position: -330px 0px;
+#eventList .people-attending .icon_wrapper {
+  padding: 2px 0 1px 0;
 }
 
-#eventList .event .main .event-info .content .date-and-status .status-hidden .big-icon-hidden {
-  background-position: -330px -20px;
+#eventList .people-attending .icon {
+  width: 24px;
+  height: 14px;
+	background: url(../img/friends-16.png) no-repeat;
 }
+
+
+
+
+#eventList .closed_sales-event span {
+  color: #5aa500;
+}
+
+#eventList .published-event span {
+  color: #5aa500;
+}
+
+#eventList .published-event .icon_wrapper {
+  padding: 2px 0 1px 0;
+}
+
+#eventList .published-event .icon {
+  background-position: -172px -4px;
+  width: 16px;
+  height: 16px;
+}
+
+#eventList .canceled-event span {
+  color: #cc0000;
+}
+
+#eventList .canceled-event .icon_wrapper {
+  padding: 2px 0 1px 0;
+}
+
+#eventList .canceled-event .icon {
+  background-position: -220px -4px;
+  width: 16px;
+  height: 16px;
+}
+
+#eventList .particular-event span {
+  color: #0071bc;
+}
+
+#eventList .particular-event .icon_wrapper {
+  padding: 2px 0 1px 0;
+}
+
+#eventList .particular-event .icon {
+  background-position: -220px -28px;
+  width: 16px;
+  height: 16px;
+}
+
+#eventList .hidden-event span {
+  color: #ff9600;
+}
+
+#eventList .hidden-event .icon_wrapper {
+  padding: 5px 0 6px 0;
+}
+
+#eventList .hidden-event .icon {
+  background-position: -192px -8px;
+  width: 24px;
+  height: 8px;
+}
+
+#eventList .draft-event .icon_wrapper {
+  padding: 2px 0;
+}
+
+#eventList .draft-event .icon {
+  background-position: -198px -28px;
+  width: 12px;
+  height: 15px;
+}
+
+
+
+
+
+
 
 #eventList .event .se-panel .close-sales .big-icon-cross {
   background-position: -330px -40px;
@@ -399,10 +525,6 @@ body {
 #eventList .event .se-panel .people-attending:active .big-icon-friends {
   background-position: -330px -100px;
 }
-
-
-/* BEGIN RIGHT-PANEL REDESIGN
----------------------------------------------------------------------------------------------------- */
 
 #eventList .right-panel {
   width: 220px;
@@ -514,90 +636,6 @@ body {
   border-left: 1px solid #555;
 }
 
-
-
-
-/***** BIG ICONS *****
-#eventList .right-panel .icon_wrapper {
-  margin-top: 8px;
-  margin-bottom: 2px;
-  padding: 1px 42px;
-}
-
-#eventList .action-button .icon {
-  background: url(../img/profile-sprite.png) no-repeat;
-  display: block;
-}
-
-#eventList .publish-button .icon {
-  background-position: -6px -6px;
-  width: 24px;
-  height: 24px;
-}
-
-#eventList .publish-button:active .icon {
-  background-position: -6px -42px;
-}
-
-#eventList .hide-button .icon_wrapper {
-  padding: 7px 34px;
-}
-
-#eventList .hide-button .icon {
-  background-position: -220px -12px;
-  width: 40px;
-  height: 12px;
-}
-
-#eventList .hide-button:active .icon {
-  background-position: -220px -48px;
-}
-
-#eventList .dashboard-button .icon_wrapper {
-  padding: 0px 40px;
-  margin-top: 8px;
-}
-
-#eventList .dashboard-button .icon {
-  background-position: -76px -4px;
-  width: 28px;
-  height: 26px;
-}
-
-#eventList .dashboard-button:active .icon {
-  background-position: -76px -40px;
-}
-
-#eventList .edit-button .icon_wrapper {
-  padding: 1px 37px 1px 43px;
-}
-
-#eventList .edit-button .icon {
-  background-position: -42px -6px;
-  width: 28px;
-  height: 24px;
-}
-
-#eventList .edit-button:active .icon {
-  background-position: -42px -42px;
-}
-
-#eventList .preview-button .icon_wrapper {
-  padding: 5px 40px;
-}
-
-#eventList .preview-button .icon {
-  background-position: -112px -10px;
-  width: 28px;
-  height: 16px;
-}
-
-#eventList .preview-button:active .icon {
-  background-position: -112px -46px;
-}
-***** /BIG ICONS *****/
-
-/***** SMALL ICONS *****/
 #eventList .right-panel .icon_wrapper {
   margin-top: 12px;
   margin-bottom: 4px;
@@ -678,7 +716,6 @@ body {
 #eventList .preview-button:active .icon {
   background-position: -26px -30px;
 }
-/***** /SMALL ICONS *****/
 
 #eventList .event-short .right-panel .icon_wrapper {
   margin-top: 10px;
@@ -719,137 +756,6 @@ body {
 #eventList .send_all_sms-button:active .icon {
   background-position: -46px -39px !important;
 }
-
-
-#eventList .action-button.big-loader, #eventList .action-button.big-loader:hover, #eventList .action-button.big-loader:active {
-  border-left: 1px solid #fff;
-	cursor: not-allowed;
-	background: #E6E6E6;
-}
-
-#eventList .big-loader .icon_wrapper {
-  padding: 4px 43px !important;
-}
-
-#eventList .big-loader .icon {
-	background: url(../img/big-loader.gif) !important;
-  width: 24px;
-  height: 24px;
-}
-
-/* END RIGHT-PANEL REDESIGN
----------------------------------------------------------------------------------------------------- */
-
-/* OLD SOCIAL STATS
----------------------------------------------------------------------------------------------------- */
-/*#eventList .event .right-panel .social-stats {
-  width: 206px;
-  height: 75px;
-  border-bottom: 1px solid #b3b3b3;
-  padding: 7px;
-  font-weight: 400;
-}
-
-#eventList .event .right-panel .social-stats .profile-pictures {
-  margin-bottom: 5px;
-  display: inline-block;
-}
-
-#eventList .event .right-panel .social-stats .profile-pictures img {
-  float:left;
-  display: block;
-  width: 24px;
-  height: 24px;
-  margin-right: 2px;
-}
-
-#eventList .event .right-panel .social-stats .profile-pictures img:last-child {
-  margin-right: 0;
-}
-
-#eventList .event .right-panel .going-button,
-#eventList .event .right-panel .tickets-button {
-  float: left;
-  height: 29px;
-  width: 109px;
-  line-height: 27px;
-  text-align: center;
-  font-weight: 400;
-  cursor: pointer;
-  color: #fff;
-  text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
-}
-
-#eventList .event .right-panel .going-button {
-  background: #35c4ff;
-  background: -moz-linear-gradient(top,  #35c4ff 0%, #0084ff 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#35c4ff), color-stop(100%,#0084ff));
-  background: -webkit-linear-gradient(top,  #35c4ff 0%,#0084ff 100%);
-  background: -o-linear-gradient(top,  #35c4ff 0%,#0084ff 100%);
-  background: -ms-linear-gradient(top,  #35c4ff 0%,#0084ff 100%);
-  background: linear-gradient(to bottom,  #35c4ff 0%,#0084ff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35c4ff', endColorstr='#0084ff',GradientType=0 );
-  border-top: 1px solid #A8E6FF;
-  border-right: 1px solid #004fbb;
-}
-
-#eventList .event .right-panel .going-button:hover {
-  background: #4fcdff;
-  background: -moz-linear-gradient(top,  #4fcdff 0%, #1e96ff 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4fcdff), color-stop(100%,#1e96ff));
-  background: -webkit-linear-gradient(top,  #4fcdff 0%,#1e96ff 100%);
-  background: -o-linear-gradient(top,  #4fcdff 0%,#1e96ff 100%);
-  background: -ms-linear-gradient(top,  #4fcdff 0%,#1e96ff 100%);
-  background: linear-gradient(to bottom,  #4fcdff 0%,#1e96ff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fcdff', endColorstr='#1e96ff',GradientType=0 );
-}
-
-#eventList .event .right-panel .going-button:active {
-background: #0084ff;
-background: -moz-linear-gradient(top,  #0084ff 0%, #35c4ff 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0084ff), color-stop(100%,#35c4ff));
-background: -webkit-linear-gradient(top,  #0084ff 0%,#35c4ff 100%);
-background: -o-linear-gradient(top,  #0084ff 0%,#35c4ff 100%);
-background: -ms-linear-gradient(top,  #0084ff 0%,#35c4ff 100%);
-background: linear-gradient(to bottom,  #0084ff 0%,#35c4ff 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0084ff', endColorstr='#35c4ff',GradientType=0 );
-}
-
-#eventList .event .right-panel .tickets-button {
-  background: #f1a400;
-  background: -moz-linear-gradient(top,  #f1a400 0%, #ff7516 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1a400), color-stop(100%,#ff7516));
-  background: -webkit-linear-gradient(top,  #f1a400 0%,#ff7516 100%);
-  background: -o-linear-gradient(top,  #f1a400 0%,#ff7516 100%);
-  background: -ms-linear-gradient(top,  #f1a400 0%,#ff7516 100%);
-  background: linear-gradient(to bottom,  #f1a400 0%,#ff7516 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1a400', endColorstr='#ff7516',GradientType=0 );
-  border-top: 1px solid #F1C781;
-  border-left: 1px solid #F1C781;
-}
-
-#eventList .event .right-panel .tickets-button:hover {
-  background: #f4b300;
-  background: -moz-linear-gradient(top,  #f4b300 0%, #ff802b 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4b300), color-stop(100%,#ff802b));
-  background: -webkit-linear-gradient(top,  #f4b300 0%,#ff802b 100%);
-  background: -o-linear-gradient(top,  #f4b300 0%,#ff802b 100%);
-  background: -ms-linear-gradient(top,  #f4b300 0%,#ff802b 100%);
-  background: linear-gradient(to bottom,  #f4b300 0%,#ff802b 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4b300', endColorstr='#ff802b',GradientType=0 );
-}
-
-#eventList .event .right-panel .tickets-button:active {
-background: #ff7516;
-background: -moz-linear-gradient(top,  #ff7516 0%, #f1a400 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7516), color-stop(100%,#f1a400));
-background: -webkit-linear-gradient(top,  #ff7516 0%,#f1a400 100%);
-background: -o-linear-gradient(top,  #ff7516 0%,#f1a400 100%);
-background: -ms-linear-gradient(top,  #ff7516 0%,#f1a400 100%);
-background: linear-gradient(to bottom,  #ff7516 0%,#f1a400 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7516', endColorstr='#f1a400',GradientType=0 );
-}
----------------------------------------------------------------------------------------------------- */
 
 /* BEGIN SOCIAL STATS REDESIGN
 ---------------------------------------------------------------------------------------------------- */
@@ -905,7 +811,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7516', end
 	  text-shadow: rgba(0, 0, 0, 0.7) 0 -1px 0;
 		border-top: 1px solid #0084ff;
 }
-
 /* END SOCIAL STATS REDESIGN
 ------------------------------------------------------------------------------------------------------------ */
 
@@ -1036,12 +941,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7516', end
   height: 60px;
 }
 
-
-
-
-/* BEGIN STATUS REDESIGN
----------------------------------------------------------------------------------------------------- */
-
 #eventList .status-container {
   display: block;
   clear: both;
@@ -1135,17 +1034,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7516', end
   width: 12px;
   height: 15px;
 }
-/* END STATUS REDESIGN
----------------------------------------------------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
 
 /* BEGIN SE-PANEL REDESIGN
 ---------------------------------------------------------------------------------------------------- */
@@ -1272,20 +1160,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7516', end
   background-position: -103px -27px !important;
 }
 
-#eventList .small-loader, #eventList .small-loader:hover, #eventList .small-loader:active {
-	cursor: not-allowed;
-	background: #ededed !important;
-}
-
-#eventList .small-loader .icon {
-	background: url(../img/small-loader.gif) !important;
-  width: 16px;
-  height: 16px;
-}
-
-
-
-
 /* END SE-PANEL REDESIGN
 ---------------------------------------------------------------------------------------------------- */
 
@@ -1314,3 +1188,277 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7516', end
 
 /* END NEW HEADER
 ---------------------------------------------------------------------------------------------------- */
+
+
+
+#eventList .inline-menu .action-button {
+	font-weight: 400;
+	text-align: left;
+	line-height: 28px;
+  height: 28px;
+  width: 220px;
+	border: none;
+	border-top: solid 1px #fff;
+	border-bottom: 1px solid #B3B3B3;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+
+#eventList .inline-menu .action-button:active {
+	border-top: solid 1px #555;
+	border-bottom: 1px solid #555;
+	text-shadow: none;
+}
+
+#eventList .inline-menu .action-button.selected,
+#eventList .inline-menu .action-button:active.selected {
+	font-weight: 700;
+	background: rgb(178,178,178);
+	background: -moz-linear-gradient(top, rgba(178,178,178,1) 0%, rgba(204,204,204,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(178,178,178,1)), color-stop(100%,rgba(204,204,204,1)));
+	background: -webkit-linear-gradient(top, rgba(178,178,178,1) 0%,rgba(204,204,204,1) 100%);
+	background: -o-linear-gradient(top, rgba(178,178,178,1) 0%,rgba(204,204,204,1) 100%);
+	background: -ms-linear-gradient(top, rgba(178,178,178,1) 0%,rgba(204,204,204,1) 100%);
+	background: linear-gradient(to bottom, rgba(178,178,178,1) 0%,rgba(204,204,204,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2b2b2', endColorstr='#cccccc',GradientType=0 );
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #b3b3b3;
+}
+
+#eventList .inline-menu .action-button:first-child {
+	border-top: none;
+	height: 29px;
+}
+
+#eventList .inline-menu .action-button:last-child {
+		border-bottom: none;
+		height: 29px;
+}
+
+#eventList .inline-menu .icon_wrapper {
+	display: block;
+  float: left;
+	margin: 0;
+  padding: 1px 2px;
+}
+
+#eventList .inline-menu .action-button .icon {
+  background: url(../img/dashboard-sprite.png) no-repeat;
+  display: block;
+}
+
+#eventList .inline-menu .graphics-button .icon_wrapper {
+  padding: 7px 12px 6px 13px;
+}
+
+#eventList .inline-menu .graphics-button .icon {
+  background-position: -4px -5px;
+  width: 15px;
+  height: 15px;
+}
+
+#eventList .inline-menu .graphics-button:active .icon {
+  background-position: -4px -29px;
+}
+
+#eventList .inline-menu .notifications-button .icon_wrapper {
+  padding: 8px 11px;
+}
+
+#eventList .inline-menu .notifications-button .icon {
+  background-position: -27px -6px;
+  width: 18px;
+  height: 12px;
+}
+
+#eventList .inline-menu .notifications-button:active .icon {
+  background-position: -27px -30px;
+}
+
+#eventList .inline-menu .list-button .icon_wrapper {
+  padding: 7px 8px;
+}
+
+#eventList .inline-menu .list-button .icon {
+  background-position: -72px -5px;
+  width: 24px;
+  height: 14px;
+}
+
+#eventList .inline-menu .list-button:active .icon {
+  background-position: -72px -29px;
+}
+
+#eventList .inline-menu .edit-button .icon_wrapper {
+  padding: 6px 11px 6px 10px;
+}
+
+#eventList .inline-menu .edit-button .icon {
+  background-position: -52px -4px;
+  width: 19px;
+  height: 16px;
+}
+
+#eventList .inline-menu .edit-button:active .icon {
+  background-position: -52px -28px;
+}
+
+.dashboard-table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.dashboard-table td {
+	padding: 5px 0;
+}
+
+.dashboard-table td:first-child {
+	font-weight: bold;
+}
+
+.dashboard-table td:last-child {
+	text-align: right;
+}
+
+.dashboard-table .table-footer {
+	font-weight: bold;
+	font-size: 18px;
+	border-top: 1px solid #888;
+}
+
+
+.table-container {
+	margin: 0 20px;
+}
+
+
+.people-attending-list {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.people-attending-list thead {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+}
+
+.people-attending-list thead td {
+	border-bottom: 1px solid #888;
+}
+
+.people-attending-list tr {
+	border-bottom: 1px solid #ccc;
+}
+
+.people-attending-list tr:last-child {
+	border-bottom: none;
+}
+
+.people-attending-list td {
+	padding: 8px 0;
+}
+
+.back-table td:first-child, .back-table-header td:first-child {
+	width: 240px;
+	text-align: left;
+}
+
+#dashboardList .box-back {
+	padding: 5px 20px;
+}
+
+#dashboardList .print-list {
+margin-top: 4px;
+display: block;
+float: left;
+}
+
+#dashboardList .print-list span {
+	color: #333;
+	font-weight: 400;
+}
+
+#dashboardList .print-list:hover span {
+	color: rgba(50, 100, 200, 1);
+}
+
+#dashboardList .print-list .icon_wrapper {
+	padding: 2px 4px 1px 0;
+  display: block;
+  float: left;
+	line-height: inherit;
+}
+
+#dashboardList .print-list .icon {
+  display: block;
+  float: left;
+  background: url(../img/dashboard-sprite.png) no-repeat;
+	background-position: -100px -4px;
+	width: 16px;
+	height: 15px;
+}
+
+#listSearch {
+	float: right;
+	width: 220px;
+}
+
+#listSearch input {
+	width: 182px;
+	margin: 0;
+	float: right;
+}
+
+#listSearch .search-button {
+	width: 26px;
+	height: 26px;
+	float: right;
+}
+
+#listSearch .search-button .icon_wrapper {
+  margin: 4px;
+}
+
+#listSearch .search-button .icon {
+  background: url(../img/dashboard-sprite.png) no-repeat;
+  display: block;
+  background-position: -99px -27px;
+  width: 18px;
+  height: 18px;
+}
+
+.nav-list {
+	margin-top: -38px;
+	float: right;
+}
+
+.nav-list > span {
+	float: left;
+	margin-right: 10px;
+}
+
+.nav-buttons-container {
+	float: left;
+}
+
+.nav-button {
+	float: left;
+	background: #eee;
+	border: 1px solid #ccc;
+	padding: 0 10px;
+	margin-left: -1px;
+	font-weight: 700;
+}
+
+.nav-button:hover {
+	background: #ddd;
+}
+
+.nav-button:active, .nav-button:active span {
+	background: #888;
+	color: #fff;
+}
+
+.nav-button:first-child {
+	margin-left: 0;
+}
