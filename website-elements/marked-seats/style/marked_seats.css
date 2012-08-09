@@ -1,0 +1,166 @@
+
+.box-back .table-container {
+	margin: 0 20px;
+}
+
+.back-table {
+	width: 100%;
+}
+
+.back-table-header {
+	margin-bottom: -10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+	width: 100%;
+}
+
+.back-table tr {
+	border-bottom: 1px solid #aaa;
+}
+
+.back-table tr:last-child {
+	border-bottom: none;
+}
+
+.back-table td, .back-table-header td {
+	padding: 8px 0;
+	text-align: center;
+}
+
+.back-table td:first-child, .back-table-header td:first-child {
+	text-align: left;
+}
+
+#zonesDashboard table td {
+	text-align: right;
+}
+
+#zonesDashboard table td:first-child {
+	width: 150px;
+	text-align: left;
+	font-weight: 700;
+}
+
+#zonesDashboard table td:last-child {
+	width: 40px;
+}
+
+#saveVenue {
+	width: 220px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 26px;
+	font-weight: 300;
+}
+
+ .row .control-group {float: left; width: 280px}
+ .row .control-group:first-child {margin-right: 20px;}
+ .row .control-group input {width: 270px;}
+ .row .control-group select {width: 280px;}
+
+#newVenueEndereco select {float: left; width: 80px}
+#newVenueEndereco select:first-child { width: 180px; margin-right: 20px}
+
+#editZone .size-field {
+	width: 128px;
+}
+
+.float-right {
+	float: right;
+}
+
+
+.fullwidth-search {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fullwidth-search input {
+  height: 30px;
+  font-size: 22px;
+  width: 650px;
+  border-right: none;
+	margin: 0;
+}
+
+.fullwidth-search .button {
+  font-size: 22px;
+  padding: 7px 20px;
+  width: 242px;
+  margin: 0;
+}
+
+#markedSeatsVenueList .back-table td {
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+}
+
+#markedSeatsVenueList .back-table tr:last-child td {
+	border-bottom: none;
+}
+
+#markedSeatsVenueList td.name {
+	font-weight: 700;
+	width: 200px;
+}
+
+#markedSeatsVenueList td.address {
+	width: 340px;
+}
+
+#markedSeatsVenueList td.category {
+	width: 140px;
+}
+
+#markedSeatsVenueList td.seat-quantity {
+	width: 80px;
+	text-align: right;
+}
+
+#markedSeatsVenueList td.zone-quantity {
+	width: 80px;
+	text-align: right;
+}
+
+#markedSeatsVenueList td.edit {
+	text-align: right;
+}
+
+
+.nav-list {
+	margin-top: -38px;
+	float: right;
+}
+
+.nav-list > span {
+	float: left;
+	margin-right: 10px;
+}
+
+.nav-buttons-container {
+	float: left;
+}
+
+.nav-button {
+	float: left;
+	background: #eee;
+	border: 1px solid #ccc;
+	padding: 0 10px;
+	margin-left: -1px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.nav-button:hover {
+	background: #ddd;
+}
+
+.nav-button:active, .nav-button:active span {
+	background: #888;
+	color: #fff;
+}
+
+.nav-button:first-child {
+	margin-left: 0;
+}
