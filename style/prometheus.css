@@ -18,13 +18,13 @@ section:after {clear: both;}
 
 .center-text {text-align: center;}
 
+.center {margin: 0 auto;}
+
 .container {width: 960px; margin: 0 auto;}
 .container:before, .container:after {display: table; content: "";}
 .container:after {clear: both;}
 .below-header {margin-top: 65px}
 .below-menu-bar {margin-top: 105px}
-
-.center {margin: 0 auto;}
 
 /* Headers */
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, {margin: 0; font-family: inherit; font-weight: bold; color: inherit; text-rendering: optimizeLegibility;}
@@ -223,7 +223,7 @@ table.split td:first-child, table.split th:first-child {padding-left: 0;}
 ---------------------------------------------------------------------------------------------------- */
 
 [class^="icon-"], [class*=" icon-"], [class^="big-icon-"], [class*="big-icon-"] {display: inline-block; width: 16px; height: 16px; *margin-right: .3em; line-height: 16px; vertical-align: text-bottom; background-image: url("../img/icons/icon-set-8.png"); background-position: 16px 16px; background-repeat: no-repeat;}
-[class^="big-icon-"], [class*="big-icon-"] {width: 32px; height: 32px; line-height: 32px; background-image: url("../img/icons/icon-set-16.png"); background-position: 32px 32px;}
+[class^="big-icon-"], [class*="big-icon-"] {width: 32px; height: 32px; line-height: 32px; vertical-align: middle; background-image: url("../img/icons/icon-set-16.png"); background-position: 32px 32px;}
 [class^="icon-"]:last-child, [class*=" icon-"]:last-child {*margin-left: 0;}
 .orange-icons {background-image: url("../img/icons/icon-set-8-orange.png");}
 
@@ -1083,7 +1083,7 @@ legend + .control-group {
   *line-height: 26px;
 }
 
-a.button, a.button:hover, a.button:active {
+a.button, a.button:hover, a.button:active, a.button:visited {
 	text-decoration: none;
 }
 
@@ -1209,7 +1209,7 @@ button.button.smaller {
 /* COLOR DEFINITIONS
 ---------------------------------------------------------------------------------------------------- */
 
-.orange-gradient, .blue-gradient, .green-gradient, .darkgrey-gradient {color: #ffffff; text-shadow: 0 1px 0px rgba(0, 0, 0, 0.3);}
+.orange-gradient, .blue-gradient, .green-gradient, .darkgrey-gradient {color: #ffffff !important; text-shadow: 0 1px 0px rgba(0, 0, 0, 0.3);}
 .orange-gradient:active, .blue-gradient:active, .green-gradient:active, .darkgrey-gradient:active {color: #ffffff !important; text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3);}
 .grey-gradient {color: #ccc; text-shadow: 0 1px rgba(255, 255, 255, 0.9); font-weight: 300}
 

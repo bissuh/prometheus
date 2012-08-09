@@ -1448,6 +1448,7 @@ float: left;
 	padding: 0 10px;
 	margin-left: -1px;
 	font-weight: 700;
+	cursor: pointer;
 }
 
 .nav-button:hover {
@@ -1474,4 +1475,8 @@ float: left;
 
 #dashboardNotifications button {
 	float: right;
+}
+
+.text-right {
+	text-align: right;
 }
