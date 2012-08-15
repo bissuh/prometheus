@@ -50,7 +50,6 @@ p.small {font-size: 11px; line-height: 11px; color: #999999;}
 p:last-child {margin-bottom: 0;}
 strong {font-weight: bold;}
 em {font-style: italic;}
-span {color: #888;}
 a, a:visited, a:active {color: rgba(50, 100, 200, 1); text-decoration: none;}
 a:hover {text-decoration: underline;}
 
