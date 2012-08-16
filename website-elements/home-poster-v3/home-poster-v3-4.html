@@ -7,26 +7,27 @@
     <link href="../../style/prometheus.css" rel="stylesheet" type="text/css"/>
     <link href="style/home-poster-v3.css" rel="stylesheet" type="text/css"/>
     <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/> -->
+        <script type="text/javascript" src="script/jquery-1.7.1.min.js"></script>
 </head>
 
 <body>
 
-    <div class="container">
+    <div id="container" class="center">
 
-        <div class="box shadow span12">
+        <!-- <div class="box shadow span12">
             <h1>Home posters <small>&mdash; On the wall</small></h1>
-        </div>
+        </div> -->
         
         <!-- <img class="poster-image" src="../../img/ressources/feist.jpg" alt=""/>
         <img class="picture" src="../../img/ressources/instant-litter.jpg" alt=""/>
         <img class="poster-image" src="../../img/ressources/beyond-the-music.jpg" alt=""/> -->
         
-        <div class="home-tile shadow">
-            <img class="poster" src="../../img/ressources/feist.jpg" alt=""></img>
+        <div class="home-tile">
             <div class="subtitle">
                 <p class="date">tue 22 jun</p>
                 <p>Sao Paulo</p>
             </div>
+            <img class="poster" src="../../img/ressources/feist.jpg" alt=""></img>
             <table class="friends">
                 <tbody>
                     <tr>
@@ -49,18 +50,15 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="buy-ticket"></div>
         </div>
         
-        <div class="home-tile shadow">
-            <img class="poster" src="../../img/ressources/instant-litter.jpg" alt=""></img>
-            <div class="subtitle ticket">
+        <div class="home-tile">
+            <div class="subtitle">
                 <p class="date">tue 22 jun</p>
                 <p>Sao Paulo</p>
-                <div class="ticket-indicator">
-                    <div class="icon"></div>
-                    <span>ingressos</span>
-                </div>
             </div>
+            <img class="poster" src="../../img/ressources/instant-litter.jpg" alt=""></img>
             <table class="friends">
                 <tbody>
                     <tr>
@@ -83,9 +81,14 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="buy-ticket"></div>
         </div>
         
-        <div class="home-tile shadow">
+        <div class="home-tile">
+            <div class="subtitle">
+                <p class="date">tue 22 jun</p>
+                <p>Sao Paulo</p>
+            </div>
             <div class="info-container">
                 <table>
                     <tbody>
@@ -110,15 +113,6 @@
                     </tbody>
                 </table>
             </div>
-            <div class="subtitle ticket">
-                
-                <p class="date">tue 22 jun</p>
-                <p>Sao Paulo</p>
-                <div class="ticket-indicator">
-                    <div class="icon"></div>
-                    <span>ingressos</span>
-                </div>
-            </div>
             <table class="friends">
                 <tbody>
                     <tr>
@@ -143,16 +137,12 @@
             </table>
         </div>
         
-        <div class="home-tile shadow">
+        <div class="home-tile today">
+            <div class="subtitle">
+                <p class="date">hoje</p>
+                <p>Sao Paulo</p>
+            </div>
             <img class="poster" src="../../img/ressources/jazz.jpg" alt=""></img>
-            <div class="subtitle ticket">
-                <p class="date">tue 22 jun</p>
-                <p>Sao Paulo</p>
-                <div class="ticket-indicator">
-                    <div class="icon"></div>
-                    <span>ingressos</span>
-                </div>
-            </div>
             <table class="friends">
                 <tbody>
                     <tr>
@@ -177,7 +167,11 @@
             </table>
         </div>
         
-        <div class="home-tile shadow">
+        <div class="home-tile today">
+            <div class="subtitle">
+                <p class="date">hoje</p>
+                <p>Sao Paulo</p>
+            </div>
             <div class="info-container">
                 <table>
                     <tbody>
@@ -202,15 +196,6 @@
                     </tbody>
                 </table>
             </div>
-            <div class="subtitle ticket">
-                
-                <p class="date">tue 22 jun</p>
-                <p>Sao Paulo</p>
-                <div class="ticket-indicator">
-                    <div class="icon"></div>
-                    <span>ingressos</span>
-                </div>
-            </div>
             <table class="friends">
                 <tbody>
                     <tr>
@@ -233,14 +218,15 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="buy-ticket"></div>
         </div>
         
-        <div class="home-tile shadow">
-            <img class="poster" src="../../img/ressources/beyond-the-music.jpg" alt=""></img>
+        <div class="home-tile">
             <div class="subtitle">
                 <p class="date">tue 22 jun</p>
                 <p>Sao Paulo</p>
             </div>
+            <img class="poster" src="../../img/ressources/beyond-the-music.jpg" alt=""></img>
             <table class="friends">
                 <tbody>
                     <tr>
@@ -265,16 +251,13 @@
             </table>
         </div>
         
-        <div class="home-tile shadow">
-            <img class="poster" src="../../img/ressources/silver.jpg" alt=""></img>
-            <div class="subtitle ticket">
+        <div class="home-tile">
+            <div class="subtitle">
                 <p class="date">tue 22 jun</p>
                 <p>Sao Paulo</p>
-                <div class="ticket-indicator">
-                    <div class="icon"></div>
-                    <span>ingressos</span>
-                </div>
             </div>
+            <img class="poster" src="../../img/ressources/silver.jpg" alt=""></img>
+
             <table class="friends">
                 <tbody>
                     <tr>
@@ -297,9 +280,14 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="buy-ticket"></div>
         </div>
         
-        <div class="home-tile shadow">
+        <div class="home-tile">
+            <div class="subtitle">
+                <p class="date">tue 22 jun</p>
+                <p>Sao Paulo</p>
+            </div>
             <div class="info-container">
                 <table>
                     <tbody>
@@ -324,14 +312,204 @@
                     </tbody>
                 </table>
             </div>
-            <div class="subtitle ticket">
-                
+            <table class="friends">
+                <tbody>
+                    <tr>
+                        <td class="pic-container">
+                            <img src="img/robi.jpeg" alt=""></img>
+                        </td>
+                        <td class="pic-container">
+                            <img src="img/gavinho.jpeg" alt=""></img>
+                        </td>
+                        <td class="pic-container">
+                            <img src="img/icaro.jpeg" alt=""></img>
+                        </td>
+                        <td class="pic-container">
+                            <img src="img/bissuh.jpeg" alt=""></img>
+                        </td>
+                        <td class="people-attending">
+                            <span class="icon"></span>
+                            <span>200</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="home-tile">
+            <div class="subtitle">
                 <p class="date">tue 22 jun</p>
                 <p>Sao Paulo</p>
-                <div class="ticket-indicator">
-                    <div class="icon"></div>
-                    <span>ingressos</span>
-                </div>
+            </div>
+            <img class="poster" src="../../img/ressources/feist.jpg" alt=""></img>
+            <table class="friends">
+                <tbody>
+                    <tr>
+                        <td class="pic-container">
+                            <img src="img/robi.jpeg" alt=""></img>
+                        </td>
+                        <td class="pic-container">
+                            <img src="img/gavinho.jpeg" alt=""></img>
+                        </td>
+                        <td class="pic-container">
+                            <img src="img/icaro.jpeg" alt=""></img>
+                        </td>
+                        <td class="pic-container">
+                            <img src="img/bissuh.jpeg" alt=""></img>
+                        </td>
+                        <td class="people-attending">
+                            <span class="icon"></span>
+                            <span>200</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="home-tile today">
+            <div class="subtitle">
+                <p class="date">hoje</p>
+                <p>Sao Paulo</p>
+            </div>
+            <div class="info-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h3 class="title">
+                                    Instant litter festival
+                                </h3>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit hehe  dfg 
+                                </p>
+                                <div class="labels">
+                                    <span class="label label-blue">music</span> <span class="label label-orange">classical</span> <span class="label label-green">indie</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="number_of_friends">
+                                <span>6</span> friends are attending
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <table class="friends">
+                <tbody>
+                    <tr>
+                        <td class="pic-container">
+                            <img src="img/robi.jpeg" alt=""></img>
+                        </td>
+                        <td class="pic-container">
+                            <img src="img/gavinho.jpeg" alt=""></img>
+                        </td>
+                        <td class="pic-container">
+                            <img src="img/icaro.jpeg" alt=""></img>
+                        </td>
+                        <td class="pic-container">
+                            <img src="img/bissuh.jpeg" alt=""></img>
+                        </td>
+                        <td class="people-attending">
+                            <span class="icon"></span>
+                            <span>200</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="buy-ticket"></div>
+        </div>
+        
+        <div class="home-tile">
+            <div class="subtitle">
+                <p class="date">tue 22 jun</p>
+                <p>Sao Paulo</p>
+            </div>
+            <img class="poster" src="../../img/ressources/beyond-the-music.jpg" alt=""></img>
+            <table class="friends">
+                <tbody>
+                    <tr>
+                        <td class="pic-container">
+                            <img src="img/robi.jpeg" alt=""></img>
+                        </td>
+                        <td class="pic-container">
+                            <img src="img/gavinho.jpeg" alt=""></img>
+                        </td>
+                        <td class="pic-container">
+                            <img src="img/icaro.jpeg" alt=""></img>
+                        </td>
+                        <td class="pic-container">
+                            <img src="img/bissuh.jpeg" alt=""></img>
+                        </td>
+                        <td class="people-attending">
+                            <span class="icon"></span>
+                            <span>200</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="home-tile">
+            <div class="subtitle">
+                <p class="date">tue 22 jun</p>
+                <p>Sao Paulo</p>
+            </div>
+            <img class="poster" src="../../img/ressources/silver.jpg" alt=""></img>
+
+            <table class="friends">
+                <tbody>
+                    <tr>
+                        <td class="pic-container">
+                            <img src="img/robi.jpeg" alt=""></img>
+                        </td>
+                        <td class="pic-container">
+                            <img src="img/gavinho.jpeg" alt=""></img>
+                        </td>
+                        <td class="pic-container">
+                            <img src="img/icaro.jpeg" alt=""></img>
+                        </td>
+                        <td class="pic-container">
+                            <img src="img/bissuh.jpeg" alt=""></img>
+                        </td>
+                        <td class="people-attending">
+                            <span class="icon"></span>
+                            <span>200</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="buy-ticket"></div>
+        </div>
+        
+        <div class="home-tile">
+            <div class="subtitle">
+                <p class="date">tue 22 jun</p>
+                <p>Sao Paulo</p>
+            </div>
+            <div class="info-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h3 class="title">
+                                    Por que os homems mentem?
+                                </h3>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit hehe  dfg 
+                                </p>
+                                <div class="labels">
+                                    <span class="label label-blue">music</span> <span class="label label-orange">classical</span> <span class="label label-green">indie</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="number_of_friends">
+                                <span>6</span> friends are attending
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <table class="friends">
                 <tbody>
@@ -357,12 +535,12 @@
             </table>
         </div>
         
-        <div class="home-tile shadow">
-            <img class="poster" src="../../img/ressources/feist.jpg" alt=""></img>
+        <div class="home-tile">
             <div class="subtitle">
                 <p class="date">tue 22 jun</p>
                 <p>Sao Paulo</p>
             </div>
+            <img class="poster" src="../../img/ressources/feist.jpg" alt=""></img>
             <table class="friends">
                 <tbody>
                     <tr>
@@ -386,6 +564,18 @@
                 </tbody>
             </table>
         </div>
+        
+        
+        </div>
     </div>
+    
+    <script type="text/javascript">
+        $(window).ready(function() {
+            $("#container").width(240*Math.floor($(window).width()/240));
+        });
+        $(window).resize(function() {
+            $("#container").width(240*Math.floor($(window).width()/240));
+        });
+    </script>
 </body>
 </html>

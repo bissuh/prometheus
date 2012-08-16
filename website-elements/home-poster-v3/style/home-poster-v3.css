@@ -5,6 +5,7 @@
 	-moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 	-webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+	position: relative;
 }
 
 .home-tile .poster {
@@ -23,8 +24,9 @@
 	padding: 0 4px;
 }
 
-.home-tile .subtitle.ticket {
-	background: #ff9600;
+.home-tile .subtitle.ticket .date {
+	color: #ff9600;
+/*	background: #0ca8e9;*/
 }
 
 .home-tile p {
@@ -48,6 +50,7 @@
 	border-collapse: collapse;
 	width: 100%;
 	background: #fff;
+	height: 42px;
 }
 
 .home-tile .pic-container {
@@ -128,4 +131,26 @@
 .home-tile .info-container .number_of_friends span {
 	font-size: 24px;
 	font-weight: 400;
+}
+
+.buy-ticket {
+  background-image: url("../img/ingressos-ribbon.png");
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  z-index: 2;
+}
+
+.today .buy-ticket {
+	background-image: url("../img/ingressos-ribbon-grey.png");
+}
+
+.today .subtitle {
+	background: #ff9600;
+}
+
+.today .date {
+	color: white !important;
 }
