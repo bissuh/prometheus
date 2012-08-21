@@ -33,6 +33,8 @@
 
 .event-header img {
 	vertical-align: bottom;
+	width: 90px;
+	height: 90px;
 }
 
 .verified-organizer {
