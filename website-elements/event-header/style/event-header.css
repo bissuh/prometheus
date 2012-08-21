@@ -1,0 +1,46 @@
+.event-header {
+	position: relative;
+}
+
+.event-header table {
+	border-collapse: collapse;
+	border: none;
+	background: white;
+	width: 940px;
+}
+
+.event-header td {
+		height: 90px;
+}
+
+.event-header h1 {
+	line-height: 38px;
+		padding-top: 6px;
+}
+
+.event-header .title-container {
+	padding-left: 20px;
+}
+
+.event-header .organizer-info {
+	text-align: right;
+	padding-right: 20px;
+}
+
+.event-header .img-container {
+	width: 90px;
+}
+
+.event-header img {
+	vertical-align: bottom;
+}
+
+.verified-organizer {
+  background-image: url("../img/verified-ribbon.png");
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  z-index: 2;
+}
