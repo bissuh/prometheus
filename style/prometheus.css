@@ -82,8 +82,9 @@ pre code {padding: 0; color: inherit; background-color: transparent; border: 0;}
 ---------------------------------------------------------------------------------------------------- */
 
 .box {background: #fff; padding: 20px; float: left;}
-.box-header, .box-footer, .box-footer-closing, .box-footer-thin {position: relative; padding: 20px; background: white; z-index: 1;}
+.box-header, .box-middle, .box-footer, .box-footer-closing, .box-footer-thin {position: relative; padding: 20px; background: white; z-index: 1;}
 .box-header {padding-bottom: 10px;}
+.box-middle {padding-top: 10px; padding-bottom: 10px;}
 .box-footer {padding-top: 10px;}
 .box-footer-closing {padding: 20px 0 0 0;}
 .box-footer-thin {padding: 10px 0 0 0;}

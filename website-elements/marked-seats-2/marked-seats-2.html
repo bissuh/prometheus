@@ -5,7 +5,7 @@
 <head>
 	<title>Ingresse &mdash; Event Calendar</title>
 	<link href="../../style/prometheus.css" rel="stylesheet" type="text/css"/>
-	<link href="style/create-event.css" rel="stylesheet" type="text/css"/>
+	<link href="style/marked-seats-2.css" rel="stylesheet" type="text/css"/>
 	<link href="style/style.css" rel="stylesheet" type="text/css"/>
 	<link href="style/jquery-ui-1.8.21.custom.css" rel="stylesheet" type="text/css"/>
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
@@ -229,7 +229,7 @@
 				</table>
 				
 			</div>
-			<div class="box-footer shadow">
+			<div class="box-middle shadow">
 				<div class="row">
 
 					<!-- Form -->
@@ -334,10 +334,110 @@
 						</fieldset>
 					</form>
 				</div>
+				
+			</div>
+			
+            <!-- THIS IS FOR THE FISRT SCREEN (ZONES) -->
+			
+            <!-- <div class="box-back shadow zone-selector">
+                <div class="row">
+                    <div class="seat-selection">
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="" class="button blue-gradient blue-border float-right">Save</div>
+                    <a href="#" class="float-right" style="padding: 7px 5px">discard</a>
+                </div>
+            </div> -->
+			
+            <!-- THIS IS FOR THE SECOND SCREEN (SEATS) -->
+			
+			<div class="box-back shadow zone-selector">
+                <div class="row">
+                    <div class="seat-selection">
+                    </div>
+                </div>
+                <div class="row">
+                    <select id="" class="float-right input-xxlarge"><option>ez</option></select>
+                    <span href="#" class="float-left" style="padding-top: 5px"><strong>Select a zone associated with that ticket:</strong></span>
+                </div>
+            </div>
+            
+			<div class="box-footer shadow">
+				
+				
+				<table id="zonesSummary">
+					<thead>
+						<tr>
+							<th class="ticket-type">
+								Zone name
+							</th>
+							<th>
+								Total capacity
+							</th>
+							<th>
+								Number of selected seats
+							</th>
+							<th></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="ticket-type">
+								General entrance
+							</td>
+							<td>
+								50
+							</td>
+							<td>
+								40
+							</td>
+							<td>
+								<a href="#">edit</a>
+							</td>
+							<td>
+								<a href="#">x</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="ticket-type">
+								General entrance
+							</td>
+							<td>
+								70
+							</td>
+							<td class="selectedSeats">
+								30
+							</td>
+							<td>
+								<a href="#">edit</a>
+							</td>
+							<td>
+								<a href="#">x</a>
+							</td>
+						<tr>
+						</tr>
+							<td class="ticket-type">
+								General entrance
+							</td>
+							<td>
+								30
+							</td>
+							<td>
+								15
+							</td>
+							<td>
+								<a href="#">edit</a>
+							</td>
+							<td>
+								<a href="#">x</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
 				<div class="row">
-					<div class="ticket-total-cost">
-						Total cost for the buyer: <span>R$</span><span id="ticketTotalCost">XX</span>
-					</div>
 					<div id="addTicketButton" class="button orange-gradient orange-border float-right">
 						Add ticket
 					</div>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Ingresse - Marked seats - Add a zone</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css"/>
+    <link href="../../style/prometheus.css" rel="stylesheet" type="text/css"/>
+    <link href="style/marked_seats.css" rel="stylesheet" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
+    <script type='text/javascript' src='js/jquery1.7.2.2.js'></script>
+    <script type='text/javascript' src='js/menu-sticker.js'></script>
+</head>
+
+<body>
+
+
+    <div id="markedSeats" class="container">
+
+        <!-- box container -->
+        <div class="box shadow span12">
+            <h1>Add a venue</h1>
+        </div>
+        <!-- end of box container -->
+
+        <div class="column span8">
+
+            <div class="box shadow span8" style="position: relative">
+                <h3 class="box-title">General settings</h3>
+                <div class="row">
+                    <div class="row span4">
+                        <form id="editZone">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="control-group">
+                                        <label class="control-label" for="optionsCheckbox"><strong>Name *</strong></label>
+                                        <div class="controls">
+                                            <input type="text" id="" placeholder="Name"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="control-group">
+                                        <label class="control-label" for="optionsCheckbox"><strong>Picture *</strong></label>
+                                        <div class="controls">
+                                            <a>add photo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="control-group">
+                                        <label class="control-label" for="optionsCheckbox"><strong>Size *</strong></label>
+                                        <div class="controls">
+                                            <input type="text" class="size-field" id="" placeholder="X"/>
+                                            <input type="text" class="size-field" id="" placeholder="Y"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="row span4" style="height: 176px;
+                    background: #ccc;">
+                </div>
+            </div>
+            <div class="row">
+                <div style="width: 100%; height: 300px; background: #ccc;">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box shadow span8" style="position: relative">
+            <h3 class="box-title">Edit seat</h3>
+            <div class="row">
+                <div class="row span4">
+                    <form id="editZone">
+                        <fieldset>
+                            <div class="row">
+                                <div class="control-group">
+                                    <label class="control-label" for="optionsCheckbox"><strong>Seat number *</strong></label>
+                                    <div class="controls">
+                                        <input type="text" id="" placeholder="Name"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="control-group">
+                                    <label class="control-label" for="optionsCheckbox"><strong>Picture *</strong></label>
+                                    <div class="controls">
+                                        <a>add photo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="row span4" style="height: 176px; background: #ccc;"></div>
+            </div>
+            <div class="form-actions">
+                <div class="float-right">
+                    <a href="marked_seats-add_venue.html">Discard changes</a>
+                    <button type="submit" class="button darkgrey-gradient darkgrey-border">Remove seat</button>
+                    <button type="submit" class="button orange-gradient orange-border">Save changes</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="zonesDashboard" class="column span4">
+        <div class="span4">
+            <div class="box-header shadow">
+                <h3 class="box-title">Zones</h3>
+                <a>+ add a zone</a>
+                <table class="back-table-header">
+                    <thead>
+                        <tr>
+                            <td>
+                                Zone
+                            </td>
+                            <td>
+                                # seats
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="box-back shadow">
+                <div class="table-container">
+                    <table class="back-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    yop
+                                </td>
+                                <td>
+                                    300
+                                </td>
+                                <td>
+                                    <a href="#">edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Zone 4 sfdg
+                                </td>
+                                <td>
+                                    30,000
+                                </td>
+                                <td>
+                                    <a href="#">edit</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="box-footer-thin shadow">
+            </div>
+        </div>
+
+        <div class="box shadow span4">
+            <h3 class="box-title">Finish? <small>&mdash; <a href="marked_seats-venue_list.html">back without saving</a></small></h3>
+            <div id="saveVenue" class="button orange-gradient orange-border">Save this venue</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

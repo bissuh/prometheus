@@ -1,0 +1,519 @@
+body {
+  background: url('../../../img/bg-pattern.png');
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+
+/* GENERAL SETTINGS
+---------------------------------------------------------------------------------------------------- */
+
+.box-header, .box-footer {
+  position: relative;
+  padding: 20px;
+  background: white;
+  z-index: 1;
+}
+
+.box-header {
+  padding-bottom: 10px;
+}
+
+.box-footer {
+  padding-bottom: 0;
+}
+
+.social {
+  position: relative;
+  z-index: 0;
+}
+
+
+/* MAIN FORM
+---------------------------------------------------------------------------------------------------- */
+
+#createEvent #mainForm, 
+#createEvent #mainForm fieldset,
+#createEvent #mainForm fieldset .control-group {
+  float: left;
+  width: 460px;
+}
+
+#createEvent #mainForm fieldset .control-group:first-child {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#createEvent #mainForm fieldset .control-group:last-child {
+  margin-bottom: 0;
+}
+
+
+#createEvent #mainForm fieldset .control-group .controls input,
+#createEvent #mainForm fieldset .control-group .controls textarea {
+    width: 290px;
+    display: inline;
+}
+
+#createEvent #mainForm fieldset .control-group.hidden-field {
+  margin: 0;
+}
+
+#createEvent #descriptionControlGroup {
+  margin-bottom: 20px !important;
+}
+
+#createEvent .control-group.hidden-field .controls input,
+#createEvent .control-group.hidden-field .controls textarea,
+#createEvent .control-group.hidden-field .controls table {
+  display: none !important;
+}
+
+#createEvent #mainForm fieldset .control-group.hidden-field .controls a {
+  padding-top: 5px;
+  display: block;
+}
+
+#createEvent .help-block.change-url {
+  margin: 0;
+  font-size: 12px;
+}
+
+#createEvent #eventDate {
+  width: 100px !important;
+  margin-right: 20px;
+}
+
+#createEvent #eventStartingTime {
+  width: 60px !important;
+}
+
+#createEvent #eventEndingTime {
+  width: 60px !important;
+  float: right;
+}
+
+.upload-poster {
+  float: right;
+}
+
+.upload-poster img {
+  display: block;
+  width: 180px;
+  height: 240px;
+}
+
+.upload-poster .picture-actions {
+  text-align: center;
+}
+
+
+
+/* ADD TICKETS
+---------------------------------------------------------------------------------------------------- */
+
+#addTicketsBox {
+  width: 700px !important;
+}
+
+#addTicketsBox .column {
+  float: left;
+  width: 320px;
+}
+
+#addTicketsBox .column:first-child {
+  margin-right: 20px;
+}
+
+#addTicketsBox #ticketName, #addTicketsBox #ticketDescription {
+  width: 310px;
+}
+
+#addTicketsBox #ticketQuantity, #addTicketsBox #ticketPrice {
+  width: 80px !important;
+}
+
+
+#ticketQuantityControlGroup, #ticketPriceControlGroup {
+  float: left;
+  width: 90px;
+  margin-right: 20px;
+}
+
+#ticketFreeControlGroup {
+  float: left;
+  width: 100px;
+  margin-right: 0;
+}
+
+#freeTicket {
+  width: 100px !important;
+}
+
+#ticketOffersControlGroup {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+#ticketOffersControlGroup label.checkbox.inline {
+  width: 132px;
+  float:left;
+}
+#ticketOffersControlGroup label.checkbox.inline:last-child {
+  float: right;
+}
+
+#ticketFeeControlGroup {
+  display:block; clear:both;
+}
+
+#ticketFeeControlGroup table {
+  width: 100%;
+  font-size: 12px;
+  color: #888;
+}
+
+#ticketFeeControlGroup table strong {
+  color: #333;
+}
+
+#ticketFeeControlGroup table td:last-child {
+  text-align: right;
+}
+
+.input-action {
+  font-size: 13px;
+  line-height: 23px;
+  vertical-align: text-bottom;
+}
+
+p.input-action {
+  line-height: normal;
+}
+
+.control-group .input-action {
+  display: none;
+}
+
+.control-group.hidden-field .input-action {
+  display: block;
+}
+
+.ticket-total-cost {
+  float:left;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.ticket-total-cost span {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+#ticketTotalCost {
+  color: #333;
+}
+
+#ticketSalesDates table {
+  border-collapse: collapse;
+}
+
+#ticketSalesDates table td {
+  padding-right: 10px;
+}
+
+#ticketSalesDates .time1 {
+  padding-right: 20px !important;
+}
+
+#ticketSalesDates .time2 {
+  padding-right: 0;
+}
+
+#ticketSalesDates table input {
+  margin: 0;
+}
+
+.date-input {
+  width: 80px;
+}
+
+.time-input {
+  width: 40px;
+}
+
+#addTicketButton {
+  width: 108px;
+}
+
+
+#ticketSummary {
+  width: 660px;
+  text-align: right;
+  margin: auto;
+  font-size: 14px;
+}
+
+#ticketSummary th {
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #888;
+  font-size: 16px;
+}
+
+#ticketSummary td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+#ticketSummary tr:last-child td {
+  border-bottom: none;
+}
+
+#ticketSummary .ticket-type {
+  text-align: left;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+/* SIDE BOX
+----------------------------------------------------------------------------------------------------*/
+
+#sideBox .box-header, #sideBox .box-footer {
+  width: 180px !important;
+}
+
+#sideBox .box-back {
+  width: 220px !important;
+}
+
+#sideBox #saveEventButton, #sideBox #previewEventButton, #sideBox #publishEventButton {
+  text-align: center;
+  cursor: pointer;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
+}
+
+#sideBox #saveEventButton:active, #sideBox #previewEventButton:active, #sideBox #publishEventButton:active {
+    text-shadow: rgba(0, 0, 0, 0.5) 0 -1px 0;
+}
+
+#sideBox #saveEventButton, #sideBox #previewEventButton {
+  float: left;
+  width: 109px;
+  height: 29px;
+  line-height: 29px;
+  font-size: 18px;
+}
+
+#sideBox #saveEventButton {
+  border-bottom: 1px solid #004fbb;
+  border-right: 1px solid #004fbb;
+}
+
+#sideBox #previewEventButton {
+  border-bottom: 1px solid #337A00;
+  border-left: 1px solid #C7FF60;
+}
+
+#sideBox #publishEventButton {
+  display: block;
+  clear: both;
+  height: 39px;
+  line-height: 38px;
+  font-size: 22px;
+  font-weight: 700;
+  border-top: 1px solid #F1C781;
+}
+
+
+
+
+
+
+
+
+
+/* TO BE UPDATED IN PROMETHEUS ------ UPDATED
+----------------------------------------------------------------------------------------------------*/
+
+/* All the .span* > .box-header, .span* > .box-footer */
+
+.box-back {
+  width: 100%;
+}
+
+.hidden {display: none}
+
+.orange-gradient {
+  background: #ff9600;
+  background: -moz-linear-gradient(top,  #f1a400 0%, #ff7516 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1a400), color-stop(100%, #ff7516));
+  background: -webkit-linear-gradient(top,  #f1a400 0%, #ff7516 100%);
+  background: -o-linear-gradient(top,  #f1a400 0%, #ff7516 100%);
+  background: -ms-linear-gradient(top,  #f1a400 0%, #ff7516 100%);
+  background: linear-gradient(to bottom,  #f1a400 0%, #ff7516 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1a400', endColorstr='#ff7516', GradientType=0 );
+}
+
+.orange-gradient:hover {
+  background: #f4b300;
+  background: -moz-linear-gradient(top,  #f4b300 0%, #ff802b 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4b300), color-stop(100%, #ff802b));
+  background: -webkit-linear-gradient(top,  #f4b300 0%, #ff802b 100%);
+  background: -o-linear-gradient(top,  #f4b300 0%, #ff802b 100%);
+  background: -ms-linear-gradient(top,  #f4b300 0%, #ff802b 100%);
+  background: linear-gradient(to bottom,  #f4b300 0%, #ff802b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4b300', endColorstr='#ff802b', GradientType=0 );
+}
+
+.orange-gradient:active {
+  background: #f46309;
+  background: -moz-linear-gradient(top,  #f46309 0%, #f29100 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f46309), color-stop(100%, #f29100));
+  background: -webkit-linear-gradient(top,  #f46309 0%, #f29100 100%);
+  background: -o-linear-gradient(top,  #f46309 0%, #f29100 100%);
+  background: -ms-linear-gradient(top,  #f46309 0%, #f29100 100%);
+  background: linear-gradient(to bottom,  #f46309 0%, #f29100 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f46309', endColorstr='#f29100', GradientType=0 );
+}
+
+.blue-gradient {
+  background: #0ca8e9;
+  background: -moz-linear-gradient(top,  #35c4ff 0%, #0084ff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #35c4ff), color-stop(100%, #0084ff));
+  background: -webkit-linear-gradient(top,  #35c4ff 0%, #0084ff 100%);
+  background: -o-linear-gradient(top,  #35c4ff 0%, #0084ff 100%);
+  background: -ms-linear-gradient(top,  #35c4ff 0%, #0084ff 100%);
+  background: linear-gradient(to bottom,  #35c4ff 0%, #0084ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35c4ff', endColorstr='#0084ff', GradientType=0 );
+}
+
+.blue-gradient:hover {
+  background: #4fcdff;
+  background: -moz-linear-gradient(top,  #4fcdff 0%, #1e96ff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4fcdff), color-stop(100%, #1e96ff));
+  background: -webkit-linear-gradient(top,  #4fcdff 0%, #1e96ff 100%);
+  background: -o-linear-gradient(top,  #4fcdff 0%, #1e96ff 100%);
+  background: -ms-linear-gradient(top,  #4fcdff 0%, #1e96ff 100%);
+  background: linear-gradient(to bottom,  #4fcdff 0%, #1e96ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fcdff', endColorstr='#1e96ff', GradientType=0 );
+}
+
+.blue-gradient:active {
+  background: #0084ff;
+  background: -moz-linear-gradient(top,  #0084ff 0%, #329ff2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0084ff), color-stop(100%, #329ff2));
+  background: -webkit-linear-gradient(top,  #0084ff 0%, #329ff2 100%);
+  background: -o-linear-gradient(top,  #0084ff 0%, #329ff2 100%);
+  background: -ms-linear-gradient(top,  #0084ff 0%, #329ff2 100%);
+  background: linear-gradient(to bottom,  #0084ff 0%, #329ff2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0084ff', endColorstr='#329ff2', GradientType=0 );
+}
+
+.green-gradient {
+  background: #89e400;
+  background: -moz-linear-gradient(top,  #a8ff14 0%, #5aa500 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a8ff14), color-stop(100%, #5aa500));
+  background: -webkit-linear-gradient(top,  #a8ff14 0%,#5aa500 100%);
+  background: -o-linear-gradient(top,  #a8ff14 0%, #5aa500 100%);
+  background: -ms-linear-gradient(top,  #a8ff14 0%, #5aa500 100%);
+  background: linear-gradient(to bottom,  #a8ff14 0%, #5aa500 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8ff14', endColorstr='#5aa500', GradientType=0 );
+}
+
+.green-gradient:hover {
+  background: #ccff32;
+  background: -moz-linear-gradient(top,  #ccff32 0%, #65c400 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ccff32), color-stop(100%,#65c400));
+  background: -webkit-linear-gradient(top,  #ccff32 0%,#65c400 100%);
+  background: -o-linear-gradient(top,  #ccff32 0%,#65c400 100%);
+  background: -ms-linear-gradient(top,  #ccff32 0%,#65c400 100%);
+  background: linear-gradient(to bottom,  #ccff32 0%,#65c400 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccff32', endColorstr='#65c400',GradientType=0 );
+}
+ 
+ .green-gradient:active {
+   background: #5aa500;
+   background: -moz-linear-gradient(top,  #5aa500 0%, #92d811 100%);
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5aa500), color-stop(100%, #92d811));
+   background: -webkit-linear-gradient(top,  #5aa500 0%, #92d811 100%);
+   background: -o-linear-gradient(top,  #5aa500 0%, #92d811 100%);
+   background: -ms-linear-gradient(top,  #5aa500 0%, #92d811 100%);
+   background: linear-gradient(to bottom,  #5aa500 0%, #92d811 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aa500', endColorstr='#92d811', GradientType=0 );
+   
+ }
+
+
+
+
+
+
+
+/*
+//////////////////////////////////
+//////////////////////////////////
+SPECIFIC TO MARKED SEATS PART 2
+//////////////////////////////////
+//////////////////////////////////
+*/
+
+
+
+
+#zonesSummary {
+  width: 660px;
+  text-align: right;
+  margin: auto;
+  font-size: 14px;
+}
+
+#zonesSummary th {
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #888;
+  font-size: 12px;
+}
+
+#zonesSummary td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+#zonesSummary tr:last-child td {
+  border-bottom: none;
+}
+
+#zonesSummary .ticket-type {
+  text-align: left;
+  font-weight: 700;
+}
+
+#zonesSummary .selectedSeats {
+	width: 120px;
+}
+
+
+
+.zone-selector {
+	padding: 20px;
+}
+
+.seat-selection {
+	border: 1px solid #888;
+	width: 658px;
+	height: 400px;
+	margin-bottom: 14px;
+}

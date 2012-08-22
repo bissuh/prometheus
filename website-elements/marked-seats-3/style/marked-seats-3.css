@@ -1,0 +1,54 @@
+.table-title {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#ticketSummary {
+  width: 420px;
+  text-align: right;
+  margin: auto;
+  font-size: 14px;
+}
+
+#ticketSummary th {
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #888;
+  font-size: 12px;
+}
+
+#ticketSummary td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+#ticketSummary tr:last-child td {
+  border-bottom: none;
+}
+
+#ticketSummary .ticket-type {
+  text-align: left;
+  font-weight: 700;
+}
+
+#ticketSummary .selectedSeats {
+	width: 120px;
+}
+
+.seat-selection {
+	border: 1px solid #ccc;
+	width: 420px;
+	height: 300px;
+	margin-bottom: 14px;
+}
+
+.select-actions .button {
+	width: 176px;
+}
+
+.select-actions select {
+	width: 200px;
+	height: 30px;
+}
