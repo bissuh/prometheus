@@ -1,0 +1,37 @@
+#pop-up-tutorial
+
+.super-title {
+	font-size: 30px; text-align: left; margin-top: 125px; margin-left: 10px;
+}
+
+.browser-icons {
+	width: 450px; height: 120px; padding-top: 30px; margin: 0px auto;
+}
+
+#safari-div {
+	width: 960px; height: 576px; margin: 0px auto; background: url('../img/safari-bg.jpg') no-repeat;
+}
+
+#chrome-div {
+	width: 960px; height: 1152px; margin: 0px auto; background: url('../img/chrome-bg.jpg') no-repeat;
+}
+
+#firefox-div {
+	width: 960px; height: 576px; margin: 0px auto; background: url('../img/firefox-bg.jpg') no-repeat;
+}
+
+#explorer-div {
+	width: 960px; height: 576px; margin: 0px auto; background: url('../img/explorer-bg.jpg') no-repeat;
+}
+
+.titles {
+	padding-top: 35px; margin-left: 25px;
+}
+
+.super-number {
+	font-size: 50px; font-weight: bold; color: #474747; width: 50px; height: 40px; float: left;
+}
+
+.steps {
+	font-size: 18px; font-weight: bolder; color: #474747; float: left;
+}
