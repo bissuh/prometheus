@@ -9,29 +9,45 @@
 }
 
 #safari-div {
-	width: 960px; height: 576px; margin: 0px auto; background: url('../img/safari-bg.jpg') no-repeat;
+	width: 960px; height: 800px; margin: 0px auto; background: url('../img/safari-bg.jpg') no-repeat;
 }
 
 #chrome-div {
-	width: 960px; height: 1152px; margin: 0px auto; background: url('../img/chrome-bg.jpg') no-repeat;
+	width: 960px; height: 800px; margin: 0px auto; background: url('../img/chrome-bg.jpg') no-repeat;
 }
 
 #firefox-div {
-	width: 960px; height: 576px; margin: 0px auto; background: url('../img/firefox-bg.jpg') no-repeat;
+	width: 960px; height: 800px; margin: 0px auto; background: url('../img/firefox-bg.jpg') no-repeat;
 }
 
 #explorer-div {
-	width: 960px; height: 576px; margin: 0px auto; background: url('../img/explorer-bg.jpg') no-repeat;
+	width: 960px; height: 800px; margin: 0px auto; background: url('../img/explorer-bg.jpg') no-repeat;
 }
 
 .titles {
-	padding-top: 35px; margin-left: 25px;
+	padding-top: 35px; margin-left: 25px; width: 65px;
 }
 
 .super-number {
-	font-size: 50px; font-weight: bold; color: #474747; width: 50px; height: 40px; float: left;
+	font-size: 40px; font-weight: bold; color: #474747; width: 6px; height: 40px;
 }
 
 .steps {
-	font-size: 18px; font-weight: bolder; color: #474747; float: left;
+	font-size: 14px; font-weight: bolder; color: #474747;
+}
+
+.titles-font {
+	font-weight: bolder; font-size: 30px; float: left; margin-top: 30px; color: #e3e3e3; text-shadow: #000 1px 1px 3px;
+}
+
+.video {
+	margin-top: 100px; margin-left: 230px;
+}
+
+.table {
+	margin-top: 50px; width: 890px; margin-right: auto; margin-left: auto;
+}
+
+.second-line {
+	margin-top: 40px; width: 600px; margin-left: auto; margin-right: auto; 
 }
