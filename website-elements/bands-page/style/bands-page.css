@@ -15,7 +15,7 @@ section:after {clear: both;}
 .bg-branco-2 {margin: 0 auto; background-color: #ffffff;}
 .bg-orange {margin: 0 auto; background-color: #ff9600; height: 340px;}
 .bg-blue {margin: 0 auto; background-color: #0ca8e9; height: 410px;}
-.bg-grey {margin: 0 auto; background-color: #4d4d4d; height: 320px;}
+.bg-grey {margin: 0 auto; background-color: #4d4d4d; height: 340px;}
 .bg-green {margin: 0 auto; background-color: #5aa500; height: 410px;}
 
 .disco {height: 410px;
@@ -100,21 +100,21 @@ section:after {clear: both;}
 
 .orange-content {color: #925d00;
 			font-size: 27px;
-			width: 677px;
+			width: 650px;
 			float: right;
 			margin-top: 20px;
 			text-align: right;}
 
 .green-content {color: #3e6a00;
 			font-size: 27px;
-			width: 600px;
+			width: 550px;
 			float: left;
 			margin-top: 20px;
 			text-align: left;}
 
 .gray-content {color: #919191;
 			font-size: 27px;
-			width: 700px;
+			width: 640px;
 			float: right;
 			margin-top: 20px;
 			text-align: right;}
