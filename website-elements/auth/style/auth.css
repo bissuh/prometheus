@@ -1,0 +1,176 @@
+.auth_body {
+   position: relative;
+}
+
+/* Facebook button */
+
+.button.facebook {
+   background: transparent url(../img/btn_fb.png) left top no-repeat;
+   line-height: 48px;
+   text-transform: uppercase;
+   font-size: 13px;
+   font-weight: 200;
+   padding: 0 0 0 44px;
+   width: 260px;
+   border: 0;
+   color: #fff;
+   text-shadow: 0 1px 0px rgba(0, 0, 0, 0.4);
+}
+.button.facebook:hover {
+  background-position: left center;
+}
+.button.facebook:active {
+   background-position: left bottom;
+}
+
+
+/* Top banner */
+
+.auth_banner {
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 276px;
+   background: transparent url(../img/auth_banner.jpg) center bottom no-repeat;
+   background-size: 100%;
+}
+
+/* Container */
+
+#auth_container {
+   position: relative;
+   z-index: 2;
+}
+
+
+/* Left column with content */
+
+#auth_content, #auth_forms {
+   margin-top: 160px;
+}
+#auth_content .headline {
+   color: #FFF;
+   display: table-cell;
+   padding-top: 10px;
+   font-weight: 100;
+   font-size: 32px;
+   height: 106px;
+   vertical-align: middle;
+}
+#auth_content .auth_video {
+   margin-top: 20px;
+}
+.auth_content_body {
+   margin-top: 29px;
+}
+
+
+/* Right column */
+
+/* Section dividers */
+
+.divider.or {
+   background: transparent url(../img/divider_or.png) center center no-repeat;
+   font-family: Georgia, Times, serif;
+   font-size: 12px;
+   font-style: italic;
+   color: #999;
+   text-align: center;
+   padding: 10px 0;
+}
+.divider.full {
+   margin: 20px -20px;
+   border: 1px solid #E0E0E0;
+}
+
+/* Sign-up call-to-action */
+
+#signup_call {
+   padding-bottom: 5px;
+}
+#btn_signup_call {
+   background: transparent url(../img/btn_signup-call.png) left top no-repeat;
+   width: 260px;
+   line-height: 40px;
+   text-transform: uppercase;
+   font-size: 16px;
+   font-weight: 200;
+   letter-spacing: .1em;
+   color: #fff;
+   text-shadow: 0 1px 0px rgba(0, 0, 0, 0.4);
+   border: 0;
+}
+#btn_signup_call:hover {
+   background-position: left center;
+}
+#btn_signup_call:active {
+   background-position: left bottom;
+} 
+#signup_call .legend {
+   display: block;
+   color: #666;
+   text-align: center;
+   font-size: 12px;
+   margin-top: 5px;
+}
+
+/* Sign in form */
+
+#signin_form p, #signup_form p {
+   font-size: 14px;
+}
+
+.auth_form .input-large{
+   width: 244px;
+   padding: 8px;
+}
+.auth_recover_password {
+   font-size: 13px;
+   line-height: 35px;
+}
+
+#auth_forms {
+   position: relative;
+   min-height: 700px;
+   overflow: hidden;
+}
+
+#auth_forms .button_auth_submit {
+   float: right;
+   line-height: 30px;
+   padding: 0 8px;
+   text-transform: uppercase;
+   font-size: 12px;
+   font-weight: 200;
+   letter-spacing: .1em;
+}
+
+/* Sign up */
+
+#signup_form {
+   position: absolute;
+}
+#signup_form.signup_hide {
+   left: 500px;
+}
+ #signup_form.signup_show {
+   left: 0;
+}
+ 
+#signup_form .auth_form{
+   display: block;
+   margin-top: 17px;
+}
+.label_signup_terms {
+   display: inline-block;
+   width: 135px;
+   font-size: 11px;
+   padding-left: 16px;
+   text-indent: -14px;
+}
+.label_signup_terms input {
+   display: inline;
+   position: relative;
+}

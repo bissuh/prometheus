@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Ingresse - Entre</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css"/>
+    <link href="style/auth.css" rel="stylesheet" type="text/css"/>
+    <link href="../../style/prometheus.css" rel="stylesheet" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
+</head>
+
+<body class="auth_body">
+    <div id="auth_container" class="container center">
+
+    <!-- Headline, body content and video -->
+        <div id="auth_content" class="column span8">
+            <h2 class="headline">Ingresse - o lugar para descobrir eventos e comprar ingressos</h2>
+            <p class="auth_content_body">A vida é muito curta para estar no lugar errado ou longe dos amigos. A Ingresse existe para que as pessoas encontrem os melhores eventos e aproveitem seus melhores momentos ao lado de amigos.</p>
+            <iframe src="http://player.vimeo.com/video/44943443" width="628" height="352" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen class="auth_video"></iframe>
+        </div>
+
+    <!-- Sidebar with sign-up call-to-ation, signin form and signup form -->
+        <div id="auth_forms" class="column span4">
+            <div id="signup_call" class="box shadow span4 signupcall">
+                <button id="btn_signup_call" class="button button_auth">Crie sua conta</button>
+                <span class="legend">É de graça!</span>
+            </div>
+
+            <div id="signin_form" class="box shadow span4">
+                <p>Já tem cadastro? É só entrar</p>
+                <button class="button facebook">Entrar com o Facebook</button>
+                <p class="divider or">ou</p>
+                <form class="auth_form">
+                    <input type="email" class="input-large" placeholder="E-mail" />
+                    <input type="password" class="input-large" placeholder="Senha" />
+                    <a href="#" class="auth_recover_password">Esqueceu a senha?</a>
+                    <button class="button orange-gradient orange-border button_auth_submit">Login</button>
+                </form>
+            </div>
+            <div id="signup_form" class="box shadow span4 signup_hide">
+                <button class="button button_auth facebook">Cadastrar com o Facebook</button>
+                <hr class="divider full" />
+                    <p>Ou crie sua conta:</p>
+                <form class="auth_form">
+                    <input type="text" class="input-large" placeholder="Nome" />
+                    <input type="email" class="input-large" placeholder="E-mail" />
+                    <input type="email" class="input-large" placeholder="E-mail (confirmação)" />
+                    <input type="text" class="input-large" placeholder="Celular, ex: (00) 99999-9999" />
+                    <input type="password" class="input-large" placeholder="Senha" />
+                    <input type="password" class="input-large" placeholder="Senha (confirmação)" />
+                    <label for="terms_accept" class="label_signup_terms">
+                        <input type="checkbox" id="terms_accept"> Aceito o <a href="#" class="">termo de serviço</a> e a <a href="#" class="">política de privacidade</a>.
+                    </label>
+                        <button class="button orange-gradient orange-border button_auth_submit">Cadastrar</button>
+                </form>
+                <hr class="divider full" />
+                <p><a href="#" id="singin_back">&larr; voltar para login</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="auth_banner">&nbsp;</div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="script/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="script/auth.js"></script>
+</body>
+</html>
