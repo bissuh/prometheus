@@ -1,0 +1,150 @@
+.tickets-title {
+    color: #ff9434;
+    background: transparent url(../img/icon-ticket-title.png) left 4px no-repeat;
+    padding-left: 26px;
+}
+
+.tickets-dates {
+    list-style: none;
+    margin: 12px 0 0 0;
+}
+
+/* Ribbon */
+
+.calendar .ribbon-wrapper {
+    margin-top: 0;
+}
+.calendar .ribbon-front {
+    width: 240px;
+    text-align: center;
+}
+.calendar .ribbon-edge-bottomright {
+    left: 200px;
+}
+.calendar .ribbon-front h2 {
+    padding-top: 0;
+    margin-top: 2px
+}
+.ic-ribbon-ticket {
+    display: inline-block;
+    background: transparent url(../img/icon-ribbon-ticket-title.png) left center no-repeat;
+    padding-left: 26px;
+}
+
+/* Event dates picker */
+
+.event-option {
+    background-color: #EEE;
+    border-bottom: 1px solid #CCC;
+    text-indent: -18px;
+    padding: 10px 10px 10px 28px;
+    margin: 0;
+}
+.event-option:hover, .event-option:active {
+    background-color: #ff9434;
+    color: #FFF;
+}
+.event-option input {
+    margin: 0 4px 0 0;
+    display: inline-block;
+}
+.event-option .event-option-date {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.event-option .event-option-detail {
+    font-size: 14px;
+    display: block;
+    padding-left: 18px;
+}
+.event-option .event-option-time {
+    color: #999;
+}
+.event-option.last-units .event-option-status{
+    font-weight: 600;
+    color: #00a2e5;
+}
+.event-option.sold-out, .event-option.sold-out .event-option-status{
+    color: #999;
+}
+.event-option:hover,
+.event-option:active,
+.event-option:hover .event-option-detail,
+.event-option:active .event-option-detail{
+    color: #FFF;
+}
+.event-option:hover.sold-out,
+.event-option:hover.sold-out .event-option-detail,
+.event-option:active.sold-out .event-option-detail{
+    background-color: #eee;
+    color: #999;
+}
+
+/* Price range table */
+
+.price-range {
+    margin: 10px 0 4px 0;
+    width: 100%;
+}
+.price-range th {
+    text-align: left;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 400;
+}
+.price-range td {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Buy button */
+
+.buy-btn {
+    background: #ff9600;
+    background: -moz-linear-gradient(top, #ff7516 0%,  #f1a400 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff7516), color-stop(100%, #f1a400));
+    background: -webkit-linear-gradient(top,  #ff7516 0%, #f1a400 100%);
+    background: -o-linear-gradient(top, #ff7516 0%, #f1a400 100%);
+    background: -ms-linear-gradient(top, #ff7516 0%, #f1a400 100%);
+    background: linear-gradient(to bottom, #ff7516 0%, #f1a400 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7516', endColorstr='#f1a400', GradientType=0);
+    
+    display: block;
+    text-align: center;
+    padding: 12px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 400;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+}
+.buy-btn:hover {
+    background: -moz-linear-gradient(top, #ff802b 0%,  #f4b300 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff802b), color-stop(100%, #f4b300));
+    background: -webkit-linear-gradient(top,  #ff802b 0%, #f4b300 100%);
+    background: -o-linear-gradient(top, #ff802b 0%, #f4b300 100%);
+    background: -ms-linear-gradient(top, #ff802b 0%, #f4b300 100%);
+    background: linear-gradient(to bottom, #ff802b 0%, #f4b300 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff802b', endColorstr='#f1a400', GradientType=0);
+    
+    text-decoration: none;
+}
+.buy-btn:active {
+    background: -moz-linear-gradient(top, #ff7516 0%,  #f46309 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff7516), color-stop(100%, #f46309));
+    background: -webkit-linear-gradient(top,  #ff7516 0%, #f46309 100%);
+    background: -o-linear-gradient(top, #ff7516 0%, #f46309 100%);
+    background: -ms-linear-gradient(top, #ff7516 0%, #f46309 100%);
+    background: linear-gradient(to bottom, #ff7516 0%, #f46309 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7516', endColorstr='#f1a400', GradientType=0);
+    
+    color: #EEE;
+}
+
+.buy-btn .ic-shopping-cart {
+    display: block;
+    background: transparent url(../img/icon-shopping-cart.png) left top no-repeat;
+    line-height: 22px;
+    min-height: 24px;
+    padding-left: 26px;
+}

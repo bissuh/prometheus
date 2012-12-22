@@ -6,7 +6,8 @@
     <title>Ingresse &mdash; Event Calendar</title>
     <link href="../../style/prometheus.css" rel="stylesheet" type="text/css"/>
     <link href="style/calendar-event.css" rel="stylesheet" type="text/css"/>
-    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/> -->
+    <link href="style/calendar-event-upgrade.css" rel="stylesheet" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
 
 	<script type="text/javascript" src="js/tableMouseOver.js"></script>
 </head>
@@ -21,74 +22,61 @@
 
         <div class="calendar">
             <div class="box-header shadow">
-                <h3 class="box-title">Tickets &amp; Dates</h3>
-                <div class="row">
-                    <p><strong>Price range: 30$ - 45$</strong></p>
+                
+            <!-- Opt.1) Desingned title -->
+                <h3 class="box-title tickets-title" style="display: none">Tickets &amp; Dates</h3>
+            
+            <!-- Opt.2) Ribbon -->
+                <div class="ribbon-wrapper">
+                    <div class="ribbon-front">
+                        <h2 class="ic-ribbon-ticket">Ingressos</h2>
+                    </div>
+                    <div class="ribbon-edge-bottomleft"></div>
+                    <div class="ribbon-edge-bottomright"></div>
                 </div>
+
+
+                <p>Tickets available!</p>
+                
+                <ul class="tickets-dates shadow">
+                    <li>
+                        <label class="event-option available">
+                            <input type="radio" name="event-ticket-option" />
+                            <span class="event-option-date">Sáb 22 Dez</span>
+                            <span class="event-option-detail event-option-time">13:00 - 22:00</span>
+                            <span class="event-option-detail event-option-status">Disponível</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="event-option last-units">
+                            <input type="radio" name="event-ticket-option" />
+                            <span class="event-option-date">Sáb 22 Dez</span>
+                            <span class="event-option-detail event-option-time">13:00 - 22:00</span>
+                            <span class="event-option-detail event-option-status">Últimos ingressos</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="event-option sold-out">
+                            <input type="radio" name="event-ticket-option" />
+                            <span class="event-option-date">Sáb 22 Dez</span>
+                            <span class="event-option-detail event-option-time">13:00 - 22:00</span>
+                            <span class="event-option-detail event-option-status">Esgotado</span>
+                        </label>
+                    </li>
+                </ul>
+                <table class="price-range">
+                    <tr>
+                        <th>a partir de:</th>
+                        <th>até</th>
+                    </tr>
+                    <tr>
+                        <td>R$80,08</td>
+                        <td>R$130,00</td>
+                    </tr>
+                </table>    
             </div>
-            <div class="social shadow">
-                <table class="calendar-table" style="cursor: pointer;" onmousedown="tableMouseDown(this);" onmouseup="tableMouseUp(this);" onmouseover="tableMouseOver(this);" onmouseout="tableMouseOut(this);">
-                    <tr>
-                        <td class="calendar-date">
-                            <p class="date">sext 21 mai</p>
-                            <p class="time">21:00 &ndash; 23:30</p>
-                            <p class="buy-tickets">Buy tickets</p>
-                        </td>
-                        <td class="calendar-ticket">
-							<i></i>
-                        </td>
-                    </tr>
-                </table>
-                <table class="calendar-table" style="cursor: pointer;" onmousedown="tableMouseDown(this);" onmouseup="tableMouseUp(this);" onmouseover="tableMouseOver(this);" onmouseout="tableMouseOut(this);">
-                    <tr>
-                        <td class="calendar-date">
-                            <p class="date">sab 22 mai</p>
-                            <p class="time">21:00 &ndash; 23:30</p>
-                            <p class="last-tickets">Last tickets</p>
-                        </td>
-                        <td class="calendar-ticket">
-							<i></i>
-                        </td>
-                    </tr>
-                </table>
-                <table class="calendar-table sold-out-date">
-                    <tr>
-                        <td class="calendar-date">
-                            <p class="date">dom 23 mai</p>
-                            <p class="time">21:00 &ndash; 23:30</p>
-							<p class="sold-out">Sold out</p>
-                        </td>
-                        <td class="calendar-ticket">
-							<i></i>
-                        </td>
-                    </tr>
-                </table>
-				<table class="calendar-table" style="cursor: pointer;" onmousedown="tableMouseDown(this);" onmouseup="tableMouseUp(this);" onmouseover="tableMouseOver(this);" onmouseout="tableMouseOut(this);">
-                    <tr>
-                        <td class="calendar-date">
-                            <p class="date">dom 23 mai</p>
-                            <p class="time">21:00 &ndash; 23:30</p>
-							<p class="buy-tickets">Buy tickets</p>
-                        </td>
-                        <td class="calendar-ticket">
-							<i></i>
-                        </td>
-                    </tr>
-                </table>
-				<table class="calendar-table sold-out-date">
-                    <tr>
-                        <td class="calendar-date">
-                            <p class="date">dom 23 mai</p>
-                            <p class="time">21:00 &ndash; 23:30</p>
-							<p class="sold-out">Sold out</p>
-                        </td>
-                        <td class="calendar-ticket">
-							<i></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="box-footer shadow">
+            <div class="box-back shadow">
+                <a id="btn-buy-eventpage" class="buy-btn"> <span class="ic-shopping-cart">Comprar ingresso</span></a>
             </div>
         </div>
 
