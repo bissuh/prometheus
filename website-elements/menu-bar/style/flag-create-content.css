@@ -1,0 +1,22 @@
+.flag-create-content {
+    position: absolute;
+    display: block;
+    background: transparent url(../img/flag-menu-bar.png) left top no-repeat;
+    width: 146px;
+    height: 60px;
+    color: #FFF;
+    text-shadow: 0 1px 0px rgba(0, 0, 0, 0.4);
+}
+.flag-create-content:hover {
+    background-position: left center;
+    color: #FFF;
+}
+.flag-create-content:active {
+    background-position: left bottom;
+    color: #DDD;
+}
+.flag-create-content .flag-label {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
