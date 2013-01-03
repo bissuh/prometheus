@@ -9,6 +9,7 @@
 }
 .flag-create-content:hover {
     background-position: left center;
+	cursor: pointer;
     color: #FFF;
 }
 .flag-create-content:active {
