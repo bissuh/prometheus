@@ -1,0 +1,185 @@
+body {background-color: #0071c8; margin: 0px; font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 16px;}
+
+section {display: block;}
+section:before, section:after {display: table; content: "";}
+section:after {clear: both;}
+
+.clearfix {*zoom: 1;}
+.clearfix:before, .clearfix:after {display: table; content: "";}
+.clearfix:after {clear: both;}
+
+.center-text {text-align: center;}
+
+.center {margin: 0 auto;}
+
+.page-title {color: #ffffff;
+	font-size: 55px;
+	text-align: left;
+	margin-top: 50px;
+	font-weight: bold;}
+
+.page-subtitle {color: #ffffff;
+	font-size: 18px;
+	font-weight: bolder;}
+
+.right-content {color: #ffffff;
+	font-size: 15px;
+	float: right;
+	text-align: right;}
+
+.left-content {color: #ffffff;
+	font-size: 15px;
+	float: left;
+	text-align: left;}
+
+.right-title {color: #ffffff;
+	font-size: 25px;
+	float: right;
+	font-weight: bolder;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	text-align: right;}
+
+.left-title {color: #ffffff;
+	font-size: 25px;
+	float: left;
+	font-weight: bolder;
+	margin-top: 20px;
+	margin-bottom: 30px;}
+
+.blue-bg {background-color: rgba(0, 90, 160, 0.7);
+		height: 200px;
+		margin-top: 100px;}
+
+.container {width: 960px; margin: 0 auto;}
+.container:before, .container:after {display: table; content: "";}
+.container:after {clear: both;}
+.below-header {margin-top: 65px}
+.below-menu-bar {margin-top: 105px}
+
+#BandsPage #findEvents h2, #BandsPage #sellTickets h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 28px;
+}
+
+#BandsPage #findEvents h4, #BandsPage #sellTickets h4 {
+	font-size: 22px;
+	font-weight: 400;
+}
+
+#BandsPage #findEvents h2, #BandsPage #findEvents h4 {
+	color: #ff9600;
+}
+
+#BandsPage #sellTickets h2, #BandsPage #sellTickets h4 {
+	color: #0ca8e9;
+}
+
+#BandsPage .pick-event {
+	background: url(../img/pick-event.png) no-repeat right top;
+	height: 173px;
+	padding-right: 200px;
+	padding-top: 90px;
+}
+
+#BandsPage .buy-tickets {
+	background: url(../img/buy-tickets.png) no-repeat left top;
+	height: 151px;
+	padding-left: 220px;
+	padding-top: 12px;
+}
+
+#BandsPage .print-phone {
+		background: url(../img/print-phone.png) no-repeat right top;
+		padding-right: 165px;
+		padding-top: 100px;
+}
+
+#BandsPage #findEvents .video {
+	padding-top: 20px;
+}
+
+#BandsPage .create-event {
+	background: url(../img/create-event.png) no-repeat right top;
+	padding-right: 100px;
+	padding-top: 90px;
+}
+
+#BandsPage .social-networks {
+	background: url(../img/social-networks.png) no-repeat left top;
+	height: 200px;
+	padding-left: 130px;
+	padding-top: 93px;
+}
+
+#BandsPage .receive-money {
+	background: url(../img/receive-money.png) no-repeat right top;
+/*	height: 200px;*/
+	padding-right: 180px;
+	padding-top: 51px;
+}
+
+#BandsPage #sellTickets .video {
+	padding-top: 76px;
+}
+
+#BandsPage #sellTickets a, #BandsPage #findEvents a {
+	width: 420px;
+	height: 40px;
+	line-height: 40px;
+}
+
+#BandsPage #moip {
+		background: url(../img/moip.png) no-repeat right 15px;
+		padding-right: 140px;
+}
+
+
+.box-back .table-container {
+	margin: 0 20px;
+}
+
+.back-table {
+	width: 100%;
+}
+
+.back-table-header {
+	margin-bottom: -10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+}
+
+.back-table tr {
+	border-bottom: 1px solid #aaa;
+}
+
+.back-table tr:last-child {
+	border-bottom: none;
+}
+
+.back-table td, .back-table-header td {
+	padding: 8px 0;
+	width: 90px;
+	text-align: center;
+}
+
+.back-table td:first-child, .back-table-header td:first-child {
+	width: 240px;
+	text-align: left;
+} 
+
+.tick-icon, .cross-icon {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.tick-icon {
+	background: url(../img/tick.png);
+}
+
+.cross-icon {
+	background: url(../img/cross.png);
+}
