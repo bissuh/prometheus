@@ -24,10 +24,10 @@
             <div class="box-header shadow">
                 
             <!-- Opt.1) Desingned title -->
-                <h3 class="box-title tickets-title" style="display: none">Tickets &amp; Dates</h3>
+                <h3 class="box-title tickets-title">Tickets &amp; Dates</h3>
             
             <!-- Opt.2) Ribbon -->
-                <div class="ribbon-wrapper">
+                <div class="ribbon-wrapper" style="display: none">
                     <div class="ribbon-front">
                         <h2 class="ic-ribbon-ticket">Ingressos</h2>
                     </div>
@@ -42,24 +42,30 @@
                     <li>
                         <label class="event-option available">
                             <input type="radio" name="event-ticket-option" />
-                            <span class="event-option-date">Sáb 22 Dez</span>
-                            <span class="event-option-detail event-option-time">13:00 - 22:00</span>
+                            <span class="event-option-date">
+                                Sex 21 Dez
+                                <span class="event-option-when">14:00</span>
+                            </span>
                             <span class="event-option-detail event-option-status">Disponível</span>
                         </label>
                     </li>
                     <li>
                         <label class="event-option last-units">
                             <input type="radio" name="event-ticket-option" />
-                            <span class="event-option-date">Sáb 22 Dez</span>
-                            <span class="event-option-detail event-option-time">13:00 - 22:00</span>
+                            <span class="event-option-date">
+                                Dom 22 Dez
+                                <span class="event-option-when">14:00</span>
+                            </span>
                             <span class="event-option-detail event-option-status">Últimos ingressos</span>
                         </label>
                     </li>
                     <li>
                         <label class="event-option sold-out">
-                            <input type="radio" name="event-ticket-option" />
-                            <span class="event-option-date">Sáb 22 Dez</span>
-                            <span class="event-option-detail event-option-time">13:00 - 22:00</span>
+                            <input type="radio" name="event-ticket-option" disabled="disabled" />
+                            <span class="event-option-date">
+                                Dom 23 Dez
+                                <span class="event-option-when">15:00</span>
+                            </span>
                             <span class="event-option-detail event-option-status">Esgotado</span>
                         </label>
                     </li>
