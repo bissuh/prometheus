@@ -20,32 +20,35 @@ section:after {clear: both;}
 
 .page-subtitle {color: #ffffff;
 	font-size: 18px;
-	font-weight: bolder;}
+	font-weight: bold;
+	margin-top: 20px;}
 
 .right-content {color: #ffffff;
-	font-size: 15px;
+	font-size: 18px;
 	float: right;
-	text-align: right;}
+	text-align: right;
+	font-weight: bolder;}
 
 .left-content {color: #ffffff;
-	font-size: 15px;
+	font-size: 18px;
 	float: left;
-	text-align: left;}
+	text-align: left;
+	font-weight: bolder;}
 
 .right-title {color: #ffffff;
 	font-size: 25px;
 	float: right;
-	font-weight: bolder;
+	font-weight: bold;
 	margin-top: 20px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	text-align: right;}
 
 .left-title {color: #ffffff;
 	font-size: 25px;
 	float: left;
-	font-weight: bolder;
+	font-weight: bold;
 	margin-top: 20px;
-	margin-bottom: 30px;}
+	margin-bottom: 20px;}
 
 .blue-bg {background-color: rgba(0, 90, 160, 0.7);
 		height: 200px;
