@@ -6,6 +6,7 @@
     <title>Ingresse - Entre</title>
     <link href="style/style.css" rel="stylesheet" type="text/css"/>
     <link href="style/auth.css" rel="stylesheet" type="text/css"/>
+    <link href="style/jquery.qtip.min.css" rel="stylesheet" type="text/css"/>
     <link href="../../style/prometheus.css" rel="stylesheet" type="text/css"/>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
 </head>
@@ -42,26 +43,28 @@
                 <button class="button button_auth facebook">Cadastrar com o Facebook</button>
                 <hr class="divider full" />
                     <p>Ou crie sua conta:</p>
-                <form class="auth_form">
-                    <input type="text" class="input-large" placeholder="Nome" />
-                    <input type="email" class="input-large" placeholder="E-mail" />
-                    <input type="email" class="input-large" placeholder="E-mail (confirmação)" />
-                    <input type="text" class="input-large" placeholder="Celular, ex: (00) 99999-9999" />
-                    <input type="password" class="input-large" placeholder="Senha" />
-                    <input type="password" class="input-large" placeholder="Senha (confirmação)" />
+                <form class="auth_form" id="auth_form">
+                    <input type="text" class="input-large" name="first_name" placeholder="Nome" />
+                    <input type="email" class="input-large" name="email" placeholder="E-mail" />
+                    <input type="email" class="input-large" name="email_confirmation" placeholder="E-mail (confirmação)" />
+                    <input type="text" class="input-large" name="mobile_number" placeholder="Celular, ex: (00) 99999-9999" />
+                    <input type="password" class="input-large" name="pass_set" placeholder="Senha" />
+                    <input type="password" class="input-large" name="pass_set_confirmation" placeholder="Senha (confirmação)" />
                     <label for="terms_accept" class="label_signup_terms">
                         <input type="checkbox" id="terms_accept"> Aceito o <a href="#" class="">termo de serviço</a> e a <a href="#" class="">política de privacidade</a>.
                     </label>
                         <button class="button orange-gradient orange-border button_auth_submit">Cadastrar</button>
                 </form>
                 <hr class="divider full" />
-                <p><a href="#" id="singin_back">&larr; voltar para login</a></p>
+                <p><a href="#" id="singin_back" title="Voltar para login">&larr; voltar para login</a></p>
             </div>
         </div>
     </div>
     <div class="auth_banner">&nbsp;</div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="script/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="script/jquery.validate.min.js"></script>
+    <script src="script/jquery.qtip.min.js"></script>
     <script src="script/auth.js"></script>
 </body>
 </html>
