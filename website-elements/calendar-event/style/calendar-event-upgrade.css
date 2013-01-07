@@ -1,9 +1,3 @@
-.tickets-title {
-    color: #ff9434;
-    background: transparent url(../img/icon-ticket-title.png) left 4px no-repeat;
-    padding-left: 26px;
-}
-
 .tickets-dates {
     list-style: none;
     margin: 12px 0 0 0;
