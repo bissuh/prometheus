@@ -111,10 +111,10 @@
 } 
 #signup_call .legend {
    display: block;
-   color: #666;
+   color: #ED8000;
    text-align: center;
-   font-size: 12px;
-   margin-top: 5px;
+   font-size: 14px;
+   margin: 6px 0 3px 0;
 }
 
 /* Sign in form */
